@@ -38,13 +38,13 @@ graph TD
     API <-->|PyMongo| DB
     API <-->|Inference| ML
     
-    subgraph Frontend Routes
-        Dashboard(/dashboard)
-        Analytics(/analytics)
-        Maps(/map)
-        Forecast(/forecast)
+    subgraph FrontendRoutes [Frontend Routes]
+        Dashboard["/dashboard"]
+        Analytics["/analytics"]
+        Maps["/map"]
+        Forecast["/forecast"]
     end
-    UI -.-> Frontend Routes
+    UI -.-> FrontendRoutes
 ```
 
 ---
