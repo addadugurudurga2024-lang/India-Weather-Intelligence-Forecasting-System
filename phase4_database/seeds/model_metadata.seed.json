@@ -1,0 +1,76 @@
+[
+  {
+    "model_id": "xgb_temp_fold2_v1",
+    "model_family": "XGBoost",
+    "target": "target_next_day_temp",
+    "task": "regression",
+    "artifact_path": "phase3_models/xgboost/temperature/xgb_temp_fold2.json",
+    "training_period": "2021-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "status": "APPROVED_FOR_PRODUCTION_CANDIDATE",
+    "registered_at": "2026-09-13T05:23:37.973128"
+  },
+  {
+    "model_id": "xgb_rain_amt_fold2_v1",
+    "model_family": "XGBoost",
+    "target": "target_next_day_rainfall_amount",
+    "task": "regression",
+    "artifact_path": "phase3_models/xgboost/rainfall/xgb_rain_amt_fold2.json",
+    "transformation": "log1p",
+    "training_period": "2021-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "status": "APPROVED_FOR_PRODUCTION_CANDIDATE",
+    "registered_at": "2026-09-13T05:23:37.973128"
+  },
+  {
+    "model_id": "xgb_rain_cls_fold2_v1",
+    "model_family": "XGBoost",
+    "target": "target_next_day_rain_binary",
+    "task": "binary_classification",
+    "artifact_path": "phase3_models/xgboost/rain_classification/xgb_rain_cls_fold2.json",
+    "training_period": "2021-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "status": "APPROVED_FOR_PRODUCTION_CANDIDATE",
+    "registered_at": "2026-09-13T05:23:37.973128"
+  },
+  {
+    "model_id": "lstm_temp_fold2_v1",
+    "model_family": "LSTM",
+    "target": "target_next_day_temp",
+    "task": "regression",
+    "artifact_path": "phase3_models/lstm/temperature/lstm_temperature_fold2.pt",
+    "preprocessor_path": "phase3_models/preprocessors/scaler_lstm_temperature_fold2.joblib",
+    "sequence_length": 7,
+    "training_period": "2021-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "status": "BENCHMARKED",
+    "registered_at": "2026-09-13T05:23:37.973128"
+  },
+  {
+    "model_id": "lstm_rain_amt_fold2_v1",
+    "model_family": "LSTM",
+    "target": "target_next_day_rainfall_amount",
+    "task": "regression",
+    "artifact_path": "phase3_models/lstm/rainfall/lstm_rainfall_fold2.pt",
+    "preprocessor_path": "phase3_models/preprocessors/scaler_lstm_rainfall_fold2.joblib",
+    "transformation": "log1p",
+    "sequence_length": 7,
+    "training_period": "2021-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "status": "BENCHMARKED",
+    "registered_at": "2026-09-13T05:23:37.973128"
+  },
+  {
+    "model_id": "lstm_rain_cls_fold2_v1",
+    "model_family": "LSTM",
+    "target": "target_next_day_rain_binary",
+    "task": "binary_classification",
+    "artifact_path": "phase3_models/lstm/rain_classification/lstm_rain_classification_fold2.pt",
+    "preprocessor_path": "phase3_models/preprocessors/scaler_lstm_rain_classification_fold2.joblib",
+    "sequence_length": 7,
+    "training_period": "2021-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "status": "BENCHMARKED",
+    "registered_at": "2026-09-13T05:23:37.973128"
+  }
+]

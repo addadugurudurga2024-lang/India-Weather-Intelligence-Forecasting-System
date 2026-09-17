@@ -1,0 +1,43 @@
+{
+  "validation_strategy": "Expanding Window Chronological Split (Walk-Forward)",
+  "unit_of_time": "Calendar Day (Daily Panel)",
+  "total_records": 604155,
+  "dataset_start": "2021-01-01",
+  "dataset_end": "2025-02-10",
+  "folds": [
+    {
+      "fold_id": 1,
+      "train_period": {
+        "start": "2021-01-01",
+        "end": "2022-12-31"
+      },
+      "val_period": {
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "train_records": 290531,
+      "val_records": 149423
+    },
+    {
+      "fold_id": 2,
+      "train_period": {
+        "start": "2021-01-01",
+        "end": "2023-12-31"
+      },
+      "val_period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "train_records": 439954,
+      "val_records": 147469
+    }
+  ],
+  "holdout_test_set": {
+    "period": {
+      "start": "2025-01-01",
+      "end": "2025-02-10"
+    },
+    "records": 16732,
+    "description": "Strict out-of-time unobserved holdout test partition."
+  }
+}

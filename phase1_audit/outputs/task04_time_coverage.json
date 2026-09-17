@@ -1,0 +1,47 @@
+{
+  "earliest_observation": "2015-01-01 00:00:00",
+  "latest_observation": "2025-02-10 00:00:00",
+  "unique_dates": 3694,
+  "expected_calendar_days": 3694,
+  "missing_calendar_dates_count": 0,
+  "records_per_date_stats": {
+    "min": 108,
+    "max": 412,
+    "mean": 262.6797509474824,
+    "median": 184.0,
+    "std": 118.78250750961195
+  },
+  "records_by_year": {
+    "2015": 44728,
+    "2016": 61183,
+    "2017": 61616,
+    "2018": 63411,
+    "2019": 66224,
+    "2020": 67532,
+    "2021": 141866,
+    "2022": 149392,
+    "2023": 149788,
+    "2024": 147826,
+    "2025": 16773
+  },
+  "records_by_month": {
+    "January": 92905,
+    "December": 82556,
+    "October": 82175,
+    "July": 81717,
+    "August": 81068,
+    "March": 80304,
+    "May": 80078,
+    "November": 79521,
+    "September": 78242,
+    "June": 78097,
+    "February": 77479,
+    "April": 76197
+  },
+  "records_by_season": {
+    "Winter": 333244,
+    "Monsoon": 241027,
+    "Summer": 234372,
+    "Post-monsoon": 161696
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "n_records": 970339,
+  "n_fields": 15,
+  "fields": [
+    "date_of_record",
+    "month",
+    "season",
+    "station_name",
+    "state",
+    "district",
+    "avg_temp",
+    "min_temp",
+    "max_temp",
+    "wind_speed",
+    "air_pressure",
+    "elevation",
+    "latitude",
+    "longitude",
+    "rainfall"
+  ],
+  "memory_usage_mb": 143.6181240081787,
+  "columns_profile": {
+    "date_of_record": {
+      "dtype": "datetime64[us]",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 3694,
+      "min_date": "2015-01-01 00:00:00",
+      "max_date": "2025-02-10 00:00:00"
+    },
+    "month": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 12,
+      "top_10_values": {
+        "January": 92905,
+        "December": 82556,
+        "October": 82175,
+        "July": 81717,
+        "August": 81068,
+        "March": 80304,
+        "May": 80078,
+        "November": 79521,
+        "September": 78242,
+        "June": 78097
+      }
+    },
+    "season": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 4,
+      "top_10_values": {
+        "Winter": 333244,
+        "Monsoon": 241027,
+        "Summer": 234372,
+        "Post-monsoon": 161696
+      }
+    },
+    "station_name": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 406,
+      "top_10_values": {
+        "Srinagar": 7388,
+        "Thiruvananthapuram": 7388,
+        "Akola": 7276,
+        "Madurai": 6700,
+        "Agra": 4794,
+        "Siliguri": 3906,
+        "New Delhi / Palam": 3694,
+        "New Delhi / Safdarjung": 3694,
+        "Dibrugarh / Mohanbari": 3694,
+        "Gauhati": 3694
+      }
+    },
+    "state": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 32,
+      "top_10_values": {
+        "MH": 98770,
+        "MP": 86379,
+        "AP": 81129,
+        "TN": 76059,
+        "KA": 75376,
+        "UP": 74032,
+        "GJ": 61988,
+        "RJ": 56227,
+        "WB": 44543,
+        "BR": 41846
+      }
+    },
+    "district": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 314,
+      "top_10_values": {
+        "Visakhapatnam": 13400,
+        "Udaipur": 11004,
+        "Uttara Kannada": 10614,
+        "Kachchh": 10014,
+        "Raipur": 9495,
+        "Lakshadweep": 9345,
+        "Mumbai Suburban": 8877,
+        "South Andaman": 8875,
+        "Pune": 8873,
+        "Coimbatore": 8868
+      }
+    },
+    "avg_temp": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 514,
+      "min": -10.4,
+      "max": 43.4,
+      "mean": 25.66170853691338,
+      "std": 5.438132717800957,
+      "median": 26.7,
+      "zero_count": 13,
+      "zero_rate": 1.339737967864839e-05,
+      "negative_count": 444,
+      "negative_rate": 0.0004575720444092219,
+      "quantiles": {
+        "q01": 9.6,
+        "q05": 15.0,
+        "q25": 23.1,
+        "q50": 26.7,
+        "q75": 29.1,
+        "q95": 32.9,
+        "q99": 36.1
+      }
+    },
+    "min_temp": {
+      "dtype": "float64",
+      "missing_count": 43898,
+      "missing_rate": 0.04523985947179285,
+      "unique_count": 494,
+      "min": -18.5,
+      "max": 36.6,
+      "mean": 20.647342140514088,
+      "std": 6.008170871460995,
+      "median": 22.4,
+      "zero_count": 182,
+      "zero_rate": 0.00019645071839437158,
+      "negative_count": 3211,
+      "negative_rate": 0.0034659519602435558,
+      "quantiles": {
+        "q01": 3.5,
+        "q05": 8.8,
+        "q25": 17.1,
+        "q50": 22.4,
+        "q75": 25.0,
+        "q95": 27.7,
+        "q99": 29.5
+      }
+    },
+    "max_temp": {
+      "dtype": "float64",
+      "missing_count": 110598,
+      "missing_rate": 0.11397872289993496,
+      "unique_count": 545,
+      "min": -5.6,
+      "max": 87.0,
+      "mean": 31.195383377086827,
+      "std": 5.464499172936127,
+      "median": 31.6,
+      "zero_count": 10,
+      "zero_rate": 1.1631409924616832e-05,
+      "negative_count": 144,
+      "negative_rate": 0.00016749230291448239,
+      "quantiles": {
+        "q01": 15.2,
+        "q05": 21.2,
+        "q25": 28.5,
+        "q50": 31.6,
+        "q75": 34.4,
+        "q95": 39.8,
+        "q99": 43.0
+      }
+    },
+    "wind_speed": {
+      "dtype": "float64",
+      "missing_count": 274444,
+      "missing_rate": 0.28283311296361374,
+      "unique_count": 499,
+      "min": 0.0,
+      "max": 66.6,
+      "mean": 9.432732380603397,
+      "std": 4.979262606101378,
+      "median": 8.4,
+      "zero_count": 135,
+      "zero_rate": 0.00019399478369581618,
+      "negative_count": 0,
+      "negative_rate": 0.0,
+      "quantiles": {
+        "q01": 2.1,
+        "q05": 3.5,
+        "q25": 6.1,
+        "q50": 8.4,
+        "q75": 11.6,
+        "q95": 19.1,
+        "q99": 26.5
+      }
+    },
+    "air_pressure": {
+      "dtype": "float64",
+      "missing_count": 304664,
+      "missing_rate": 0.31397686787813334,
+      "unique_count": 454,
+      "min": 922.6,
+      "max": 1036.5,
+      "mean": 1009.4376634243438,
+      "std": 5.292870662223626,
+      "median": 1009.8,
+      "zero_count": 0,
+      "zero_rate": 0.0,
+      "negative_count": 0,
+      "negative_rate": 0.0,
+      "quantiles": {
+        "q01": 997.2,
+        "q05": 1000.2,
+        "q25": 1005.8,
+        "q50": 1009.8,
+        "q75": 1013.3,
+        "q95": 1017.4,
+        "q99": 1020.3
+      }
+    },
+    "elevation": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 273,
+      "min": 0.0,
+      "max": 2652.0,
+      "mean": 298.1810181802442,
+      "std": 415.26621476251796,
+      "median": 139.0,
+      "zero_count": 68742,
+      "zero_rate": 0.07084328260535751,
+      "negative_count": 0,
+      "negative_rate": 0.0,
+      "quantiles": {
+        "q01": 0.0,
+        "q05": 0.0,
+        "q25": 16.0,
+        "q50": 139.0,
+        "q75": 436.0,
+        "q95": 1041.0,
+        "q99": 2205.0
+      }
+    },
+    "latitude": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 359,
+      "min": 7.9833,
+      "max": 34.0833,
+      "mean": 20.793670336552484,
+      "std": 6.328275224369604,
+      "median": 21.6167,
+      "zero_count": 0,
+      "zero_rate": 0.0,
+      "negative_count": 0,
+      "negative_rate": 0.0,
+      "quantiles": {
+        "q01": 8.4667,
+        "q05": 10.15,
+        "q25": 15.85,
+        "q50": 21.6167,
+        "q75": 25.5667,
+        "q95": 30.7333,
+        "q99": 33.5833
+      }
+    },
+    "longitude": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "unique_count": 334,
+      "min": 68.85,
+      "max": 95.3833,
+      "mean": 79.42682559342666,
+      "std": 5.852512104465779,
+      "median": 78.0667,
+      "zero_count": 0,
+      "zero_rate": 0.0,
+      "negative_count": 0,
+      "negative_rate": 0.0,
+      "quantiles": {
+        "q01": 69.1167,
+        "q05": 72.2,
+        "q25": 75.4,
+        "q50": 78.0667,
+        "q75": 82.7167,
+        "q95": 92.35,
+        "q99": 94.1167
+      }
+    },
+    "rainfall": {
+      "dtype": "float64",
+      "missing_count": 257554,
+      "missing_rate": 0.2654268250580467,
+      "unique_count": 1598,
+      "min": 0.0,
+      "max": 485.9,
+      "mean": 5.267532565921,
+      "std": 14.444142068063769,
+      "median": 0.0,
+      "zero_count": 366240,
+      "zero_rate": 0.5138155264210106,
+      "negative_count": 0,
+      "negative_rate": 0.0,
+      "quantiles": {
+        "q01": 0.0,
+        "q05": 0.0,
+        "q25": 0.0,
+        "q50": 0.0,
+        "q75": 4.0,
+        "q95": 26.9,
+        "q99": 68.1
+      }
+    }
+  }
+}

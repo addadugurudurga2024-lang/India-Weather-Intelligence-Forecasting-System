@@ -1,0 +1,78 @@
+{
+  "month_mismatch_count": 0,
+  "month_season_crosstab": {
+    "Monsoon": {
+      "April": 0,
+      "August": 81068,
+      "December": 0,
+      "February": 0,
+      "January": 0,
+      "July": 81717,
+      "June": 0,
+      "March": 0,
+      "May": 0,
+      "November": 0,
+      "October": 0,
+      "September": 78242
+    },
+    "Post-monsoon": {
+      "April": 0,
+      "August": 0,
+      "December": 0,
+      "February": 0,
+      "January": 0,
+      "July": 0,
+      "June": 0,
+      "March": 0,
+      "May": 0,
+      "November": 79521,
+      "October": 82175,
+      "September": 0
+    },
+    "Summer": {
+      "April": 76197,
+      "August": 0,
+      "December": 0,
+      "February": 0,
+      "January": 0,
+      "July": 0,
+      "June": 78097,
+      "March": 0,
+      "May": 80078,
+      "November": 0,
+      "October": 0,
+      "September": 0
+    },
+    "Winter": {
+      "April": 0,
+      "August": 0,
+      "December": 82556,
+      "February": 77479,
+      "January": 92905,
+      "July": 0,
+      "June": 0,
+      "March": 80304,
+      "May": 0,
+      "November": 0,
+      "October": 0,
+      "September": 0
+    }
+  },
+  "fields_evaluated": [
+    "date_of_record",
+    "month",
+    "season",
+    "station_name",
+    "state",
+    "district",
+    "avg_temp",
+    "min_temp",
+    "max_temp",
+    "wind_speed",
+    "air_pressure",
+    "elevation",
+    "latitude",
+    "longitude",
+    "rainfall"
+  ]
+}

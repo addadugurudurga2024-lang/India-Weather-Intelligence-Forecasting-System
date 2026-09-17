@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Operational25DayWeatherTimeline",
+  "description": "Authoritative contract for 25-day weather intelligence: 12 actual observed days, 1 current observed day, and 12 multi-horizon forecast days.",
+  "type": "object",
+  "required": [
+    "station_id",
+    "station_name",
+    "district",
+    "state",
+    "forecast_origin",
+    "generated_at",
+    "timeline_summary",
+    "timeline"
+  ],
+  "properties": {
+    "station_id": {
+      "type": "string",
+      "description": "Unique physical station identifier: {slug}_{lat}_{lon}_{elev}m"
+    },
+    "station_name": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "elevation_m": {
+      "type": "number"
+    },
+    "forecast_origin": {
+      "type": "string",
+      "format": "date",
+      "description": "Operational anchor date D0 (YYYY-MM-DD)"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "is_historical_simulation": {
+      "type": "boolean",
+      "description": "True if anchored to audited historical holdout (e.g. 2025-01-20) for benchmark replay"
+    },
+    "timeline_summary": {
+      "type": "object",
+      "required": ["total_days", "historical_observed_count", "current_count", "forecast_count", "unavailable_count"],
+      "properties": {
+        "total_days": { "type": "integer", "enum": [25] },
+        "historical_observed_count": { "type": "integer" },
+        "current_count": { "type": "integer" },
+        "forecast_count": { "type": "integer" },
+        "unavailable_count": { "type": "integer" }
+      }
+    },
+    "timeline": {
+      "type": "array",
+      "minItems": 25,
+      "maxItems": 25,
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "relative_day",
+          "status",
+          "is_observed",
+          "provenance"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Calendar date (YYYY-MM-DD)"
+          },
+          "relative_day": {
+            "type": "integer",
+            "minimum": -12,
+            "maximum": 12,
+            "description": "-12 to -1: Historical Actual; 0: Today/Current; 1 to 12: Forecast Horizon"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["OBSERVED", "CURRENT", "FORECAST", "DERIVED", "UNAVAILABLE", "MODEL ESTIMATE"]
+          },
+          "is_observed": {
+            "type": "boolean",
+            "description": "Strict flag: true ONLY if value was measured by sensor telemetry"
+          },
+          "provenance": {
+            "type": "string",
+            "description": "Authoritative origin description (e.g. 'Phase 2 IMD Canonical', 'Open-Meteo CC BY 4.0', 'XGBoost Multi-Horizon v1')"
+          },
+          "temperature_avg": {
+            "type": ["number", "null"],
+            "description": "Daily mean surface temperature (°C)"
+          },
+          "temperature_min": {
+            "type": ["number", "null"],
+            "description": "Daily minimum temperature (°C)"
+          },
+          "temperature_max": {
+            "type": ["number", "null"],
+            "description": "Daily maximum temperature (°C)"
+          },
+          "rainfall_amount": {
+            "type": ["number", "null"],
+            "description": "Daily precipitation accumulation (mm). null represents missing sensor reading, NEVER assumed 0."
+          },
+          "rain_probability": {
+            "type": ["number", "null"],
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Probability of rain occurrence P(rain > 0). Populated on FORECAST days."
+          },
+          "rain_binary": {
+            "type": ["boolean", "null"],
+            "description": "True if rain > 0mm (observed) or predicted prob >= operating threshold (forecast)"
+          },
+          "wind_speed": {
+            "type": ["number", "null"],
+            "description": "Daily mean wind speed (km/h)"
+          },
+          "air_pressure": {
+            "type": ["number", "null"],
+            "description": "Atmospheric surface pressure (hPa)"
+          },
+          "uncertainty": {
+            "type": ["object", "null"],
+            "description": "Empirical prediction intervals for continuous forecasts and calibrated bounds",
+            "properties": {
+              "temp_interval_80": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 2,
+                "maxItems": 2,
+                "description": "[P10_lower, P90_upper] in °C"
+              },
+              "temp_interval_95": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "rainfall_interval_80": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 2,
+                "maxItems": 2,
+                "description": "[P10_lower, P90_upper] in mm"
+              },
+              "methodology": {
+                "type": "string",
+                "description": "Mathematical basis of uncertainty (e.g. 'Empirical Validation Residual Quantiles')"
+              }
+            }
+          },
+          "model_metadata": {
+            "type": ["object", "null"],
+            "properties": {
+              "model_id": { "type": "string" },
+              "model_version": { "type": "string" },
+              "horizon_name": { "type": "string" },
+              "training_period": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

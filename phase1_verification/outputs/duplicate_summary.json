@@ -1,0 +1,8 @@
+{
+  "total_station_date_duplicate_records": 21703,
+  "type_a_different_coordinates_count": 20213,
+  "type_b_same_coords_differing_elevation_count": 1490,
+  "type_c_conflicting_weather_values_count": 1490,
+  "type_d_exact_duplicate_rows_count": 0,
+  "composite_key_duplicate_count": 0
+}

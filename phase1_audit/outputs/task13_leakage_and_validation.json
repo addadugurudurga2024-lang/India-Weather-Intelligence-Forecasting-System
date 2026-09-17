@@ -1,0 +1,11 @@
+{
+  "prohibited_practices": [
+    "Random train/test splits (causes extreme temporal autocorrelation leakage)",
+    "Global min-max or standard scaling fit across the entire time series",
+    "Backward-looking rolling features computed across gap dates without datetime index alignment",
+    "Global target encoding of station/district without out-of-fold temporal partitioning",
+    "Imputing missing rainfall as 0 across all historical records"
+  ],
+  "recommended_validation_strategy": "Chronological rolling-origin evaluation (Expanding Window or Walk-Forward Split by station)",
+  "station_split_consideration": "Grouped TimeSeriesSplit by station identifier to test generalizability across unseen stations vs temporal holdout on known stations."
+}

@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "snapshot_id": "prospective_forecast_snapshot_2026-09-13_v1",
+    "forecast_origin": "2026-09-13",
+    "issuance_timestamp": "2026-09-13T17:28:59.188505",
+    "station_id": "new_delhi_safdarjung_28.5833_77.2000_211m",
+    "station_name": "New Delhi (Safdarjung)",
+    "latitude": 28.5833,
+    "longitude": 77.2,
+    "elevation_m": 211.0,
+    "our_model_architecture": "Direct Multi-Horizon XGBoost (xgb_multi_horizon_h1..12_v1)",
+    "external_benchmark_provider": "Open-Meteo Global Ensemble API (CC BY 4.0 / WMO GTS)",
+    "audit_notice": "SCIENTIFIC NOTICE: This dataset is a prospective forecast-vs-forecast comparison. Neither model is ground truth. External forecasts serve strictly as an independent benchmark. Forecast skill can only be evaluated against future actual physical ground-truth station observations once each target date has elapsed."
+  },
+  "horizons": [
+    {
+      "horizon": "T+1",
+      "date": "2026-09-14",
+      "our_temp_avg": 18.0,
+      "our_temp_min": 10.8,
+      "our_temp_max": 26.1,
+      "our_temp_80_interval": [
+        16.9,
+        19.1
+      ],
+      "our_rain_prob_pct": 26.7,
+      "our_rain_amount_mm": 0.2,
+      "our_wind_kmh": 3.3,
+      "our_pres_hpa": 1013.6,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 28.0,
+      "external_temp_min": 25.9,
+      "external_temp_max": 31.3,
+      "external_rain_prob_pct": 94,
+      "external_rain_amount_mm": 1.4,
+      "external_wind_kmh": 12.5
+    },
+    {
+      "horizon": "T+2",
+      "date": "2026-09-15",
+      "our_temp_avg": 17.4,
+      "our_temp_min": 11.5,
+      "our_temp_max": 25.6,
+      "our_temp_80_interval": [
+        15.9,
+        19.0
+      ],
+      "our_rain_prob_pct": 36.5,
+      "our_rain_amount_mm": 0.4,
+      "our_wind_kmh": 3.7,
+      "our_pres_hpa": 1013.7,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 26.9,
+      "external_temp_min": 24.9,
+      "external_temp_max": 30.8,
+      "external_rain_prob_pct": 96,
+      "external_rain_amount_mm": 1.8,
+      "external_wind_kmh": 9.4
+    },
+    {
+      "horizon": "T+3",
+      "date": "2026-09-16",
+      "our_temp_avg": 16.9,
+      "our_temp_min": 11.5,
+      "our_temp_max": 25.5,
+      "our_temp_80_interval": [
+        15.1,
+        18.7
+      ],
+      "our_rain_prob_pct": 46.6,
+      "our_rain_amount_mm": 0.5,
+      "our_wind_kmh": 4.1,
+      "our_pres_hpa": 1013.0,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 27.2,
+      "external_temp_min": 24.7,
+      "external_temp_max": 31.8,
+      "external_rain_prob_pct": 67,
+      "external_rain_amount_mm": 1.9,
+      "external_wind_kmh": 8.7
+    },
+    {
+      "horizon": "T+4",
+      "date": "2026-09-17",
+      "our_temp_avg": 17.0,
+      "our_temp_min": 11.6,
+      "our_temp_max": 25.1,
+      "our_temp_80_interval": [
+        15.1,
+        19.0
+      ],
+      "our_rain_prob_pct": 48.1,
+      "our_rain_amount_mm": 0.3,
+      "our_wind_kmh": 4.0,
+      "our_pres_hpa": 1013.6,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 27.8,
+      "external_temp_min": 23.4,
+      "external_temp_max": 32.2,
+      "external_rain_prob_pct": 29,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 7.7
+    },
+    {
+      "horizon": "T+5",
+      "date": "2026-09-18",
+      "our_temp_avg": 16.7,
+      "our_temp_min": 11.0,
+      "our_temp_max": 25.0,
+      "our_temp_80_interval": [
+        14.7,
+        18.8
+      ],
+      "our_rain_prob_pct": 56.3,
+      "our_rain_amount_mm": 0.5,
+      "our_wind_kmh": 3.7,
+      "our_pres_hpa": 1012.9,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 25.7,
+      "external_temp_min": 21.8,
+      "external_temp_max": 28.5,
+      "external_rain_prob_pct": 29,
+      "external_rain_amount_mm": 6.3,
+      "external_wind_kmh": 11.5
+    },
+    {
+      "horizon": "T+6",
+      "date": "2026-09-19",
+      "our_temp_avg": 17.7,
+      "our_temp_min": 10.9,
+      "our_temp_max": 24.8,
+      "our_temp_80_interval": [
+        15.7,
+        19.8
+      ],
+      "our_rain_prob_pct": 60.3,
+      "our_rain_amount_mm": 0.5,
+      "our_wind_kmh": 3.7,
+      "our_pres_hpa": 1012.5,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 27.8,
+      "external_temp_min": 22.9,
+      "external_temp_max": 31.8,
+      "external_rain_prob_pct": 20,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 5.9
+    },
+    {
+      "horizon": "T+7",
+      "date": "2026-09-20",
+      "our_temp_avg": 16.7,
+      "our_temp_min": 11.0,
+      "our_temp_max": 24.3,
+      "our_temp_80_interval": [
+        14.7,
+        18.9
+      ],
+      "our_rain_prob_pct": 67.6,
+      "our_rain_amount_mm": 0.6,
+      "our_wind_kmh": 3.5,
+      "our_pres_hpa": 1012.2,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 28.7,
+      "external_temp_min": 24.3,
+      "external_temp_max": 32.5,
+      "external_rain_prob_pct": 20,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 2.9
+    },
+    {
+      "horizon": "T+8",
+      "date": "2026-09-21",
+      "our_temp_avg": 16.4,
+      "our_temp_min": 11.3,
+      "our_temp_max": 24.7,
+      "our_temp_80_interval": [
+        14.3,
+        18.6
+      ],
+      "our_rain_prob_pct": 59.2,
+      "our_rain_amount_mm": 0.6,
+      "our_wind_kmh": 3.6,
+      "our_pres_hpa": 1012.6,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 29.0,
+      "external_temp_min": 24.7,
+      "external_temp_max": 32.8,
+      "external_rain_prob_pct": 10,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 7.4
+    },
+    {
+      "horizon": "T+9",
+      "date": "2026-09-22",
+      "our_temp_avg": 17.2,
+      "our_temp_min": 11.0,
+      "our_temp_max": 25.0,
+      "our_temp_80_interval": [
+        15.1,
+        19.5
+      ],
+      "our_rain_prob_pct": 56.1,
+      "our_rain_amount_mm": 0.8,
+      "our_wind_kmh": 3.7,
+      "our_pres_hpa": 1012.7,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 29.1,
+      "external_temp_min": 23.8,
+      "external_temp_max": 33.5,
+      "external_rain_prob_pct": 18,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 7.8
+    },
+    {
+      "horizon": "T+10",
+      "date": "2026-09-23",
+      "our_temp_avg": 16.7,
+      "our_temp_min": 10.8,
+      "our_temp_max": 25.0,
+      "our_temp_80_interval": [
+        14.6,
+        19.0
+      ],
+      "our_rain_prob_pct": 56.7,
+      "our_rain_amount_mm": 0.8,
+      "our_wind_kmh": 3.7,
+      "our_pres_hpa": 1011.8,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 29.7,
+      "external_temp_min": 23.5,
+      "external_temp_max": 34.5,
+      "external_rain_prob_pct": 25,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 9.6
+    },
+    {
+      "horizon": "T+11",
+      "date": "2026-09-24",
+      "our_temp_avg": 16.4,
+      "our_temp_min": 11.4,
+      "our_temp_max": 24.6,
+      "our_temp_80_interval": [
+        14.2,
+        18.8
+      ],
+      "our_rain_prob_pct": 66.4,
+      "our_rain_amount_mm": 0.8,
+      "our_wind_kmh": 3.7,
+      "our_pres_hpa": 1011.5,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 30.6,
+      "external_temp_min": 25.1,
+      "external_temp_max": 35.0,
+      "external_rain_prob_pct": 24,
+      "external_rain_amount_mm": 0.6,
+      "external_wind_kmh": 8.1
+    },
+    {
+      "horizon": "T+12",
+      "date": "2026-09-25",
+      "our_temp_avg": 16.6,
+      "our_temp_min": 12.0,
+      "our_temp_max": 25.0,
+      "our_temp_80_interval": [
+        14.4,
+        19.0
+      ],
+      "our_rain_prob_pct": 60.8,
+      "our_rain_amount_mm": 0.6,
+      "our_wind_kmh": 4.0,
+      "our_pres_hpa": 1011.0,
+      "external_provider": "Open-Meteo CC BY 4.0 / WMO Global Models (GFS/ECMWF blend)",
+      "external_temp_mean": 30.6,
+      "external_temp_min": 25.3,
+      "external_temp_max": 35.0,
+      "external_rain_prob_pct": 26,
+      "external_rain_amount_mm": 0.0,
+      "external_wind_kmh": 10.1
+    }
+  ]
+}

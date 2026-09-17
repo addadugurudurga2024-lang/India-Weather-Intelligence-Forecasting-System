@@ -1,0 +1,434 @@
+{
+  "missing_counts": {
+    "date_of_record": 0,
+    "month": 0,
+    "season": 0,
+    "station_name": 0,
+    "state": 0,
+    "district": 0,
+    "avg_temp": 0,
+    "min_temp": 43898,
+    "max_temp": 110598,
+    "wind_speed": 274444,
+    "air_pressure": 304664,
+    "elevation": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "rainfall": 257554
+  },
+  "missing_rates": {
+    "date_of_record": 0.0,
+    "month": 0.0,
+    "season": 0.0,
+    "station_name": 0.0,
+    "state": 0.0,
+    "district": 0.0,
+    "avg_temp": 0.0,
+    "min_temp": 0.04523985947179285,
+    "max_temp": 0.11397872289993496,
+    "wind_speed": 0.28283311296361374,
+    "air_pressure": 0.31397686787813334,
+    "elevation": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "rainfall": 0.2654268250580467
+  },
+  "missing_by_year": {
+    "2015": {
+      "avg_temp": 0.0,
+      "min_temp": 0.25152030048291896,
+      "max_temp": 0.0854721874441066,
+      "wind_speed": 0.89257288499374,
+      "air_pressure": 0.9744455374709354,
+      "rainfall": 0.693726524771955
+    },
+    "2016": {
+      "avg_temp": 0.0,
+      "min_temp": 0.11124005034078094,
+      "max_temp": 0.32914371639180817,
+      "wind_speed": 0.7867054573982969,
+      "air_pressure": 0.9056927577921972,
+      "rainfall": 0.7052612653841753
+    },
+    "2017": {
+      "avg_temp": 0.0,
+      "min_temp": 0.09934108023889898,
+      "max_temp": 0.33303038171903404,
+      "wind_speed": 0.7671384056089328,
+      "air_pressure": 0.8694332640872501,
+      "rainfall": 0.6878732796676188
+    },
+    "2018": {
+      "avg_temp": 0.0,
+      "min_temp": 0.09145101007711595,
+      "max_temp": 0.2984971061803157,
+      "wind_speed": 0.7201274226869155,
+      "air_pressure": 0.8238791376890445,
+      "rainfall": 0.7035687814417056
+    },
+    "2019": {
+      "avg_temp": 0.0,
+      "min_temp": 0.09742691471369896,
+      "max_temp": 0.32024643633727956,
+      "wind_speed": 0.6883305146170573,
+      "air_pressure": 0.7687243295482,
+      "rainfall": 0.670225295965209
+    },
+    "2020": {
+      "avg_temp": 0.0,
+      "min_temp": 0.10769709174909672,
+      "max_temp": 0.3782058875792217,
+      "wind_speed": 0.6810549073032044,
+      "air_pressure": 0.6934490315702185,
+      "rainfall": 0.6655955695077889
+    },
+    "2021": {
+      "avg_temp": 0.0,
+      "min_temp": 0.00052866789787546,
+      "max_temp": 0.00048637446604542315,
+      "wind_speed": 0.006520237407130673,
+      "air_pressure": 0.0065343352177406845,
+      "rainfall": 0.03410260386561967
+    },
+    "2022": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0002677519545892685,
+      "max_temp": 8.701938524151226e-05,
+      "wind_speed": 0.0012450465888400985,
+      "air_pressure": 0.0012517403877048301,
+      "rainfall": 0.012758380636178644
+    },
+    "2023": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0,
+      "max_temp": 3.338051112238631e-05,
+      "wind_speed": 4.673271557134083e-05,
+      "air_pressure": 4.673271557134083e-05,
+      "rainfall": 1.3352204448954523e-05
+    },
+    "2024": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0005547062086507109,
+      "max_temp": 0.002387942581142695,
+      "wind_speed": 0.005147944204673061,
+      "air_pressure": 0.006717356892562878,
+      "rainfall": 0.0020091188288934286
+    },
+    "2025": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0,
+      "max_temp": 0.0,
+      "wind_speed": 0.0,
+      "air_pressure": 0.0,
+      "rainfall": 0.0
+    }
+  },
+  "missing_by_state": {
+    "AN": {
+      "avg_temp": 0.0,
+      "min_temp": 0.06265326140264836,
+      "max_temp": 0.20365375183913684,
+      "wind_speed": 0.27023050514958313,
+      "air_pressure": 0.27023050514958313,
+      "rainfall": 0.12211868563021089
+    },
+    "AP": {
+      "avg_temp": 0.0,
+      "min_temp": 0.04453401373121818,
+      "max_temp": 0.051498231212020365,
+      "wind_speed": 0.283659357319824,
+      "air_pressure": 0.35415202948390834,
+      "rainfall": 0.2697555744554968
+    },
+    "AR": {
+      "avg_temp": 0.0,
+      "min_temp": 0.021536483445837352,
+      "max_temp": 0.13500482160077146,
+      "wind_speed": 0.5213757634201222,
+      "air_pressure": 0.5213757634201222,
+      "rainfall": 0.2227579556412729
+    },
+    "AS": {
+      "avg_temp": 0.0,
+      "min_temp": 0.031004989308624376,
+      "max_temp": 0.18054717912166238,
+      "wind_speed": 0.38691814244201983,
+      "air_pressure": 0.3911398651241844,
+      "rainfall": 0.19014200339930917
+    },
+    "BR": {
+      "avg_temp": 0.0,
+      "min_temp": 0.057329254886966496,
+      "max_temp": 0.11329637241313387,
+      "wind_speed": 0.2882473832624385,
+      "air_pressure": 0.34593509534961525,
+      "rainfall": 0.2974716818811834
+    },
+    "CH": {
+      "avg_temp": 0.0,
+      "min_temp": 0.07816711590296496,
+      "max_temp": 0.0032943995208146153,
+      "wind_speed": 0.519916142557652,
+      "air_pressure": 0.5118298891883798,
+      "rainfall": 0.37915543575920935
+    },
+    "CT": {
+      "avg_temp": 0.0,
+      "min_temp": 0.35990545767082077,
+      "max_temp": 0.36012032660077353,
+      "wind_speed": 0.36012032660077353,
+      "air_pressure": 0.36012032660077353,
+      "rainfall": 0.35969058874086807
+    },
+    "DD": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0,
+      "max_temp": 0.0,
+      "wind_speed": 0.0,
+      "air_pressure": 0.0,
+      "rainfall": 0.0
+    },
+    "DL": {
+      "avg_temp": 0.0,
+      "min_temp": 0.00785056848944234,
+      "max_temp": 0.0018949648077964266,
+      "wind_speed": 0.044125609095831075,
+      "air_pressure": 0.15511640498105037,
+      "rainfall": 0.5268002165674066
+    },
+    "GA": {
+      "avg_temp": 0.0,
+      "min_temp": 0.05848903330625508,
+      "max_temp": 0.047116165718927704,
+      "wind_speed": 0.36339019767126995,
+      "air_pressure": 0.3688058489033306,
+      "rainfall": 0.35905767668562144
+    },
+    "GJ": {
+      "avg_temp": 0.0,
+      "min_temp": 0.029957411111828095,
+      "max_temp": 0.18921404142737305,
+      "wind_speed": 0.3564076918113183,
+      "air_pressure": 0.3631993289023682,
+      "rainfall": 0.35274569271471895
+    },
+    "HP": {
+      "avg_temp": 0.0,
+      "min_temp": 0.005390556160265381,
+      "max_temp": 0.007982169698854506,
+      "wind_speed": 0.1704245062976209,
+      "air_pressure": 0.1704245062976209,
+      "rainfall": 0.09495672005390556
+    },
+    "HR": {
+      "avg_temp": 0.0,
+      "min_temp": 0.029682624248420733,
+      "max_temp": 0.07763147880356192,
+      "wind_speed": 0.3341197960270949,
+      "air_pressure": 0.3341197960270949,
+      "rainfall": 0.2500951366161808
+    },
+    "JK": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0689231098278259,
+      "max_temp": 0.16693401775211208,
+      "wind_speed": 0.35744840124050903,
+      "air_pressure": 0.35744840124050903,
+      "rainfall": 0.2034007058068656
+    },
+    "KA": {
+      "avg_temp": 0.0,
+      "min_temp": 0.02431808533220123,
+      "max_temp": 0.03850031840373594,
+      "wind_speed": 0.21573179791976227,
+      "air_pressure": 0.28274251751220547,
+      "rainfall": 0.2048928040755678
+    },
+    "KL": {
+      "avg_temp": 0.0,
+      "min_temp": 0.006707996319077832,
+      "max_temp": 0.005158134353659127,
+      "wind_speed": 0.08105293747275634,
+      "air_pressure": 0.24681551799292875,
+      "rainfall": 0.2321402625078704
+    },
+    "LD": {
+      "avg_temp": 0.0,
+      "min_temp": 0.07116104868913857,
+      "max_temp": 0.07169609416800428,
+      "wind_speed": 0.36276083467094705,
+      "air_pressure": 0.36276083467094705,
+      "rainfall": 0.23006955591225253
+    },
+    "MH": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0590968917687557,
+      "max_temp": 0.20007087172218285,
+      "wind_speed": 0.2956565758833654,
+      "air_pressure": 0.3069555533056596,
+      "rainfall": 0.3105092639465425
+    },
+    "ML": {
+      "avg_temp": 0.0,
+      "min_temp": 0.026740506329113924,
+      "max_temp": 0.2805379746835443,
+      "wind_speed": 0.2931962025316456,
+      "air_pressure": 0.2931962025316456,
+      "rainfall": 0.13354430379746834
+    },
+    "MN": {
+      "avg_temp": 0.0,
+      "min_temp": 0.11234434217650244,
+      "max_temp": 0.48673524634542503,
+      "wind_speed": 0.5963724959393611,
+      "air_pressure": 0.5969139144558744,
+      "rainfall": 0.29453167298321603
+    },
+    "MP": {
+      "avg_temp": 0.0,
+      "min_temp": 0.08546058648514107,
+      "max_temp": 0.21370935065235763,
+      "wind_speed": 0.3145440442700193,
+      "air_pressure": 0.3156901561722178,
+      "rainfall": 0.24420287338357702
+    },
+    "MZ": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0,
+      "max_temp": 0.0,
+      "wind_speed": 0.0,
+      "air_pressure": 0.0,
+      "rainfall": 0.0
+    },
+    "NL": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0,
+      "max_temp": 0.0,
+      "wind_speed": 0.0,
+      "air_pressure": 0.0,
+      "rainfall": 0.0
+    },
+    "OR": {
+      "avg_temp": 0.0,
+      "min_temp": 0.03526532962287688,
+      "max_temp": 0.21084828711256118,
+      "wind_speed": 0.35522022838499184,
+      "air_pressure": 0.3811294501487381,
+      "rainfall": 0.2863688705498513
+    },
+    "PB": {
+      "avg_temp": 0.0,
+      "min_temp": 0.021490885878431093,
+      "max_temp": 0.04964891127030286,
+      "wind_speed": 0.30824881197248033,
+      "air_pressure": 0.3571884530817788,
+      "rainfall": 0.3010851833463366
+    },
+    "PY": {
+      "avg_temp": 0.0,
+      "min_temp": 0.056105163301260336,
+      "max_temp": 0.0701992139856349,
+      "wind_speed": 0.5962867597235397,
+      "air_pressure": 0.5962867597235397,
+      "rainfall": 0.39070334733703754
+    },
+    "RJ": {
+      "avg_temp": 0.0,
+      "min_temp": 0.07704483611076529,
+      "max_temp": 0.08798264179131023,
+      "wind_speed": 0.3931563128034574,
+      "air_pressure": 0.40059046365625056,
+      "rainfall": 0.361534494104256
+    },
+    "SK": {
+      "avg_temp": 0.0,
+      "min_temp": 0.0,
+      "max_temp": 0.0,
+      "wind_speed": 0.0,
+      "air_pressure": 0.0,
+      "rainfall": 0.0
+    },
+    "TN": {
+      "avg_temp": 0.0,
+      "min_temp": 0.023416032290721676,
+      "max_temp": 0.03222498323669783,
+      "wind_speed": 0.22486490750601507,
+      "air_pressure": 0.2862646103682667,
+      "rainfall": 0.2842530141074692
+    },
+    "TR": {
+      "avg_temp": 0.0,
+      "min_temp": 0.13722304283604136,
+      "max_temp": 0.3330871491875923,
+      "wind_speed": 0.5598227474150664,
+      "air_pressure": 0.5598227474150664,
+      "rainfall": 0.27267355982274744
+    },
+    "UP": {
+      "avg_temp": 0.0,
+      "min_temp": 0.04075264750378215,
+      "max_temp": 0.06459368921547438,
+      "wind_speed": 0.2827425977955479,
+      "air_pressure": 0.28290468986384265,
+      "rainfall": 0.3050842878755133
+    },
+    "WB": {
+      "avg_temp": 0.0,
+      "min_temp": 0.012572121320970747,
+      "max_temp": 0.06923646813191747,
+      "wind_speed": 0.0919336371595986,
+      "air_pressure": 0.10710998361134184,
+      "rainfall": 0.1275621309745639
+    }
+  },
+  "missing_correlation": {
+    "avg_temp": {
+      "avg_temp": null,
+      "min_temp": null,
+      "max_temp": null,
+      "wind_speed": null,
+      "air_pressure": null,
+      "rainfall": null
+    },
+    "min_temp": {
+      "avg_temp": null,
+      "min_temp": 1.0,
+      "max_temp": 0.27103392127201903,
+      "wind_speed": 0.34662387380034987,
+      "air_pressure": 0.32176146998445526,
+      "rainfall": 0.22589425138370398
+    },
+    "max_temp": {
+      "avg_temp": null,
+      "min_temp": 0.27103392127201903,
+      "max_temp": 1.0,
+      "wind_speed": 0.5711297794436955,
+      "air_pressure": 0.5301641672020554,
+      "rainfall": 0.33965593994147225
+    },
+    "wind_speed": {
+      "avg_temp": null,
+      "min_temp": 0.34662387380034987,
+      "max_temp": 0.5711297794436955,
+      "wind_speed": 1.0,
+      "air_pressure": 0.9229428997891176,
+      "rainfall": 0.6035731123138117
+    },
+    "air_pressure": {
+      "avg_temp": null,
+      "min_temp": 0.32176146998445526,
+      "max_temp": 0.5301641672020554,
+      "wind_speed": 0.9229428997891176,
+      "air_pressure": 1.0,
+      "rainfall": 0.6447131999567042
+    },
+    "rainfall": {
+      "avg_temp": null,
+      "min_temp": 0.22589425138370398,
+      "max_temp": 0.33965593994147225,
+      "wind_speed": 0.6035731123138117,
+      "air_pressure": 0.6447131999567042,
+      "rainfall": 1.0
+    }
+  }
+}

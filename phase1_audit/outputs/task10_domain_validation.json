@@ -1,0 +1,29 @@
+{
+  "temperature": {
+    "min_gt_max_count": 1,
+    "avg_out_of_bounds_count": 95,
+    "extreme_temperature_count": 1,
+    "status": "REQUIRES_ATTENTION"
+  },
+  "wind_speed": {
+    "negative_count": 0,
+    "extreme_gt_150_count": 0,
+    "status": "VALID"
+  },
+  "air_pressure": {
+    "negative_count": 0,
+    "abnormal_outside_850_1085_count": 0,
+    "status": "VALID"
+  },
+  "rainfall": {
+    "negative_count": 0,
+    "extreme_gt_1000_count": 0,
+    "status": "VALID"
+  },
+  "geography": {
+    "lat_outside_india_bounding_box": 0,
+    "lon_outside_india_bounding_box": 0,
+    "elevation_outside_valid_range": 0,
+    "status": "VALID"
+  }
+}

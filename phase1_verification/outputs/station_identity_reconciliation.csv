@@ -1,0 +1,9 @@
+station_name,state,district,latitudes,longitudes,elevations,record_count,date_min,date_max,explanation
+Agra,UP,Agra,"[27.15, 27.1667]","[77.9667, 78.0333]",[168],4794,2018-07-21 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name
+Akola,MH,Akola,[20.7],"[77.0333, 77.0667]","[280, 305]",7276,2015-01-01 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name
+Car Nicobar,AN,Nicobar,"[9.1667, 9.15]","[92.8333, 92.8167]","[9, 10]",2974,2021-01-02 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name
+Jamshedpur,BR,East Singhbhum,[22.8167],[86.1833],"[140, 128]",2980,2021-01-02 00:00:00,2025-02-10 00:00:00,Sensor elevation discrepancy reporting (140m vs 128m)
+Madurai,TN,Madurai,"[9.9167, 9.8333]","[78.1167, 78.0833]","[132, 139]",6700,2015-12-07 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name
+Siliguri,WB,Jalpaiguri,"[26.6667, 26.6333]","[88.3667, 88.3167]","[123, 126]",3906,2016-02-12 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name
+Srinagar,JK,Srinagar,"[34.0833, 33.9833]","[74.8333, 74.7833]","[1585, 1664]",7388,2015-01-01 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name
+Thiruvananthapuram,KL,Thiruvananthapuram,"[8.4833, 8.4667]",[76.95],"[60, 4]",7388,2015-01-01 00:00:00,2025-02-10 00:00:00,Dual physical tower reporting under identical station name

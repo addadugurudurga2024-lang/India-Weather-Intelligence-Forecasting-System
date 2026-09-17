@@ -1,0 +1,33 @@
+state_code,entity_name,entity_type,record_count,pct_share
+MH,Maharashtra,State,98770,10.1789
+MP,Madhya Pradesh,State,86379,8.9019
+AP,Andhra Pradesh,State,81129,8.3609
+TN,Tamil Nadu,State,76059,7.8384
+KA,Karnataka,State,75376,7.768
+UP,Uttar Pradesh,State,74032,7.6295
+GJ,Gujarat,State,61988,6.3883
+RJ,Rajasthan,State,56227,5.7946
+WB,West Bengal,State,44543,4.5905
+BR,Bihar,State,41846,4.3125
+OR,Odisha,State,41684,4.2958
+KL,Kerala,State,41294,4.2556
+AS,Assam,State,36478,3.7593
+HP,Himachal Pradesh,State,19293,1.9883
+JK,Jammu and Kashmir (UT),UT,18702,1.9274
+AN,Andaman and Nicobar Islands (UT),UT,16312,1.6811
+PB,Punjab,State,14099,1.453
+HR,Haryana,State,13139,1.3541
+GA,Goa,State,11079,1.1418
+LD,Lakshadweep (UT),UT,9345,0.9631
+DL,Delhi (NCT),UT,7388,0.7614
+PY,Puducherry (UT),UT,7379,0.7605
+TR,Tripura,State,6770,0.6977
+ML,Meghalaya,State,6320,0.6513
+CT,Chhattisgarh,State,4654,0.4796
+MN,Manipur,State,3694,0.3807
+CH,Chandigarh (UT),UT,3339,0.3441
+AR,Arunachal Pradesh,State,3111,0.3206
+NL,Nagaland,State,2977,0.3068
+MZ,Mizoram,State,2792,0.2877
+DD,Daman and Diu / Dadra and Nagar Haveli (UT),UT,2652,0.2733
+SK,Sikkim,State,1489,0.1535

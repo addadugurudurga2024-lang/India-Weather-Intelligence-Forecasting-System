@@ -1,0 +1,85 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "station_id",
+      "station_name",
+      "state",
+      "district",
+      "latitude",
+      "longitude",
+      "elevation_m",
+      "record_count_total",
+      "record_count_modern_2021_2025",
+      "first_observed_date",
+      "last_observed_date"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "station_id": {
+        "bsonType": "string",
+        "description": "Unique canonical composite key (e.g. agartala_23.8833_91.2500_15m)"
+      },
+      "station_name": {
+        "bsonType": "string",
+        "description": "Physical IMD weather station name"
+      },
+      "state": {
+        "bsonType": "string",
+        "description": "2-letter Indian State or Union Territory code"
+      },
+      "district": {
+        "bsonType": "string",
+        "description": "District administrative boundary"
+      },
+      "latitude": {
+        "bsonType": "double",
+        "description": "Latitude coordinate in decimal degrees"
+      },
+      "longitude": {
+        "bsonType": "double",
+        "description": "Longitude coordinate in decimal degrees"
+      },
+      "elevation_m": {
+        "bsonType": ["int", "double"],
+        "description": "Station ground elevation in meters"
+      },
+      "record_count_total": {
+        "bsonType": "int",
+        "description": "Total historical records (2015-2025)"
+      },
+      "record_count_modern_2021_2025": {
+        "bsonType": "int",
+        "description": "Records during modern multivariate modeling period (2021-2025)"
+      },
+      "first_observed_date": {
+        "bsonType": "string",
+        "description": "First observation date (YYYY-MM-DD)"
+      },
+      "last_observed_date": {
+        "bsonType": "string",
+        "description": "Last observation date (YYYY-MM-DD)"
+      },
+      "location": {
+        "bsonType": "object",
+        "required": ["type", "coordinates"],
+        "properties": {
+          "type": { "enum": ["Point"] },
+          "coordinates": {
+            "bsonType": "array",
+            "items": { "bsonType": "double" }
+          }
+        },
+        "description": "GeoJSON point representation [longitude, latitude] for 2dsphere spatial index"
+      },
+      "created_at": {
+        "bsonType": "date"
+      },
+      "updated_at": {
+        "bsonType": "date"
+      }
+    }
+  }
+}

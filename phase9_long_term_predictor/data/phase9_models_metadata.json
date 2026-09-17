@@ -1,0 +1,743 @@
+{
+  "xgb_longterm_temp_v1": {
+    "model_id": "xgb_longterm_temp_v1",
+    "target": "avg_temp",
+    "target_column": "avg_temp_clean",
+    "algorithm": "XGBoost Regressor",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_temp_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.0016,
+      "doy_sin": 0.0015,
+      "doy_cos": 0.0052,
+      "doy_sin2": 0.002,
+      "doy_cos2": 0.0037,
+      "month": 0.003,
+      "season_code": 0.0017,
+      "latitude": 0.0024,
+      "longitude": 0.0008,
+      "elevation": 0.0015,
+      "station_hist_avg_temp_mean": 0.0026,
+      "station_hist_min_temp_mean": 0.0051,
+      "station_hist_max_temp_mean": 0.0007,
+      "station_hist_wind_speed_mean": 0.0005,
+      "station_hist_air_pressure_mean": 0.0012,
+      "station_hist_rain_frequency": 0.0012,
+      "station_month_avg_temp_mean": 0.3796,
+      "station_month_avg_temp_std": 0.0013,
+      "station_month_min_temp_mean": 0.3899,
+      "station_month_max_temp_mean": 0.1832,
+      "station_month_wind_speed_mean": 0.0005,
+      "station_month_air_pressure_mean": 0.0078,
+      "station_month_rain_frequency": 0.0021,
+      "station_month_rain_amount_mean": 0.0008
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "mae": 1.5,
+          "rmse": 2.032
+        },
+        "hist_gradient_boosting": {
+          "mae": 1.382
+        },
+        "xgboost_production": {
+          "mae": 1.379,
+          "rmse": 1.864,
+          "r2": 0.889
+        },
+        "mae_reduction_pct": 8.05
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "mae": 1.324,
+          "rmse": 1.722,
+          "r2": 0.896
+        }
+      },
+      "uncertainty_intervals": {
+        "residual_80_ci": [
+          -2.12,
+          2.24
+        ],
+        "residual_90_ci": [
+          -2.95,
+          3.02
+        ],
+        "method": "empirical_residual_quantiles"
+      }
+    },
+    "uncertainty_method": "Empirical validation residual quantiles (80% PI: [q10, q90])",
+    "physical_ordering_enforced": true,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  },
+  "xgb_longterm_temp_min_v1": {
+    "model_id": "xgb_longterm_temp_min_v1",
+    "target": "min_temp",
+    "target_column": "min_temp_clean",
+    "algorithm": "XGBoost Regressor",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_temp_min_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.0019,
+      "doy_sin": 0.0031,
+      "doy_cos": 0.0076,
+      "doy_sin2": 0.001,
+      "doy_cos2": 0.0037,
+      "month": 0.003,
+      "season_code": 0.0022,
+      "latitude": 0.0022,
+      "longitude": 0.0006,
+      "elevation": 0.0099,
+      "station_hist_avg_temp_mean": 0.0021,
+      "station_hist_min_temp_mean": 0.0138,
+      "station_hist_max_temp_mean": 0.001,
+      "station_hist_wind_speed_mean": 0.0009,
+      "station_hist_air_pressure_mean": 0.0014,
+      "station_hist_rain_frequency": 0.0006,
+      "station_month_avg_temp_mean": 0.3908,
+      "station_month_avg_temp_std": 0.0057,
+      "station_month_min_temp_mean": 0.4167,
+      "station_month_max_temp_mean": 0.0183,
+      "station_month_wind_speed_mean": 0.0006,
+      "station_month_air_pressure_mean": 0.0999,
+      "station_month_rain_frequency": 0.0123,
+      "station_month_rain_amount_mean": 0.0007
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "mae": 1.564,
+          "rmse": 2.138
+        },
+        "hist_gradient_boosting": {
+          "mae": 1.468
+        },
+        "xgboost_production": {
+          "mae": 1.463,
+          "rmse": 1.992,
+          "r2": 0.893
+        },
+        "mae_reduction_pct": 6.45
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "mae": 1.808,
+          "rmse": 2.323,
+          "r2": 0.843
+        }
+      },
+      "uncertainty_intervals": {
+        "residual_80_ci": [
+          -1.76,
+          2.76
+        ],
+        "residual_90_ci": [
+          -2.71,
+          3.6
+        ],
+        "method": "empirical_residual_quantiles"
+      }
+    },
+    "uncertainty_method": "Empirical validation residual quantiles (80% PI: [q10, q90])",
+    "physical_ordering_enforced": true,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  },
+  "xgb_longterm_temp_max_v1": {
+    "model_id": "xgb_longterm_temp_max_v1",
+    "target": "max_temp",
+    "target_column": "max_temp_clean",
+    "algorithm": "XGBoost Regressor",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_temp_max_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.0039,
+      "doy_sin": 0.0043,
+      "doy_cos": 0.0044,
+      "doy_sin2": 0.0042,
+      "doy_cos2": 0.0058,
+      "month": 0.0075,
+      "season_code": 0.0089,
+      "latitude": 0.0031,
+      "longitude": 0.0033,
+      "elevation": 0.0027,
+      "station_hist_avg_temp_mean": 0.0016,
+      "station_hist_min_temp_mean": 0.0023,
+      "station_hist_max_temp_mean": 0.0043,
+      "station_hist_wind_speed_mean": 0.0011,
+      "station_hist_air_pressure_mean": 0.0015,
+      "station_hist_rain_frequency": 0.0024,
+      "station_month_avg_temp_mean": 0.2385,
+      "station_month_avg_temp_std": 0.0039,
+      "station_month_min_temp_mean": 0.0025,
+      "station_month_max_temp_mean": 0.6775,
+      "station_month_wind_speed_mean": 0.0014,
+      "station_month_air_pressure_mean": 0.0047,
+      "station_month_rain_frequency": 0.007,
+      "station_month_rain_amount_mean": 0.0032
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "mae": 1.858,
+          "rmse": 2.497
+        },
+        "hist_gradient_boosting": {
+          "mae": 1.753
+        },
+        "xgboost_production": {
+          "mae": 1.753,
+          "rmse": 2.37,
+          "r2": 0.823
+        },
+        "mae_reduction_pct": 5.64
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "mae": 1.725,
+          "rmse": 2.273,
+          "r2": 0.798
+        }
+      },
+      "uncertainty_intervals": {
+        "residual_80_ci": [
+          -2.65,
+          2.81
+        ],
+        "residual_90_ci": [
+          -3.71,
+          3.82
+        ],
+        "method": "empirical_residual_quantiles"
+      }
+    },
+    "uncertainty_method": "Empirical validation residual quantiles (80% PI: [q10, q90])",
+    "physical_ordering_enforced": true,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  },
+  "xgb_longterm_rain_amt_v1": {
+    "model_id": "xgb_longterm_rain_amt_v1",
+    "target": "rainfall_amount",
+    "target_column": "rainfall",
+    "algorithm": "XGBoost Regressor",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_rain_amt_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.0224,
+      "doy_sin": 0.0195,
+      "doy_cos": 0.025,
+      "doy_sin2": 0.0158,
+      "doy_cos2": 0.0333,
+      "month": 0.0142,
+      "season_code": 0.019,
+      "latitude": 0.024,
+      "longitude": 0.0321,
+      "elevation": 0.0154,
+      "station_hist_avg_temp_mean": 0.0164,
+      "station_hist_min_temp_mean": 0.0169,
+      "station_hist_max_temp_mean": 0.0136,
+      "station_hist_wind_speed_mean": 0.0164,
+      "station_hist_air_pressure_mean": 0.0181,
+      "station_hist_rain_frequency": 0.0264,
+      "station_month_avg_temp_mean": 0.0524,
+      "station_month_avg_temp_std": 0.0166,
+      "station_month_min_temp_mean": 0.0192,
+      "station_month_max_temp_mean": 0.0565,
+      "station_month_wind_speed_mean": 0.0154,
+      "station_month_air_pressure_mean": 0.024,
+      "station_month_rain_frequency": 0.1328,
+      "station_month_rain_amount_mean": 0.3546
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "mae": 4.78,
+          "rmse": 10.965
+        },
+        "hist_gradient_boosting": {
+          "mae": 4.743
+        },
+        "xgboost_production": {
+          "mae": 4.744,
+          "rmse": 10.996,
+          "r2": 0.211
+        },
+        "mae_reduction_pct": 0.75
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "mae": 1.18,
+          "rmse": 2.526,
+          "r2": -0.294
+        }
+      },
+      "uncertainty_intervals": {
+        "residual_80_ci": [
+          -7.25,
+          5.08
+        ],
+        "residual_90_ci": [
+          -9.82,
+          13.72
+        ],
+        "method": "empirical_residual_quantiles"
+      }
+    },
+    "uncertainty_method": "Empirical validation residual quantiles (80% PI: [q10, q90])",
+    "physical_ordering_enforced": false,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  },
+  "xgb_longterm_rain_cls_v1": {
+    "model_id": "xgb_longterm_rain_cls_v1",
+    "target": "rain_binary",
+    "target_column": "rain_binary",
+    "algorithm": "XGBoost Classifier",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_rain_cls_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.015,
+      "doy_sin": 0.0181,
+      "doy_cos": 0.0207,
+      "doy_sin2": 0.0124,
+      "doy_cos2": 0.0113,
+      "month": 0.026,
+      "season_code": 0.0182,
+      "latitude": 0.0149,
+      "longitude": 0.0102,
+      "elevation": 0.0069,
+      "station_hist_avg_temp_mean": 0.0072,
+      "station_hist_min_temp_mean": 0.0079,
+      "station_hist_max_temp_mean": 0.0074,
+      "station_hist_wind_speed_mean": 0.0055,
+      "station_hist_air_pressure_mean": 0.0071,
+      "station_hist_rain_frequency": 0.0222,
+      "station_month_avg_temp_mean": 0.0076,
+      "station_month_avg_temp_std": 0.0139,
+      "station_month_min_temp_mean": 0.0085,
+      "station_month_max_temp_mean": 0.0148,
+      "station_month_wind_speed_mean": 0.0059,
+      "station_month_air_pressure_mean": 0.0135,
+      "station_month_rain_frequency": 0.5711,
+      "station_month_rain_amount_mean": 0.1536
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "roc_auc": 0.8714,
+          "brier_score": 0.1422
+        },
+        "hist_gradient_boosting": {
+          "roc_auc": 0.8748,
+          "brier_score": 0.1398
+        },
+        "xgboost_production": {
+          "roc_auc": 0.8747,
+          "brier_score": 0.14
+        },
+        "auc_improvement_over_baseline": 0.0032
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "roc_auc": 0.7915,
+          "brier_score": 0.0977,
+          "f1_score": 0.3201
+        }
+      },
+      "uncertainty_intervals": {
+        "method": "calibrated_probability_output"
+      }
+    },
+    "uncertainty_method": "Calibrated model output probability",
+    "physical_ordering_enforced": false,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  },
+  "xgb_longterm_wind_v1": {
+    "model_id": "xgb_longterm_wind_v1",
+    "target": "wind_speed",
+    "target_column": "wind_speed",
+    "algorithm": "XGBoost Regressor",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_wind_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.0083,
+      "doy_sin": 0.0108,
+      "doy_cos": 0.0471,
+      "doy_sin2": 0.0086,
+      "doy_cos2": 0.011,
+      "month": 0.008,
+      "season_code": 0.038,
+      "latitude": 0.0055,
+      "longitude": 0.0069,
+      "elevation": 0.0046,
+      "station_hist_avg_temp_mean": 0.004,
+      "station_hist_min_temp_mean": 0.007,
+      "station_hist_max_temp_mean": 0.0036,
+      "station_hist_wind_speed_mean": 0.2492,
+      "station_hist_air_pressure_mean": 0.0057,
+      "station_hist_rain_frequency": 0.0076,
+      "station_month_avg_temp_mean": 0.0051,
+      "station_month_avg_temp_std": 0.006,
+      "station_month_min_temp_mean": 0.0055,
+      "station_month_max_temp_mean": 0.0098,
+      "station_month_wind_speed_mean": 0.5102,
+      "station_month_air_pressure_mean": 0.0232,
+      "station_month_rain_frequency": 0.0093,
+      "station_month_rain_amount_mean": 0.0048
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "mae": 2.584,
+          "rmse": 3.714
+        },
+        "hist_gradient_boosting": {
+          "mae": 2.587
+        },
+        "xgboost_production": {
+          "mae": 2.587,
+          "rmse": 3.723,
+          "r2": 0.512
+        },
+        "mae_reduction_pct": -0.1
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "mae": 2.374,
+          "rmse": 3.342,
+          "r2": 0.472
+        }
+      },
+      "uncertainty_intervals": {
+        "residual_80_ci": [
+          -2.38,
+          5.41
+        ],
+        "residual_90_ci": [
+          -3.53,
+          7.54
+        ],
+        "method": "empirical_residual_quantiles"
+      }
+    },
+    "uncertainty_method": "Empirical validation residual quantiles (80% PI: [q10, q90])",
+    "physical_ordering_enforced": false,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  },
+  "xgb_longterm_pressure_v1": {
+    "model_id": "xgb_longterm_pressure_v1",
+    "target": "air_pressure",
+    "target_column": "air_pressure",
+    "algorithm": "XGBoost Regressor",
+    "version": "v1.0.0",
+    "phase": "Phase 9 Long-Term Weather Predictor",
+    "model_file": "xgb_longterm_pressure_v1.json",
+    "training_period": "2015-01-01 to 2023-12-31",
+    "validation_period": "2024-01-01 to 2024-12-31",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "features": [
+      "doy",
+      "doy_sin",
+      "doy_cos",
+      "doy_sin2",
+      "doy_cos2",
+      "month",
+      "season_code",
+      "latitude",
+      "longitude",
+      "elevation",
+      "station_hist_avg_temp_mean",
+      "station_hist_min_temp_mean",
+      "station_hist_max_temp_mean",
+      "station_hist_wind_speed_mean",
+      "station_hist_air_pressure_mean",
+      "station_hist_rain_frequency",
+      "station_month_avg_temp_mean",
+      "station_month_avg_temp_std",
+      "station_month_min_temp_mean",
+      "station_month_max_temp_mean",
+      "station_month_wind_speed_mean",
+      "station_month_air_pressure_mean",
+      "station_month_rain_frequency",
+      "station_month_rain_amount_mean"
+    ],
+    "feature_count": 24,
+    "feature_importances": {
+      "doy": 0.006,
+      "doy_sin": 0.0053,
+      "doy_cos": 0.0356,
+      "doy_sin2": 0.0049,
+      "doy_cos2": 0.0134,
+      "month": 0.0113,
+      "season_code": 0.0038,
+      "latitude": 0.0037,
+      "longitude": 0.0017,
+      "elevation": 0.0016,
+      "station_hist_avg_temp_mean": 0.0017,
+      "station_hist_min_temp_mean": 0.015,
+      "station_hist_max_temp_mean": 0.0012,
+      "station_hist_wind_speed_mean": 0.0011,
+      "station_hist_air_pressure_mean": 0.0131,
+      "station_hist_rain_frequency": 0.004,
+      "station_month_avg_temp_mean": 0.0031,
+      "station_month_avg_temp_std": 0.0014,
+      "station_month_min_temp_mean": 0.01,
+      "station_month_max_temp_mean": 0.0014,
+      "station_month_wind_speed_mean": 0.0011,
+      "station_month_air_pressure_mean": 0.8573,
+      "station_month_rain_frequency": 0.0017,
+      "station_month_rain_amount_mean": 0.0008
+    },
+    "metrics": {
+      "validation_2024": {
+        "seasonal_baseline": {
+          "mae": 1.806,
+          "rmse": 2.393
+        },
+        "hist_gradient_boosting": {
+          "mae": 1.847
+        },
+        "xgboost_production": {
+          "mae": 1.856,
+          "rmse": 2.44,
+          "r2": 0.811
+        },
+        "mae_reduction_pct": -2.75
+      },
+      "holdout_2025": {
+        "xgboost_production": {
+          "mae": 1.372,
+          "rmse": 1.764,
+          "r2": 0.558
+        }
+      },
+      "uncertainty_intervals": {
+        "residual_80_ci": [
+          -2.97,
+          2.9
+        ],
+        "residual_90_ci": [
+          -4.03,
+          3.89
+        ],
+        "method": "empirical_residual_quantiles"
+      }
+    },
+    "uncertainty_method": "Empirical validation residual quantiles (80% PI: [q10, q90])",
+    "physical_ordering_enforced": false,
+    "limitations": [
+      "Represents learned historical/seasonal baseline estimation, not a 12-day numerical weather forecast.",
+      "Does not ingest real-time atmospheric sounding or radar/satellite data.",
+      "Subject to historical non-stationarity and extreme convective rainfall variance."
+    ]
+  }
+}

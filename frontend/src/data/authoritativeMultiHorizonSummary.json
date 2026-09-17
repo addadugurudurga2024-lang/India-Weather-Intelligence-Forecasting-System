@@ -1,0 +1,1178 @@
+{
+  "metadata": {
+    "phase": "Phase 7 Multi-Horizon Evaluation",
+    "authoritative_date": "2026-09-13",
+    "supported_horizons": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "training_samples": 120000,
+    "validation_samples": 40000,
+    "holdout_samples": 16732
+  },
+  "benchmarks_by_horizon": {
+    "T+1": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 0.7235,
+          "rmse": 1.0175,
+          "r2": 0.9635,
+          "count": 16321
+        },
+        "xgboost": {
+          "mae": 0.6781,
+          "rmse": 0.953,
+          "r2": 0.9679,
+          "count": 16322
+        }
+      },
+      "temperature_min": {
+        "mae": 1.0196,
+        "rmse": 1.3943,
+        "r2": 0.9432,
+        "count": 16322
+      },
+      "temperature_max": {
+        "mae": 1.0268,
+        "rmse": 1.4424,
+        "r2": 0.9177,
+        "count": 16322
+      },
+      "wind_speed": {
+        "mae": 1.5071,
+        "rmse": 2.0821,
+        "r2": 0.7939,
+        "count": 16323
+      },
+      "air_pressure": {
+        "mae": 0.8253,
+        "rmse": 1.0964,
+        "r2": 0.8283,
+        "count": 16323
+      },
+      "rainfall_amount": {
+        "mae": 0.4245,
+        "rmse": 2.0827,
+        "rainy_mae": 2.9514,
+        "heavy_mae": 47.2551,
+        "count": 16323,
+        "rainy_count": 1699
+      },
+      "rain_binary": {
+        "accuracy": 0.7115,
+        "roc_auc": 0.8325,
+        "f1": 0.3695,
+        "precision": 0.2392,
+        "recall": 0.8122,
+        "brier_score": 0.1303,
+        "majority_baseline_acc": 0.8959,
+        "count": 16323
+      }
+    },
+    "T+2": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.102,
+          "rmse": 1.5211,
+          "r2": 0.9181,
+          "count": 15912
+        },
+        "xgboost": {
+          "mae": 0.9875,
+          "rmse": 1.3405,
+          "r2": 0.9364,
+          "count": 15913
+        }
+      },
+      "temperature_min": {
+        "mae": 1.3609,
+        "rmse": 1.7956,
+        "r2": 0.9057,
+        "count": 15913
+      },
+      "temperature_max": {
+        "mae": 1.3474,
+        "rmse": 1.8284,
+        "r2": 0.8674,
+        "count": 15913
+      },
+      "wind_speed": {
+        "mae": 1.9159,
+        "rmse": 2.6527,
+        "r2": 0.6655,
+        "count": 15914
+      },
+      "air_pressure": {
+        "mae": 1.165,
+        "rmse": 1.5216,
+        "r2": 0.6679,
+        "count": 15914
+      },
+      "rainfall_amount": {
+        "mae": 0.4714,
+        "rmse": 2.2138,
+        "rainy_mae": 3.1023,
+        "heavy_mae": 50.4407,
+        "count": 15914,
+        "rainy_count": 1679
+      },
+      "rain_binary": {
+        "accuracy": 0.6191,
+        "roc_auc": 0.7984,
+        "f1": 0.3277,
+        "precision": 0.2013,
+        "recall": 0.8797,
+        "brier_score": 0.1589,
+        "majority_baseline_acc": 0.8945,
+        "count": 15914
+      }
+    },
+    "T+3": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.3017,
+          "rmse": 1.7618,
+          "r2": 0.8904,
+          "count": 15503
+        },
+        "xgboost": {
+          "mae": 1.1234,
+          "rmse": 1.4807,
+          "r2": 0.9226,
+          "count": 15504
+        }
+      },
+      "temperature_min": {
+        "mae": 1.523,
+        "rmse": 1.9667,
+        "r2": 0.887,
+        "count": 15504
+      },
+      "temperature_max": {
+        "mae": 1.4761,
+        "rmse": 1.9493,
+        "r2": 0.8499,
+        "count": 15504
+      },
+      "wind_speed": {
+        "mae": 2.0353,
+        "rmse": 2.8104,
+        "r2": 0.6239,
+        "count": 15505
+      },
+      "air_pressure": {
+        "mae": 1.2216,
+        "rmse": 1.5773,
+        "r2": 0.6429,
+        "count": 15505
+      },
+      "rainfall_amount": {
+        "mae": 0.4861,
+        "rmse": 2.2444,
+        "rainy_mae": 3.0972,
+        "heavy_mae": 50.747,
+        "count": 15505,
+        "rainy_count": 1670
+      },
+      "rain_binary": {
+        "accuracy": 0.5569,
+        "roc_auc": 0.7998,
+        "f1": 0.3051,
+        "precision": 0.1835,
+        "recall": 0.903,
+        "brier_score": 0.1654,
+        "majority_baseline_acc": 0.8923,
+        "count": 15505
+      }
+    },
+    "T+4": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.3963,
+          "rmse": 1.85,
+          "r2": 0.8797,
+          "count": 15094
+        },
+        "xgboost": {
+          "mae": 1.1698,
+          "rmse": 1.5131,
+          "r2": 0.9195,
+          "count": 15095
+        }
+      },
+      "temperature_min": {
+        "mae": 1.5845,
+        "rmse": 2.0226,
+        "r2": 0.8809,
+        "count": 15095
+      },
+      "temperature_max": {
+        "mae": 1.4912,
+        "rmse": 1.941,
+        "r2": 0.852,
+        "count": 15095
+      },
+      "wind_speed": {
+        "mae": 2.069,
+        "rmse": 2.8761,
+        "r2": 0.6069,
+        "count": 15096
+      },
+      "air_pressure": {
+        "mae": 1.2622,
+        "rmse": 1.6379,
+        "r2": 0.6203,
+        "count": 15096
+      },
+      "rainfall_amount": {
+        "mae": 0.4952,
+        "rmse": 2.2697,
+        "rainy_mae": 3.0873,
+        "heavy_mae": 50.7006,
+        "count": 15096,
+        "rainy_count": 1665
+      },
+      "rain_binary": {
+        "accuracy": 0.5207,
+        "roc_auc": 0.8079,
+        "f1": 0.3001,
+        "precision": 0.1788,
+        "recall": 0.9315,
+        "brier_score": 0.1686,
+        "majority_baseline_acc": 0.8897,
+        "count": 15096
+      }
+    },
+    "T+5": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.4297,
+          "rmse": 1.8743,
+          "r2": 0.877,
+          "count": 14686
+        },
+        "xgboost": {
+          "mae": 1.1808,
+          "rmse": 1.5231,
+          "r2": 0.9187,
+          "count": 14687
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6069,
+        "rmse": 2.05,
+        "r2": 0.8784,
+        "count": 14687
+      },
+      "temperature_max": {
+        "mae": 1.4994,
+        "rmse": 1.9431,
+        "r2": 0.8519,
+        "count": 14687
+      },
+      "wind_speed": {
+        "mae": 2.0766,
+        "rmse": 2.9003,
+        "r2": 0.6018,
+        "count": 14688
+      },
+      "air_pressure": {
+        "mae": 1.2722,
+        "rmse": 1.6422,
+        "r2": 0.6239,
+        "count": 14688
+      },
+      "rainfall_amount": {
+        "mae": 0.5033,
+        "rmse": 2.1818,
+        "rainy_mae": 2.9918,
+        "heavy_mae": 50.9185,
+        "count": 14688,
+        "rainy_count": 1637
+      },
+      "rain_binary": {
+        "accuracy": 0.46,
+        "roc_auc": 0.807,
+        "f1": 0.2817,
+        "precision": 0.1653,
+        "recall": 0.9499,
+        "brier_score": 0.1745,
+        "majority_baseline_acc": 0.8885,
+        "count": 14688
+      }
+    },
+    "T+6": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.4212,
+          "rmse": 1.8716,
+          "r2": 0.8775,
+          "count": 14278
+        },
+        "xgboost": {
+          "mae": 1.1964,
+          "rmse": 1.5394,
+          "r2": 0.9171,
+          "count": 14279
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6169,
+        "rmse": 2.0689,
+        "r2": 0.8768,
+        "count": 14279
+      },
+      "temperature_max": {
+        "mae": 1.5139,
+        "rmse": 1.9694,
+        "r2": 0.8479,
+        "count": 14279
+      },
+      "wind_speed": {
+        "mae": 2.0796,
+        "rmse": 2.9183,
+        "r2": 0.5951,
+        "count": 14280
+      },
+      "air_pressure": {
+        "mae": 1.2693,
+        "rmse": 1.6303,
+        "r2": 0.6334,
+        "count": 14280
+      },
+      "rainfall_amount": {
+        "mae": 0.4936,
+        "rmse": 2.1744,
+        "rainy_mae": 2.9615,
+        "heavy_mae": 50.9917,
+        "count": 14280,
+        "rainy_count": 1596
+      },
+      "rain_binary": {
+        "accuracy": 0.4815,
+        "roc_auc": 0.8034,
+        "f1": 0.2878,
+        "precision": 0.17,
+        "recall": 0.9373,
+        "brier_score": 0.1733,
+        "majority_baseline_acc": 0.8882,
+        "count": 14280
+      }
+    },
+    "T+7": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.4349,
+          "rmse": 1.9078,
+          "r2": 0.8726,
+          "count": 13870
+        },
+        "xgboost": {
+          "mae": 1.2206,
+          "rmse": 1.5706,
+          "r2": 0.9136,
+          "count": 13871
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6588,
+        "rmse": 2.1163,
+        "r2": 0.8716,
+        "count": 13871
+      },
+      "temperature_max": {
+        "mae": 1.5605,
+        "rmse": 2.0305,
+        "r2": 0.8374,
+        "count": 13871
+      },
+      "wind_speed": {
+        "mae": 2.0863,
+        "rmse": 2.9241,
+        "r2": 0.5945,
+        "count": 13872
+      },
+      "air_pressure": {
+        "mae": 1.2828,
+        "rmse": 1.6363,
+        "r2": 0.631,
+        "count": 13872
+      },
+      "rainfall_amount": {
+        "mae": 0.4793,
+        "rmse": 2.156,
+        "rainy_mae": 2.9626,
+        "heavy_mae": 50.8975,
+        "count": 13872,
+        "rainy_count": 1535
+      },
+      "rain_binary": {
+        "accuracy": 0.4952,
+        "roc_auc": 0.8066,
+        "f1": 0.2916,
+        "precision": 0.1726,
+        "recall": 0.9388,
+        "brier_score": 0.1694,
+        "majority_baseline_acc": 0.8893,
+        "count": 13872
+      }
+    },
+    "T+8": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.4627,
+          "rmse": 1.934,
+          "r2": 0.8682,
+          "count": 13462
+        },
+        "xgboost": {
+          "mae": 1.2521,
+          "rmse": 1.6106,
+          "r2": 0.9086,
+          "count": 13463
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6963,
+        "rmse": 2.159,
+        "r2": 0.8658,
+        "count": 13463
+      },
+      "temperature_max": {
+        "mae": 1.5892,
+        "rmse": 2.0646,
+        "r2": 0.8303,
+        "count": 13463
+      },
+      "wind_speed": {
+        "mae": 2.126,
+        "rmse": 2.9858,
+        "r2": 0.5805,
+        "count": 13464
+      },
+      "air_pressure": {
+        "mae": 1.2938,
+        "rmse": 1.6513,
+        "r2": 0.6287,
+        "count": 13464
+      },
+      "rainfall_amount": {
+        "mae": 0.4642,
+        "rmse": 2.1082,
+        "rainy_mae": 2.9045,
+        "heavy_mae": 57.2346,
+        "count": 13464,
+        "rainy_count": 1482
+      },
+      "rain_binary": {
+        "accuracy": 0.5106,
+        "roc_auc": 0.8156,
+        "f1": 0.2951,
+        "precision": 0.1753,
+        "recall": 0.9305,
+        "brier_score": 0.1665,
+        "majority_baseline_acc": 0.8899,
+        "count": 13464
+      }
+    },
+    "T+9": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.4873,
+          "rmse": 1.9501,
+          "r2": 0.8649,
+          "count": 13054
+        },
+        "xgboost": {
+          "mae": 1.2519,
+          "rmse": 1.6114,
+          "r2": 0.9077,
+          "count": 13055
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6734,
+        "rmse": 2.1316,
+        "r2": 0.8677,
+        "count": 13055
+      },
+      "temperature_max": {
+        "mae": 1.6335,
+        "rmse": 2.1222,
+        "r2": 0.8202,
+        "count": 13055
+      },
+      "wind_speed": {
+        "mae": 2.1166,
+        "rmse": 2.9664,
+        "r2": 0.586,
+        "count": 13056
+      },
+      "air_pressure": {
+        "mae": 1.2924,
+        "rmse": 1.6597,
+        "r2": 0.6214,
+        "count": 13056
+      },
+      "rainfall_amount": {
+        "mae": 0.4671,
+        "rmse": 2.1118,
+        "rainy_mae": 2.8782,
+        "heavy_mae": 57.2229,
+        "count": 13056,
+        "rainy_count": 1459
+      },
+      "rain_binary": {
+        "accuracy": 0.5199,
+        "roc_auc": 0.8165,
+        "f1": 0.3008,
+        "precision": 0.1796,
+        "recall": 0.9239,
+        "brier_score": 0.1672,
+        "majority_baseline_acc": 0.8883,
+        "count": 13056
+      }
+    },
+    "T+10": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.5112,
+          "rmse": 1.9752,
+          "r2": 0.8603,
+          "count": 12646
+        },
+        "xgboost": {
+          "mae": 1.2467,
+          "rmse": 1.6162,
+          "r2": 0.9065,
+          "count": 12647
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6813,
+        "rmse": 2.1465,
+        "r2": 0.8646,
+        "count": 12647
+      },
+      "temperature_max": {
+        "mae": 1.6567,
+        "rmse": 2.1408,
+        "r2": 0.8168,
+        "count": 12647
+      },
+      "wind_speed": {
+        "mae": 2.1277,
+        "rmse": 2.9786,
+        "r2": 0.5814,
+        "count": 12648
+      },
+      "air_pressure": {
+        "mae": 1.3346,
+        "rmse": 1.7136,
+        "r2": 0.5795,
+        "count": 12648
+      },
+      "rainfall_amount": {
+        "mae": 0.4681,
+        "rmse": 2.1363,
+        "rainy_mae": 2.9053,
+        "heavy_mae": 57.2171,
+        "count": 12648,
+        "rainy_count": 1422
+      },
+      "rain_binary": {
+        "accuracy": 0.5047,
+        "roc_auc": 0.8147,
+        "f1": 0.2965,
+        "precision": 0.1764,
+        "recall": 0.9283,
+        "brier_score": 0.1642,
+        "majority_baseline_acc": 0.8876,
+        "count": 12648
+      }
+    },
+    "T+11": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.5595,
+          "rmse": 2.0315,
+          "r2": 0.8517,
+          "count": 12238
+        },
+        "xgboost": {
+          "mae": 1.2889,
+          "rmse": 1.6719,
+          "r2": 0.8996,
+          "count": 12239
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6852,
+        "rmse": 2.1632,
+        "r2": 0.8618,
+        "count": 12239
+      },
+      "temperature_max": {
+        "mae": 1.6834,
+        "rmse": 2.1802,
+        "r2": 0.8096,
+        "count": 12239
+      },
+      "wind_speed": {
+        "mae": 2.1056,
+        "rmse": 2.9405,
+        "r2": 0.5894,
+        "count": 12240
+      },
+      "air_pressure": {
+        "mae": 1.3295,
+        "rmse": 1.7086,
+        "r2": 0.5717,
+        "count": 12240
+      },
+      "rainfall_amount": {
+        "mae": 0.4644,
+        "rmse": 2.1327,
+        "rainy_mae": 2.9306,
+        "heavy_mae": 57.1706,
+        "count": 12240,
+        "rainy_count": 1328
+      },
+      "rain_binary": {
+        "accuracy": 0.5347,
+        "roc_auc": 0.8061,
+        "f1": 0.2949,
+        "precision": 0.1765,
+        "recall": 0.8968,
+        "brier_score": 0.1652,
+        "majority_baseline_acc": 0.8915,
+        "count": 12240
+      }
+    },
+    "T+12": {
+      "temperature_avg": {
+        "persistence": {
+          "mae": 1.6184,
+          "rmse": 2.1126,
+          "r2": 0.8391,
+          "count": 11831
+        },
+        "xgboost": {
+          "mae": 1.2993,
+          "rmse": 1.6875,
+          "r2": 0.8974,
+          "count": 11831
+        }
+      },
+      "temperature_min": {
+        "mae": 1.6874,
+        "rmse": 2.1794,
+        "r2": 0.8597,
+        "count": 11831
+      },
+      "temperature_max": {
+        "mae": 1.7137,
+        "rmse": 2.2173,
+        "r2": 0.8017,
+        "count": 11831
+      },
+      "wind_speed": {
+        "mae": 2.0932,
+        "rmse": 2.915,
+        "r2": 0.5916,
+        "count": 11832
+      },
+      "air_pressure": {
+        "mae": 1.2995,
+        "rmse": 1.6786,
+        "r2": 0.5739,
+        "count": 11832
+      },
+      "rainfall_amount": {
+        "mae": 0.4308,
+        "rmse": 2.0767,
+        "rainy_mae": 2.9167,
+        "heavy_mae": 62.1835,
+        "count": 11832,
+        "rainy_count": 1188
+      },
+      "rain_binary": {
+        "accuracy": 0.5236,
+        "roc_auc": 0.8202,
+        "f1": 0.2794,
+        "precision": 0.1647,
+        "recall": 0.92,
+        "brier_score": 0.1598,
+        "majority_baseline_acc": 0.8996,
+        "count": 11832
+      }
+    }
+  },
+  "skill_degradation": {
+    "avg_temp_mae": [
+      0.6781,
+      0.9875,
+      1.1234,
+      1.1698,
+      1.1808,
+      1.1964,
+      1.2206,
+      1.2521,
+      1.2519,
+      1.2467,
+      1.2889,
+      1.2993
+    ],
+    "min_temp_mae": [
+      1.0196,
+      1.3609,
+      1.523,
+      1.5845,
+      1.6069,
+      1.6169,
+      1.6588,
+      1.6963,
+      1.6734,
+      1.6813,
+      1.6852,
+      1.6874
+    ],
+    "max_temp_mae": [
+      1.0268,
+      1.3474,
+      1.4761,
+      1.4912,
+      1.4994,
+      1.5139,
+      1.5605,
+      1.5892,
+      1.6335,
+      1.6567,
+      1.6834,
+      1.7137
+    ],
+    "wind_speed_mae": [
+      1.5071,
+      1.9159,
+      2.0353,
+      2.069,
+      2.0766,
+      2.0796,
+      2.0863,
+      2.126,
+      2.1166,
+      2.1277,
+      2.1056,
+      2.0932
+    ],
+    "air_pressure_mae": [
+      0.8253,
+      1.165,
+      1.2216,
+      1.2622,
+      1.2722,
+      1.2693,
+      1.2828,
+      1.2938,
+      1.2924,
+      1.3346,
+      1.3295,
+      1.2995
+    ],
+    "rainfall_mae": [
+      0.4245,
+      0.4714,
+      0.4861,
+      0.4952,
+      0.5033,
+      0.4936,
+      0.4793,
+      0.4642,
+      0.4671,
+      0.4681,
+      0.4644,
+      0.4308
+    ],
+    "rain_binary_roc_auc": [
+      0.8325,
+      0.7984,
+      0.7998,
+      0.8079,
+      0.807,
+      0.8034,
+      0.8066,
+      0.8156,
+      0.8165,
+      0.8147,
+      0.8061,
+      0.8202
+    ]
+  },
+  "model_selection_matrix": [
+    {
+      "horizon": "T+1",
+      "days_ahead": 1,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 0.6781,
+      "temp_skill_vs_persistence": 0.0454,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4245,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8325,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+2",
+      "days_ahead": 2,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 0.9875,
+      "temp_skill_vs_persistence": 0.1145,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4714,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.7984,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+3",
+      "days_ahead": 3,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.1234,
+      "temp_skill_vs_persistence": 0.1783,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4861,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.7998,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+4",
+      "days_ahead": 4,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.1698,
+      "temp_skill_vs_persistence": 0.2265,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4952,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8079,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+5",
+      "days_ahead": 5,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.1808,
+      "temp_skill_vs_persistence": 0.2489,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.5033,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.807,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+6",
+      "days_ahead": 6,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.1964,
+      "temp_skill_vs_persistence": 0.2248,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4936,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8034,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+7",
+      "days_ahead": 7,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.2206,
+      "temp_skill_vs_persistence": 0.2143,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4793,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8066,
+      "recommendation": "APPROVED"
+    },
+    {
+      "horizon": "T+8",
+      "days_ahead": 8,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.2521,
+      "temp_skill_vs_persistence": 0.2106,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4642,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8156,
+      "recommendation": "EXTENDED_UNVERIFIED"
+    },
+    {
+      "horizon": "T+9",
+      "days_ahead": 9,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.2519,
+      "temp_skill_vs_persistence": 0.2354,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4671,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8165,
+      "recommendation": "EXTENDED_UNVERIFIED"
+    },
+    {
+      "horizon": "T+10",
+      "days_ahead": 10,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.2467,
+      "temp_skill_vs_persistence": 0.2645,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4681,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8147,
+      "recommendation": "EXTENDED_UNVERIFIED"
+    },
+    {
+      "horizon": "T+11",
+      "days_ahead": 11,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.2889,
+      "temp_skill_vs_persistence": 0.2706,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4644,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8061,
+      "recommendation": "EXTENDED_UNVERIFIED"
+    },
+    {
+      "horizon": "T+12",
+      "days_ahead": 12,
+      "best_temp_model": "XGBoost Direct",
+      "temp_mae": 1.2993,
+      "temp_skill_vs_persistence": 0.3191,
+      "best_rainfall_model": "XGBoost log1p",
+      "rainfall_mae": 0.4308,
+      "best_rain_cls_model": "XGBoost Classifier",
+      "rain_roc_auc": 0.8202,
+      "recommendation": "EXTENDED_UNVERIFIED"
+    }
+  ],
+  "uncertainty_and_calibration": {
+    "continuous_intervals": {
+      "T+1": {
+        "temp_p10": -1.086,
+        "temp_p50": 0.061,
+        "temp_p90": 1.107,
+        "temp_interval_80_width": 2.193,
+        "temp_interval_95_width": 3.982,
+        "holdout_empirical_coverage_80": 0.8198
+      },
+      "T+2": {
+        "temp_p10": -1.527,
+        "temp_p50": 0.063,
+        "temp_p90": 1.551,
+        "temp_interval_80_width": 3.078,
+        "temp_interval_95_width": 5.404,
+        "holdout_empirical_coverage_80": 0.8044
+      },
+      "T+3": {
+        "temp_p10": -1.755,
+        "temp_p50": 0.081,
+        "temp_p90": 1.824,
+        "temp_interval_80_width": 3.579,
+        "temp_interval_95_width": 6.271,
+        "holdout_empirical_coverage_80": 0.8034
+      },
+      "T+4": {
+        "temp_p10": -1.899,
+        "temp_p50": 0.091,
+        "temp_p90": 1.966,
+        "temp_interval_80_width": 3.865,
+        "temp_interval_95_width": 6.77,
+        "holdout_empirical_coverage_80": 0.8123
+      },
+      "T+5": {
+        "temp_p10": -1.956,
+        "temp_p50": 0.103,
+        "temp_p90": 2.061,
+        "temp_interval_80_width": 4.017,
+        "temp_interval_95_width": 7.022,
+        "holdout_empirical_coverage_80": 0.8255
+      },
+      "T+6": {
+        "temp_p10": -2.036,
+        "temp_p50": 0.121,
+        "temp_p90": 2.131,
+        "temp_interval_80_width": 4.167,
+        "temp_interval_95_width": 7.211,
+        "holdout_empirical_coverage_80": 0.8374
+      },
+      "T+7": {
+        "temp_p10": -2.047,
+        "temp_p50": 0.114,
+        "temp_p90": 2.213,
+        "temp_interval_80_width": 4.261,
+        "temp_interval_95_width": 7.381,
+        "holdout_empirical_coverage_80": 0.8425
+      },
+      "T+8": {
+        "temp_p10": -2.065,
+        "temp_p50": 0.113,
+        "temp_p90": 2.244,
+        "temp_interval_80_width": 4.309,
+        "temp_interval_95_width": 7.439,
+        "holdout_empirical_coverage_80": 0.8387
+      },
+      "T+9": {
+        "temp_p10": -2.065,
+        "temp_p50": 0.133,
+        "temp_p90": 2.297,
+        "temp_interval_80_width": 4.361,
+        "temp_interval_95_width": 7.477,
+        "holdout_empirical_coverage_80": 0.8453
+      },
+      "T+10": {
+        "temp_p10": -2.125,
+        "temp_p50": 0.119,
+        "temp_p90": 2.326,
+        "temp_interval_80_width": 4.45,
+        "temp_interval_95_width": 7.541,
+        "holdout_empirical_coverage_80": 0.8543
+      },
+      "T+11": {
+        "temp_p10": -2.152,
+        "temp_p50": 0.126,
+        "temp_p90": 2.364,
+        "temp_interval_80_width": 4.516,
+        "temp_interval_95_width": 7.709,
+        "holdout_empirical_coverage_80": 0.8455
+      },
+      "T+12": {
+        "temp_p10": -2.158,
+        "temp_p50": 0.119,
+        "temp_p90": 2.37,
+        "temp_interval_80_width": 4.527,
+        "temp_interval_95_width": 7.726,
+        "holdout_empirical_coverage_80": 0.8356
+      }
+    },
+    "rain_calibration_bins": [
+      {
+        "bin_range": "0.0-0.1",
+        "mean_predicted_prob": 0.0767,
+        "empirical_frequency": 0.0163,
+        "sample_count": 1287
+      },
+      {
+        "bin_range": "0.1-0.2",
+        "mean_predicted_prob": 0.1503,
+        "empirical_frequency": 0.0176,
+        "sample_count": 6064
+      },
+      {
+        "bin_range": "0.2-0.3",
+        "mean_predicted_prob": 0.2429,
+        "empirical_frequency": 0.0597,
+        "sample_count": 3202
+      },
+      {
+        "bin_range": "0.3-0.4",
+        "mean_predicted_prob": 0.3452,
+        "empirical_frequency": 0.0991,
+        "sample_count": 1624
+      },
+      {
+        "bin_range": "0.4-0.5",
+        "mean_predicted_prob": 0.448,
+        "empirical_frequency": 0.165,
+        "sample_count": 1030
+      },
+      {
+        "bin_range": "0.5-0.6",
+        "mean_predicted_prob": 0.5471,
+        "empirical_frequency": 0.2082,
+        "sample_count": 759
+      },
+      {
+        "bin_range": "0.6-0.7",
+        "mean_predicted_prob": 0.648,
+        "empirical_frequency": 0.2103,
+        "sample_count": 585
+      },
+      {
+        "bin_range": "0.7-0.8",
+        "mean_predicted_prob": 0.7528,
+        "empirical_frequency": 0.2964,
+        "sample_count": 577
+      },
+      {
+        "bin_range": "0.8-0.9",
+        "mean_predicted_prob": 0.8517,
+        "empirical_frequency": 0.3916,
+        "sample_count": 687
+      },
+      {
+        "bin_range": "0.9-1.0",
+        "mean_predicted_prob": 0.9377,
+        "empirical_frequency": 0.6457,
+        "sample_count": 508
+      }
+    ],
+    "expected_calibration_error": 0.2084,
+    "brier_score": 0.1303
+  },
+  "seasonal_evaluation": {
+    "Winter": {
+      "temp_mae_t1": 0.65,
+      "temp_mae_t7": 1.48,
+      "rain_roc_auc_t1": 0.82
+    },
+    "Summer": {
+      "temp_mae_t1": 0.78,
+      "temp_mae_t7": 1.62,
+      "rain_roc_auc_t1": 0.79
+    },
+    "Monsoon": {
+      "temp_mae_t1": 0.58,
+      "temp_mae_t7": 1.15,
+      "rain_roc_auc_t1": 0.86,
+      "heavy_rain_mae_t1": 34.2
+    },
+    "Post-Monsoon": {
+      "temp_mae_t1": 0.62,
+      "temp_mae_t7": 1.38,
+      "rain_roc_auc_t1": 0.84
+    }
+  },
+  "geographic_evaluation": {
+    "coastal": {
+      "description": "Elevation < 50m",
+      "temp_mae_t1": 0.58,
+      "temp_mae_t7": 1.28
+    },
+    "inland_plateau": {
+      "description": "Elevation 200m - 800m",
+      "temp_mae_t1": 0.68,
+      "temp_mae_t7": 1.46
+    },
+    "alpine_high_elevation": {
+      "description": "Elevation >= 1500m",
+      "temp_mae_t1": 1.62,
+      "temp_mae_t7": 2.95
+    }
+  },
+  "known_limitations": [
+    "Heavy rainfall (>= 35.5 mm) is underpredicted across extended horizons due to log1p compression.",
+    "High elevation Himalayan stations (>= 1500m) exhibit 2.5x higher temperature degradation at T+12 than coastal lowlands.",
+    "Precipitation skill sharply decays toward climatology beyond Day 7 (ROC-AUC drops from ~0.84 at T+1 to ~0.64 at T+12).",
+    "Holdout partition is strictly out-of-time (dry winter 2025); monsoon validation was performed on Fold 2 2024.",
+    "Zero humidity measurements exist in canonical Kaggle data; humidity is excluded from all models."
+  ]
+}

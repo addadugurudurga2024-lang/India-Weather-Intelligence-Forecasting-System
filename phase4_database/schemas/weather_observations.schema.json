@@ -1,0 +1,64 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "station_id",
+      "date_of_record"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "station_id": {
+        "bsonType": "string",
+        "description": "Foreign reference to stations.station_id"
+      },
+      "date_of_record": {
+        "bsonType": "string",
+        "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+        "description": "Calendar observation date (YYYY-MM-DD)"
+      },
+      "timestamp": {
+        "bsonType": "date",
+        "description": "ISODate representation for time-series range queries"
+      },
+      "avg_temp": {
+        "bsonType": ["double", "null"],
+        "description": "Clean surface average temperature (°C)"
+      },
+      "min_temp": {
+        "bsonType": ["double", "null"],
+        "description": "Clean surface minimum temperature (°C)"
+      },
+      "max_temp": {
+        "bsonType": ["double", "null"],
+        "description": "Clean surface maximum temperature (°C)"
+      },
+      "rainfall": {
+        "bsonType": ["double", "null"],
+        "description": "24h rainfall volume (mm). Missing values stored as null, not 0.0"
+      },
+      "wind_speed": {
+        "bsonType": ["double", "null"],
+        "description": "Wind speed (km/h)"
+      },
+      "air_pressure": {
+        "bsonType": ["double", "null"],
+        "description": "Barometric pressure (hPa)"
+      },
+      "is_rainy": {
+        "bsonType": ["bool", "null"],
+        "description": "Binary flag indicating active precipitation (rainfall > 0.0)"
+      },
+      "season": {
+        "enum": ["Winter", "Pre-Monsoon", "Monsoon", "Post-Monsoon"],
+        "description": "Indian meteorological season tag"
+      },
+      "month": {
+        "bsonType": "int",
+        "minimum": 1,
+        "maximum": 12
+      }
+    }
+  }
+}

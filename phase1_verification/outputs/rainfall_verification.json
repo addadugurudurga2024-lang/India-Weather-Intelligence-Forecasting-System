@@ -1,0 +1,40 @@
+{
+  "total_records": 970339,
+  "missing_count": 257554,
+  "missing_rate": 0.2654268250580467,
+  "non_null_count": 712785,
+  "zero_count": 366240,
+  "zero_rate_overall": 0.3774351025775528,
+  "zero_rate_among_observed": 0.5138155264210106,
+  "positive_count": 346545,
+  "positive_rate_overall": 0.3571380723644005,
+  "positive_rate_among_observed": 0.4861844735789895,
+  "negative_count": 0,
+  "min": 0.0,
+  "max": 485.9,
+  "mean_overall": 5.267532565921,
+  "mean_positive": 10.834431891962081,
+  "median_positive": 4.1,
+  "std_overall": 14.444142068063769,
+  "overall_quantiles": {
+    "q25": 0.0,
+    "q50": 0.0,
+    "q75": 4.0,
+    "q90": 15.1,
+    "q95": 26.9,
+    "q98": 49.0,
+    "q99": 156.0
+  },
+  "positive_quantiles": {
+    "q25": 1.0,
+    "q50": 4.1,
+    "q75": 12.5,
+    "q90": 27.7,
+    "q95": 43.4,
+    "q98": 69.1,
+    "q99": 191.7912000000011
+  },
+  "rf_gt_100mm_count": 2796,
+  "rf_gt_200mm_count": 290,
+  "rf_gt_300mm_count": 52
+}

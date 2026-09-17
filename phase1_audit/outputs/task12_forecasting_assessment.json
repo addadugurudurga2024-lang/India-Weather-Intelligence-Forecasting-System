@@ -1,0 +1,77 @@
+{
+  "Target_A_Next_Day_Avg_Temp": {
+    "feasibility": "READY_WITH_CONDITIONS",
+    "availability": "High",
+    "missingness": 0.0,
+    "continuity_dependency": "Requires strict station-level temporal sorting and masking when date_t+1 is not date_t + 1 day.",
+    "leakage_risk": "High if shuffled or split randomly; requires rolling chronological split."
+  },
+  "Target_B_Next_Day_Rainfall_Amount": {
+    "feasibility": "REQUIRES_CLEANING_AND_MASKING",
+    "availability": "Zero-inflated and right-skewed (majority zero).",
+    "missingness": 0.2654268250580467,
+    "critical_distinction": "Missing rainfall (~X%) must NEVER be imputed as 0 without physical evidence.",
+    "skewness": 6.83264618390234
+  },
+  "Target_C_Next_Day_Rain_No_Rain": {
+    "feasibility": "READY_WITH_CONDITIONS",
+    "availability": "High (binary classification)",
+    "class_imbalance": {
+      "zero_share": 0.5138155264210106,
+      "rain_share": 0.4861844735789895
+    },
+    "recommended_threshold": "0.1mm (trace rainfall threshold) or 1.0mm (measurable rainfall threshold)"
+  },
+  "sample_station_continuity": {
+    "Srinagar": {
+      "total_dates": 3694,
+      "consecutive_1day_fraction": 0.9997292907417433,
+      "gaps_count": 0
+    },
+    "Thiruvananthapuram": {
+      "total_dates": 3694,
+      "consecutive_1day_fraction": 0.9997292907417433,
+      "gaps_count": 0
+    },
+    "Akola": {
+      "total_dates": 3638,
+      "consecutive_1day_fraction": 0.9936778449697636,
+      "gaps_count": 22
+    },
+    "Madurai": {
+      "total_dates": 3350,
+      "consecutive_1day_fraction": 0.9988059701492538,
+      "gaps_count": 3
+    },
+    "Agra": {
+      "total_dates": 2397,
+      "consecutive_1day_fraction": 0.9995828118481435,
+      "gaps_count": 0
+    },
+    "Siliguri": {
+      "total_dates": 1953,
+      "consecutive_1day_fraction": 0.9687660010240655,
+      "gaps_count": 60
+    },
+    "New Delhi / Palam": {
+      "total_dates": 3694,
+      "consecutive_1day_fraction": 0.9997292907417433,
+      "gaps_count": 0
+    },
+    "New Delhi / Safdarjung": {
+      "total_dates": 3694,
+      "consecutive_1day_fraction": 0.9997292907417433,
+      "gaps_count": 0
+    },
+    "Dibrugarh / Mohanbari": {
+      "total_dates": 3694,
+      "consecutive_1day_fraction": 0.9997292907417433,
+      "gaps_count": 0
+    },
+    "Gauhati": {
+      "total_dates": 3694,
+      "consecutive_1day_fraction": 0.9997292907417433,
+      "gaps_count": 0
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "Arid (Rajasthan)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 15.8,
+      "min_temp": 9.0,
+      "max_temp": 24.8,
+      "rain_prob_pct": 4.2,
+      "rainfall_mm": 0.1,
+      "wind_kmh": 7.9,
+      "pressure_hpa": 1016.1
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 35.6,
+      "min_temp": 28.2,
+      "max_temp": 42.2,
+      "rain_prob_pct": 14.9,
+      "rainfall_mm": 1.8,
+      "wind_kmh": 12.8,
+      "pressure_hpa": 1001.5
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 31.3,
+      "min_temp": 27.5,
+      "max_temp": 36.6,
+      "rain_prob_pct": 58.6,
+      "rainfall_mm": 5.9,
+      "wind_kmh": 11.8,
+      "pressure_hpa": 999.2
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 23.0,
+      "min_temp": 15.6,
+      "max_temp": 31.3,
+      "rain_prob_pct": 2.8,
+      "rainfall_mm": 0.4,
+      "wind_kmh": 6.9,
+      "pressure_hpa": 1014.3
+    }
+  },
+  "Coastal Maritime (Mumbai)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 24.4,
+      "min_temp": 18.3,
+      "max_temp": 30.3,
+      "rain_prob_pct": 3.2,
+      "rainfall_mm": 0.0,
+      "wind_kmh": 4.7,
+      "pressure_hpa": 1012.5
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 30.9,
+      "min_temp": 28.0,
+      "max_temp": 33.7,
+      "rain_prob_pct": 12.1,
+      "rainfall_mm": 2.1,
+      "wind_kmh": 8.0,
+      "pressure_hpa": 1006.3
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 27.8,
+      "min_temp": 26.1,
+      "max_temp": 29.7,
+      "rain_prob_pct": 95.7,
+      "rainfall_mm": 34.3,
+      "wind_kmh": 10.1,
+      "pressure_hpa": 1003.6
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 28.0,
+      "min_temp": 22.6,
+      "max_temp": 33.7,
+      "rain_prob_pct": 12.4,
+      "rainfall_mm": 1.6,
+      "wind_kmh": 3.9,
+      "pressure_hpa": 1011.1
+    }
+  },
+  "High Himalayan (Shimla)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 5.6,
+      "min_temp": 0.6,
+      "max_temp": 12.0,
+      "rain_prob_pct": 29.5,
+      "rainfall_mm": 2.9,
+      "wind_kmh": 5.2,
+      "pressure_hpa": 1016.3
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 21.0,
+      "min_temp": 13.7,
+      "max_temp": 25.7,
+      "rain_prob_pct": 57.8,
+      "rainfall_mm": 3.0,
+      "wind_kmh": 6.6,
+      "pressure_hpa": 1008.0
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 20.4,
+      "min_temp": 16.7,
+      "max_temp": 23.9,
+      "rain_prob_pct": 83.0,
+      "rainfall_mm": 9.9,
+      "wind_kmh": 4.1,
+      "pressure_hpa": 1005.7
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 11.0,
+      "min_temp": 5.9,
+      "max_temp": 17.1,
+      "rain_prob_pct": 30.3,
+      "rainfall_mm": 1.7,
+      "wind_kmh": 4.6,
+      "pressure_hpa": 1017.5
+    }
+  },
+  "Northeast High Rainfall (Cherrapunji)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 11.0,
+      "min_temp": 5.8,
+      "max_temp": 17.1,
+      "rain_prob_pct": 16.1,
+      "rainfall_mm": 0.4,
+      "wind_kmh": 4.9,
+      "pressure_hpa": 1015.4
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 19.9,
+      "min_temp": 16.6,
+      "max_temp": 23.1,
+      "rain_prob_pct": 97.9,
+      "rainfall_mm": 28.2,
+      "wind_kmh": 7.0,
+      "pressure_hpa": 1007.7
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 20.8,
+      "min_temp": 18.7,
+      "max_temp": 23.9,
+      "rain_prob_pct": 99.9,
+      "rainfall_mm": 27.0,
+      "wind_kmh": 6.0,
+      "pressure_hpa": 1006.3
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 15.7,
+      "min_temp": 10.8,
+      "max_temp": 22.4,
+      "rain_prob_pct": 17.3,
+      "rainfall_mm": 1.0,
+      "wind_kmh": 4.6,
+      "pressure_hpa": 1015.1
+    }
+  },
+  "Inland Plateau (Nagpur)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 20.2,
+      "min_temp": 13.4,
+      "max_temp": 27.8,
+      "rain_prob_pct": 12.4,
+      "rainfall_mm": 0.3,
+      "wind_kmh": 4.2,
+      "pressure_hpa": 1015.2
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 35.7,
+      "min_temp": 27.7,
+      "max_temp": 42.1,
+      "rain_prob_pct": 11.1,
+      "rainfall_mm": 1.7,
+      "wind_kmh": 8.8,
+      "pressure_hpa": 1004.0
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 27.6,
+      "min_temp": 24.5,
+      "max_temp": 31.2,
+      "rain_prob_pct": 75.1,
+      "rainfall_mm": 21.6,
+      "wind_kmh": 8.0,
+      "pressure_hpa": 1001.6
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 23.8,
+      "min_temp": 16.3,
+      "max_temp": 30.4,
+      "rain_prob_pct": 2.6,
+      "rainfall_mm": 0.7,
+      "wind_kmh": 3.0,
+      "pressure_hpa": 1014.5
+    }
+  },
+  "Island (Port Blair)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 26.5,
+      "min_temp": 23.1,
+      "max_temp": 29.8,
+      "rain_prob_pct": 49.4,
+      "rainfall_mm": 3.1,
+      "wind_kmh": 12.5,
+      "pressure_hpa": 1011.4
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 28.4,
+      "min_temp": 25.6,
+      "max_temp": 31.6,
+      "rain_prob_pct": 77.2,
+      "rainfall_mm": 13.7,
+      "wind_kmh": 13.7,
+      "pressure_hpa": 1007.2
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 27.2,
+      "min_temp": 24.9,
+      "max_temp": 29.8,
+      "rain_prob_pct": 81.2,
+      "rainfall_mm": 10.6,
+      "wind_kmh": 17.6,
+      "pressure_hpa": 1007.2
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 27.4,
+      "min_temp": 24.8,
+      "max_temp": 30.5,
+      "rain_prob_pct": 69.4,
+      "rainfall_mm": 10.7,
+      "wind_kmh": 10.8,
+      "pressure_hpa": 1010.0
+    }
+  },
+  "Prompt Use Case (Rajanagaram)": {
+    "Winter": {
+      "date": "2026-01-15",
+      "avg_temp": 24.2,
+      "min_temp": 19.0,
+      "max_temp": 30.5,
+      "rain_prob_pct": 17.7,
+      "rainfall_mm": 0.2,
+      "wind_kmh": 9.9,
+      "pressure_hpa": 1013.1
+    },
+    "Summer": {
+      "date": "2026-05-15",
+      "avg_temp": 31.9,
+      "min_temp": 27.2,
+      "max_temp": 38.2,
+      "rain_prob_pct": 59.8,
+      "rainfall_mm": 4.1,
+      "wind_kmh": 11.9,
+      "pressure_hpa": 1003.7
+    },
+    "Monsoon": {
+      "date": "2026-07-15",
+      "avg_temp": 28.4,
+      "min_temp": 25.5,
+      "max_temp": 31.8,
+      "rain_prob_pct": 94.9,
+      "rainfall_mm": 16.7,
+      "wind_kmh": 15.1,
+      "pressure_hpa": 1001.7
+    },
+    "Post-Monsoon": {
+      "date": "2026-11-15",
+      "avg_temp": 26.8,
+      "min_temp": 22.5,
+      "max_temp": 32.2,
+      "rain_prob_pct": 37.5,
+      "rainfall_mm": 2.5,
+      "wind_kmh": 11.2,
+      "pressure_hpa": 1011.2
+    }
+  }
+}

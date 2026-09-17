@@ -1,0 +1,30 @@
+{
+  "dataset_name": "India Weather & Rainfall Canonical Dataset",
+  "version": "2.0.0",
+  "phase": "Phase 2 Canonical",
+  "total_records_full": 968849,
+  "total_records_forecasting_view": 604155,
+  "unique_physical_stations": 413,
+  "fields": {
+    "station_id": "Primary key: deterministic physical identifier {slug}_{lat:.4f}_{lon:.4f}_{elev}m",
+    "date_of_record": "Timestamp of daily record (YYYY-MM-DD)",
+    "month": "Month name string (January - December)",
+    "season": "Climatological season (Winter, Summer, Monsoon, Post-monsoon)",
+    "station_name": "Official station name string",
+    "state": "Two-letter state / Union Territory administrative code",
+    "district": "Administrative district name",
+    "avg_temp": "Raw recorded daily average temperature (Celsius)",
+    "min_temp": "Raw recorded daily minimum temperature (Celsius)",
+    "max_temp": "Raw recorded daily maximum temperature (Celsius)",
+    "wind_speed": "Recorded daily wind speed (km/h)",
+    "air_pressure": "Recorded atmospheric sea-level/station pressure (hPa)",
+    "elevation": "Elevation above sea level (meters)",
+    "latitude": "Latitude in decimal degrees North",
+    "longitude": "Longitude in decimal degrees East",
+    "rainfall": "Daily rainfall depth (mm); 0.0=measured dry day, NaN=missing sensor reading",
+    "qc_flag_temp": "Quality control flag: VALID, INVERSION_MIN_GT_MAX, EXTREME_OUTLIER, AVG_OUT_OF_BOUNDS",
+    "avg_temp_clean": "ML feature view with corrupted temperature values masked as NaN",
+    "min_temp_clean": "ML feature view with corrupted temperature values masked as NaN",
+    "max_temp_clean": "ML feature view with corrupted temperature values masked as NaN"
+  }
+}

@@ -1,0 +1,80 @@
+# PHASE 9 — LONG-TERM WEATHER PREDICTOR SCIENTIFIC LIMITATIONS REPORT
+
+**Project:** India Weather Forecasting & Intelligence System  
+**Phase:** PHASE 9 — Long-Term Weather Predictor  
+**Authoritative Date:** `2026-09-15`  
+**Classification:** Scientific Methodology, Boundary Transparency & Risk Analysis  
+
+---
+
+## 1. Fundamental Epistemic Distinction: Operational Forecast vs. Long-Term Prediction
+
+The India Weather Forecasting & Intelligence System operates two distinct predictive architectures:
+
+| Property | Operational Forecast Center (System A) | Long-Term Weather Predictor (System B) |
+|:---|:---|:---|
+| **Horizon Range** | $T+1 \dots T+12$ (1 to 12 days ahead) | Selected future calendar dates (e.g. 30 to 700+ days ahead) |
+| **Model Family** | 84 direct multi-horizon XGBoost models (`xgb_*_h1..12`) | 7 multi-target seasonal GBDT models (`xgb_longterm_*_v1`) |
+| **Primary Features** | Recent observations ($t_0, t_{-1}$), rolling lags, auto-correlation | Calendar harmonics, geographic coordinates, station climatology |
+| **Scientific Basis** | Numerical/synoptic weather tracking with atmospheric memory | Historical climatological distribution and seasonal periodicity |
+| **Skill Mechanism** | Inertial atmospheric persistence + dynamical degradation | Conditional historical mean expectation + regional lapse rates |
+| **Verification Basis** | Short-term physical station telemetry matching | Eventual physical station observation on target calendar date |
+
+> [!WARNING]
+> **No Synoptic Resolution at Long Range:** The Long-Term Predictor cannot forecast specific synoptic weather systems (e.g., individual convective storm cells, tropical cyclone tracks, western disturbances) months in advance. The chaotic nature of the atmosphere limits deterministic predictability to approximately 10–14 days. Predictions beyond this horizon represent **statistical expected values** conditioned on historical patterns.
+
+---
+
+## 2. Long-Range Uncertainty & Interval Semantics
+
+1. **Prediction Intervals vs. Accuracy Guarantees:** The displayed intervals (e.g., 80% CI) are **empirical residual quantiles** derived from the 2024 chronological walk-forward validation partition ($N = 147,469$ records). They denote historical spread, not guaranteed confidence.
+2. **Spread Widening on Extreme Days:** Unseasonable cold snaps, heatwaves, or unexpected depressions fall in the tails of the residual distribution. The model is optimized for expected central tendencies and underpredicts historical record anomalies.
+
+---
+
+## 3. Rainfall Modeling Limitations & Missingness Handling
+
+1. **Canonical Missing Rainfall Policy:** In the canonical Kaggle dataset, 26.58% of daily rainfall records are missing (`NaN`). In strict accordance with repository policy, missing values are **never imputed as zero**. Only verified dry days ($0.0$ mm) are treated as dry.
+2. **Convective Rainfall Skewness:** Precipitation in tropical and monsoon regimes is heavily zero-inflated and positively skewed. While the binary rain occurrence classifier achieves strong discriminative capability ($\text{ROC-AUC} = 0.8747$), predicting exact daily precipitation depth (mm) months in advance has an $R^2$ of 0.211, reflecting the fundamental stochasticity of convective rainfall.
+3. **Tropical Cyclones:** Intense monsoon depressions and post-monsoon cyclonic landfall cannot be predicted on seasonal scales from climatology alone.
+
+---
+
+## 4. Climatological Non-Stationarity & Climate Change
+
+1. **Stationary Baseline Assumption:** The models are trained on historical daily records from 2015 to 2023. This implicitly assumes that the statistical distribution of weather in 2026–2027 reflects the 2015–2023 baseline.
+2. **Secular Warming Trends:** Long-term climate trends (e.g., urban heat island intensification, monsoon onset shifting) may introduce slight cold biases during unprecedented summer heatwaves.
+
+---
+
+## 5. Raw Dataset Horizon Boundary (2025-02-10)
+
+1. The canonical Kaggle dataset terminates on `2025-02-10`.
+2. Operational forecasts in 2026 cannot use real-time observations from 2025 or 2026 as input features for the Long-Term Predictor.
+3. The Long-Term Predictor relies solely on **leakage-free static station climatology, geographic metadata, and deterministic astronomical calendar harmonics**.
+
+---
+
+## 6. Unsupported Weather Variables
+
+The canonical dataset contains physical telemetry for temperature, rainfall, wind speed, and air pressure. The following variables are **strictly unsupported and omitted**:
+- Relative Humidity / Dew Point
+- Cloud Cover / Cloud Ceiling
+- Sunshine Duration / Solar Radiation
+- Visibility / Fog Density
+- Hourly Precipitation Timing (Start/End times)
+- Radar / Satellite Reflectivity
+
+Any interface claiming to provide these variables for Indian stations would be fabricating synthetic data, in direct violation of the project's zero-fabrication principle.
+
+---
+
+## 7. Retrospective Verification Protocol
+
+Every prediction generated by the Long-Term Predictor includes structured metadata and provenance:
+- Prediction date and generation timestamp
+- Target station canonical identifier and coordinates
+- Models evaluated and validation errors
+- Historical reference context used
+
+When the target date elapses, actual station telemetry recorded in the authoritative record will be matched against the prediction using the project's retrospective verification pipeline (`phase9_long_term_predictor/scripts/prospective_verification_pipeline.py`) to quantify true prospective forecast error.

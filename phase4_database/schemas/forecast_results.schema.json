@@ -1,0 +1,67 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "station_id",
+      "forecast_date",
+      "predicted_temp",
+      "predicted_rainfall_amount",
+      "predicted_rain_probability",
+      "model_temperature",
+      "model_rainfall",
+      "model_classification",
+      "generated_at"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "station_id": {
+        "bsonType": "string",
+        "description": "Station ID reference"
+      },
+      "forecast_date": {
+        "bsonType": "string",
+        "description": "Target prediction horizon date (YYYY-MM-DD)"
+      },
+      "predicted_temp": {
+        "bsonType": "double",
+        "description": "Predicted surface temperature (°C)"
+      },
+      "predicted_rainfall_amount": {
+        "bsonType": "double",
+        "description": "Predicted precipitation volume (mm) from inverse log1p"
+      },
+      "predicted_rain_probability": {
+        "bsonType": "double",
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": "Rain occurrence probability"
+      },
+      "predicted_rain_binary": {
+        "bsonType": "bool",
+        "description": "Thresholded binary classification (prob >= 0.5)"
+      },
+      "model_temperature": {
+        "bsonType": "string",
+        "description": "Model ID used for temperature"
+      },
+      "model_rainfall": {
+        "bsonType": "string",
+        "description": "Model ID used for rainfall amount"
+      },
+      "model_classification": {
+        "bsonType": "string",
+        "description": "Model ID used for rain classification"
+      },
+      "generated_at": {
+        "bsonType": "date",
+        "description": "Inference generation timestamp"
+      },
+      "is_preview": {
+        "bsonType": "bool",
+        "description": "Development preview flag"
+      }
+    }
+  }
+}

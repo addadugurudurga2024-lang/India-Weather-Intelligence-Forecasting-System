@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "phase": "Phase 3 Forecasting Model Development",
+    "authoritative_source_hash": "e6a636777430f078b4d970f9f46e79efcece7f97b67dd186c30a755d2783cd84",
+    "cross_validation_strategy": "Chronological Walk-Forward Expanding Window",
+    "holdout_period": "2025-01-01 to 2025-02-10",
+    "models_compared": [
+      "Baseline",
+      "XGBoost",
+      "LSTM"
+    ],
+    "targets": [
+      "Target A (Temperature)",
+      "Target B (Rainfall Amount)",
+      "Target C (Rain Binary)"
+    ]
+  },
+  "target_a_temperature": {
+    "baseline": {
+      "fold1_val": {
+        "mae": 0.7298030710738048,
+        "rmse": 1.0710906107591227,
+        "r2": 0.9581626959586238,
+        "count": 149394
+      },
+      "fold2_val": {
+        "mae": 0.7185119538615711,
+        "rmse": 1.0321989280172594,
+        "r2": 0.9660193051550369,
+        "count": 146689
+      },
+      "holdout": {
+        "mae": 0.7235034617976839,
+        "rmse": 1.017475813382898,
+        "r2": 0.9634519310268469,
+        "count": 16321
+      }
+    },
+    "xgboost": {
+      "fold1": {
+        "mae": 0.716067320879513,
+        "rmse": 1.0195063000418838,
+        "r2": 0.9620998452626479,
+        "train_rows": 290194,
+        "val_rows": 149405,
+        "train_time_sec": 60.48,
+        "best_iteration": 366
+      },
+      "fold2": {
+        "mae": 0.7014555477604052,
+        "rmse": 0.9813467328836789,
+        "r2": 0.9692841787791457,
+        "train_rows": 439599,
+        "val_rows": 146696,
+        "train_time_sec": 38.55,
+        "best_iteration": 330
+      },
+      "holdout": {
+        "mae": 0.6527308142854585,
+        "rmse": 0.9147609666315075,
+        "r2": 0.970457908509001,
+        "holdout_rows": 16322
+      }
+    },
+    "lstm": {
+      "fold1": {
+        "mae": 0.7853731513023376,
+        "rmse": 1.067091389876019,
+        "r2": 0.9567708969116211,
+        "mae_rainy_only": null,
+        "rmse_rainy_only": null,
+        "train_sequences": 286167,
+        "val_sequences": 146930,
+        "train_time_sec": 384.49
+      },
+      "fold2": {
+        "mae": 0.7114635109901428,
+        "rmse": 0.9956169333553223,
+        "r2": 0.9672537446022034,
+        "mae_rainy_only": null,
+        "rmse_rainy_only": null,
+        "train_sequences": 435557,
+        "val_sequences": 140139,
+        "train_time_sec": 580.29
+      },
+      "holdout": {
+        "mae": 0.6441072821617126,
+        "rmse": 0.9053795679259734,
+        "r2": 0.9713044166564941,
+        "mae_rainy_only": null,
+        "rmse_rainy_only": null,
+        "holdout_sequences": 13871
+      }
+    }
+  },
+  "target_b_rainfall_amount": {
+    "baseline": {
+      "fold1_val": {
+        "mae": 3.7251251539326433,
+        "rmse": 11.205486429678817,
+        "r2": -0.01016708882584405,
+        "count": 149416
+      },
+      "fold1_val_rainy_only": {
+        "mae": 7.753480493935088,
+        "rmse": 16.270378411022094,
+        "r2": -0.07469294188213693,
+        "count": 64057
+      },
+      "fold2_val": {
+        "mae": 4.273540821483698,
+        "rmse": 12.278544695955008,
+        "r2": 0.015694535505832108,
+        "count": 146418
+      },
+      "fold2_val_rainy_only": {
+        "mae": 8.69035197454787,
+        "rmse": 17.54179756604378,
+        "r2": -0.052509885719109084,
+        "count": 64749
+      },
+      "holdout": {
+        "mae": 0.502609814372358,
+        "rmse": 2.5930489932782574,
+        "r2": -0.3554560600212959,
+        "count": 16323
+      },
+      "holdout_rainy_only": {
+        "mae": 3.4563272513243084,
+        "rmse": 6.829703931908613,
+        "r2": -0.24082505013042876,
+        "count": 1699
+      }
+    },
+    "xgboost": {
+      "fold1": {
+        "mae": 3.010987008946394,
+        "rmse": 9.611213072160236,
+        "r2": 0.2568299524006288,
+        "mae_rainy_only": 6.491998229824205,
+        "rmse_rainy_only": 14.633395355628384,
+        "train_rows": 283668,
+        "val_rows": 149416,
+        "train_time_sec": 15.86,
+        "best_iteration": 258
+      },
+      "fold2": {
+        "mae": 3.3738527678794674,
+        "rmse": 10.46896048565198,
+        "r2": 0.2844446611475875,
+        "mae_rainy_only": 7.128954508260413,
+        "rmse_rainy_only": 15.686945465034709,
+        "train_rows": 433084,
+        "val_rows": 146418,
+        "train_time_sec": 52.51,
+        "best_iteration": 593
+      },
+      "holdout": {
+        "mae": 0.434401096590131,
+        "rmse": 2.071032431349471,
+        "r2": 0.13535507199553054,
+        "mae_rainy_only": 2.8946701981967036,
+        "rmse_rainy_only": 6.332227556658516,
+        "holdout_rows": 16323
+      }
+    },
+    "lstm": {
+      "fold1": {
+        "mae": 3.0685787200927734,
+        "rmse": 9.684951939342952,
+        "r2": 0.2564447522163391,
+        "mae_rainy_only": 6.553293228149414,
+        "rmse_rainy_only": 14.650785749279425,
+        "train_sequences": 279836,
+        "val_sequences": 146941,
+        "train_time_sec": 310.02
+      },
+      "fold2": {
+        "mae": 3.387303590774536,
+        "rmse": 10.316348935494899,
+        "r2": 0.31651318073272705,
+        "mae_rainy_only": 7.086696147918701,
+        "rmse_rainy_only": 15.39239361665365,
+        "train_sequences": 429237,
+        "val_sequences": 139872,
+        "train_time_sec": 343.62
+      },
+      "holdout": {
+        "mae": 0.4368108808994293,
+        "rmse": 2.052609164904536,
+        "r2": 0.11678767204284668,
+        "mae_rainy_only": 2.8629937171936035,
+        "rmse_rainy_only": 6.08225421827569,
+        "holdout_sequences": 13872
+      }
+    }
+  },
+  "target_c_rain_binary": {
+    "baseline": {
+      "fold1_val": {
+        "accuracy": 0.5712841998179579,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.4287158001820421,
+        "confusion_matrix": [
+          [
+            85359,
+            0
+          ],
+          [
+            64057,
+            0
+          ]
+        ],
+        "count": 149416,
+        "pos_count": 64057,
+        "neg_count": 85359
+      },
+      "fold2_val": {
+        "accuracy": 0.5577797811744457,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.44222021882555423,
+        "confusion_matrix": [
+          [
+            81669,
+            0
+          ],
+          [
+            64749,
+            0
+          ]
+        ],
+        "count": 146418,
+        "pos_count": 64749,
+        "neg_count": 81669
+      },
+      "holdout": {
+        "accuracy": 0.8959137413465662,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.10408625865343381,
+        "confusion_matrix": [
+          [
+            14624,
+            0
+          ],
+          [
+            1699,
+            0
+          ]
+        ],
+        "count": 16323,
+        "pos_count": 1699,
+        "neg_count": 14624
+      }
+    },
+    "xgboost": {
+      "fold1": {
+        "accuracy": 0.8358007174599775,
+        "precision": 0.797787857325839,
+        "recall": 0.8264826638774841,
+        "f1": 0.8118817954576822,
+        "roc_auc": 0.9075859507048039,
+        "pr_auc": 0.8894618747213565,
+        "confusion_matrix": [
+          [
+            71940,
+            13419
+          ],
+          [
+            11115,
+            52942
+          ]
+        ],
+        "train_rows": 283668,
+        "val_rows": 149416,
+        "train_time_sec": 15.42,
+        "best_iteration": 229
+      },
+      "fold2": {
+        "accuracy": 0.8476007048313732,
+        "precision": 0.819103337293769,
+        "recall": 0.8411404037127986,
+        "f1": 0.8299756171898811,
+        "roc_auc": 0.919297151134086,
+        "pr_auc": 0.9076425387275748,
+        "confusion_matrix": [
+          [
+            69641,
+            12028
+          ],
+          [
+            10286,
+            54463
+          ]
+        ],
+        "train_rows": 433084,
+        "val_rows": 146418,
+        "train_time_sec": 32.65,
+        "best_iteration": 484
+      },
+      "holdout": {
+        "accuracy": 0.8918703669668566,
+        "precision": 0.4766619519094767,
+        "recall": 0.3967039434961742,
+        "f1": 0.43302280758111145,
+        "roc_auc": 0.8365720745115869,
+        "pr_auc": 0.4475546596504764,
+        "confusion_matrix": [
+          [
+            13884,
+            740
+          ],
+          [
+            1025,
+            674
+          ]
+        ],
+        "holdout_rows": 16323
+      }
+    },
+    "lstm": {
+      "fold1": {
+        "accuracy": 0.8168924942664062,
+        "precision": 0.7825260576333538,
+        "recall": 0.8005645287752862,
+        "f1": 0.7914425238353616,
+        "roc_auc": 0.8928889150834526,
+        "pr_auc": 0.875745557614717,
+        "confusion_matrix": [
+          [
+            68983,
+            14188
+          ],
+          [
+            12718,
+            51052
+          ]
+        ],
+        "train_sequences": 279836,
+        "val_sequences": 146941,
+        "train_time_sec": 117.99
+      },
+      "fold2": {
+        "accuracy": 0.8375800732097918,
+        "precision": 0.8095700829114618,
+        "recall": 0.8301538065926295,
+        "f1": 0.8197327493175903,
+        "roc_auc": 0.9095806063297015,
+        "pr_auc": 0.8994144819143466,
+        "confusion_matrix": [
+          [
+            65501,
+            12150
+          ],
+          [
+            10568,
+            51653
+          ]
+        ],
+        "train_sequences": 429237,
+        "val_sequences": 139872,
+        "train_time_sec": 393.48
+      },
+      "holdout": {
+        "accuracy": 0.8832179930795848,
+        "precision": 0.46536267318663405,
+        "recall": 0.3719869706840391,
+        "f1": 0.41346850108616945,
+        "roc_auc": 0.8256359738811694,
+        "pr_auc": 0.4345956872081016,
+        "confusion_matrix": [
+          [
+            11681,
+            656
+          ],
+          [
+            964,
+            571
+          ]
+        ],
+        "holdout_sequences": 13872
+      }
+    }
+  }
+}

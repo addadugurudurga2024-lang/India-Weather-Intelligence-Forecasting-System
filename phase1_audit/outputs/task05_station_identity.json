@@ -1,0 +1,22 @@
+{
+  "unique_station_names": 406,
+  "unique_station_state_pairs": 406,
+  "unique_station_district_pairs": 406,
+  "unique_station_coordinate_pairs": 413,
+  "unique_coordinates": 411,
+  "stations_with_multiple_coordinates_count": 7,
+  "stations_with_multiple_coordinates_list": [
+    "Agra",
+    "Akola",
+    "Car Nicobar",
+    "Madurai",
+    "Siliguri",
+    "Srinagar",
+    "Thiruvananthapuram"
+  ],
+  "coordinates_with_multiple_stations_count": 2,
+  "stations_in_multiple_states_count": 0,
+  "stations_in_multiple_states_list": [],
+  "stations_in_multiple_districts_count": 0,
+  "stations_in_multiple_districts_list": []
+}

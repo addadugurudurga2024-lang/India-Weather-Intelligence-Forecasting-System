@@ -1,0 +1,182 @@
+[
+  {
+    "filename": "lstm_rain_classification_preds_fold1.parquet",
+    "target": "cls",
+    "split": "fold1",
+    "rows": 146941,
+    "stations": 412,
+    "date_range": "2023-01-07 to 2023-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_rain_classification_preds_fold2.parquet",
+    "target": "cls",
+    "split": "fold2",
+    "rows": 139872,
+    "stations": 411,
+    "date_range": "2024-01-07 to 2024-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_rain_classification_preds_holdout.parquet",
+    "target": "cls",
+    "split": "holdout",
+    "rows": 13872,
+    "stations": 408,
+    "date_range": "2025-01-07 to 2025-02-09",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_rainfall_preds_fold1.parquet",
+    "target": "rain",
+    "split": "fold1",
+    "rows": 146941,
+    "stations": 412,
+    "date_range": "2023-01-07 to 2023-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_rainfall_preds_fold2.parquet",
+    "target": "rain",
+    "split": "fold2",
+    "rows": 139872,
+    "stations": 411,
+    "date_range": "2024-01-07 to 2024-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_rainfall_preds_holdout.parquet",
+    "target": "rain",
+    "split": "holdout",
+    "rows": 13872,
+    "stations": 408,
+    "date_range": "2025-01-07 to 2025-02-09",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_temperature_preds_fold1.parquet",
+    "target": "temp",
+    "split": "fold1",
+    "rows": 146930,
+    "stations": 412,
+    "date_range": "2023-01-07 to 2023-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_temperature_preds_fold2.parquet",
+    "target": "temp",
+    "split": "fold2",
+    "rows": 140139,
+    "stations": 411,
+    "date_range": "2024-01-07 to 2024-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "lstm_temperature_preds_holdout.parquet",
+    "target": "temp",
+    "split": "holdout",
+    "rows": 13871,
+    "stations": 408,
+    "date_range": "2025-01-07 to 2025-02-09",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_rain_cls_preds_fold1.parquet",
+    "target": "cls",
+    "split": "fold1",
+    "rows": 149416,
+    "stations": 412,
+    "date_range": "2023-01-01 to 2023-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_rain_cls_preds_fold2.parquet",
+    "target": "cls",
+    "split": "fold2",
+    "rows": 146418,
+    "stations": 411,
+    "date_range": "2024-01-01 to 2024-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_rain_cls_preds_holdout.parquet",
+    "target": "cls",
+    "split": "holdout",
+    "rows": 16323,
+    "stations": 409,
+    "date_range": "2025-01-01 to 2025-02-09",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_rain_preds_fold1.parquet",
+    "target": "rain",
+    "split": "fold1",
+    "rows": 149416,
+    "stations": 412,
+    "date_range": "2023-01-01 to 2023-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_rain_preds_fold2.parquet",
+    "target": "rain",
+    "split": "fold2",
+    "rows": 146418,
+    "stations": 411,
+    "date_range": "2024-01-01 to 2024-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_rain_preds_holdout.parquet",
+    "target": "rain",
+    "split": "holdout",
+    "rows": 16323,
+    "stations": 409,
+    "date_range": "2025-01-01 to 2025-02-09",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_temp_preds_fold1.parquet",
+    "target": "temp",
+    "split": "fold1",
+    "rows": 149405,
+    "stations": 412,
+    "date_range": "2023-01-01 to 2023-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_temp_preds_fold2.parquet",
+    "target": "temp",
+    "split": "fold2",
+    "rows": 146696,
+    "stations": 411,
+    "date_range": "2024-01-01 to 2024-12-31",
+    "null_predictions": 0,
+    "null_actuals": 0
+  },
+  {
+    "filename": "xgb_temp_preds_holdout.parquet",
+    "target": "temp",
+    "split": "holdout",
+    "rows": 16322,
+    "stations": 409,
+    "date_range": "2025-01-01 to 2025-02-09",
+    "null_predictions": 0,
+    "null_actuals": 0
+  }
+]

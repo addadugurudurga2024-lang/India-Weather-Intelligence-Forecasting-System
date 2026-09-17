@@ -1,0 +1,62 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "model_id",
+      "model_family",
+      "target",
+      "task",
+      "artifact_path",
+      "training_period",
+      "validation_period",
+      "status"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "model_id": {
+        "bsonType": "string"
+      },
+      "model_family": {
+        "enum": ["XGBoost", "LSTM", "Baseline"]
+      },
+      "target": {
+        "enum": ["target_next_day_temp", "target_next_day_rainfall_amount", "target_next_day_rain_binary"]
+      },
+      "task": {
+        "enum": ["regression", "binary_classification"]
+      },
+      "artifact_path": {
+        "bsonType": "string"
+      },
+      "preprocessor_path": {
+        "bsonType": "string"
+      },
+      "transformation": {
+        "bsonType": "string"
+      },
+      "sequence_length": {
+        "bsonType": "int"
+      },
+      "training_period": {
+        "bsonType": "string"
+      },
+      "validation_period": {
+        "bsonType": "string"
+      },
+      "holdout_period": {
+        "bsonType": "string"
+      },
+      "metrics": {
+        "bsonType": "object"
+      },
+      "status": {
+        "enum": ["APPROVED_FOR_PRODUCTION_CANDIDATE", "BENCHMARKED", "DEPRECATED"]
+      },
+      "registered_at": {
+        "bsonType": "date"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "state_count": 32,
+  "district_count": 314,
+  "station_count": 406,
+  "coordinate_bounds": {
+    "min_lat": 7.9833,
+    "max_lat": 34.0833,
+    "min_lon": 68.85,
+    "max_lon": 95.3833,
+    "min_elevation": 0.0,
+    "max_elevation": 2652.0
+  },
+  "geospatial_readiness": "EXCELLENT",
+  "notes": "Coordinates and elevations are intact across stations, enabling map views, spatial interpolation diagnostics, and regional clustering."
+}

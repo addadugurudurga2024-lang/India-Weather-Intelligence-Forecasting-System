@@ -1,0 +1,170 @@
+{
+  "phase": "Phase 6 Baseline Integrity Lock",
+  "timestamp": "2026-09-13T12:35:00Z",
+  "artifacts": {
+    "phase3_models/lstm/rain_classification/lstm_rain_classification_fold1.pt": {
+      "sha256": "27f8e8b14bea7681a4041898ec6acd2c756c594d5bcb5a5ce0ce3af5f1ccfae1",
+      "size_bytes": 143325
+    },
+    "phase3_models/lstm/rain_classification/lstm_rain_classification_fold2.pt": {
+      "sha256": "0b68c98f1678c51e10f6cc82e91441466b44070ce3fd9f0277f18ea80904dc87",
+      "size_bytes": 143325
+    },
+    "phase3_models/lstm/rainfall/lstm_rainfall_fold1.pt": {
+      "sha256": "4de230944ad280a6dc951fd6372d3611532c2a0163908a8a25160197bf026624",
+      "size_bytes": 143063
+    },
+    "phase3_models/lstm/rainfall/lstm_rainfall_fold2.pt": {
+      "sha256": "39ffaf6e500e6adca0af4f18d536f96dc40a4d17787264a597908e2f33b4ae60",
+      "size_bytes": 143063
+    },
+    "phase3_models/lstm/temperature/lstm_temperature_fold1.pt": {
+      "sha256": "3c3a0bed4394cd655ac12f872d6c5711291c1fb72675cdb25a437503dbea1047",
+      "size_bytes": 143181
+    },
+    "phase3_models/lstm/temperature/lstm_temperature_fold2.pt": {
+      "sha256": "4a962d736b10c2b6259998f988a076e44618baa831e94388b96205b1ef5298e7",
+      "size_bytes": 143181
+    },
+    "phase3_models/metrics/baseline_metrics.json": {
+      "sha256": "cadad3620cd1f474d784a65667fb56bb3a43081f5fce93c91dc4de6acd1fcabc",
+      "size_bytes": 2753
+    },
+    "phase3_models/metrics/lstm_metrics.json": {
+      "sha256": "3e736bf5e4d152ac9efe61e689dfc351a3f3062b854e4c53350158c76f62d969",
+      "size_bytes": 3217
+    },
+    "phase3_models/metrics/metrics_summary.json": {
+      "sha256": "7ab59fa3f6cdf484b59686aaf0b9f3a48b062ce2e037f83752e0b2bcbb107746",
+      "size_bytes": 10320
+    },
+    "phase3_models/metrics/xgboost_metrics.json": {
+      "sha256": "37bf2ae4d5dc21520c2d5abb55a03765f613d3772ad7dc7d69adbcd9098fedb2",
+      "size_bytes": 3123
+    },
+    "phase3_models/model_registry.json": {
+      "sha256": "7452854199dd04bdaf036b12424d25562395f155a358a972df2ddd33a0835089",
+      "size_bytes": 3000
+    },
+    "phase3_models/predictions/lstm_rain_classification_preds_fold1.parquet": {
+      "sha256": "9ef1b6aecd271abc9b6c1f71dbb728ea65ddd300ab8efd10e7b30ad6f693fb5d",
+      "size_bytes": 988280
+    },
+    "phase3_models/predictions/lstm_rain_classification_preds_fold2.parquet": {
+      "sha256": "2217bd5f7bee8c7c9a53e7c335c80fbca4b3940bbf699dfe4d5f0638dfeaa305",
+      "size_bytes": 933899
+    },
+    "phase3_models/predictions/lstm_rain_classification_preds_holdout.parquet": {
+      "sha256": "7ccab1bf5c26ee2f08658bbd38b963d2939253a4539a7973495f71c03e0e9e48",
+      "size_bytes": 99604
+    },
+    "phase3_models/predictions/lstm_rainfall_preds_fold1.parquet": {
+      "sha256": "4503a55c2493b0d32035b71d7555c9b729ade2e911baa39e964dc854d7a1ce3c",
+      "size_bytes": 1053808
+    },
+    "phase3_models/predictions/lstm_rainfall_preds_fold2.parquet": {
+      "sha256": "6552263b914596fe96ee586b2a7a2f0ec5782277d9717579a77d590f4ae64807",
+      "size_bytes": 1016441
+    },
+    "phase3_models/predictions/lstm_rainfall_preds_holdout.parquet": {
+      "sha256": "cead8e9ab1ad1fbf04caeeb08d95b4f33b632dad374fb8a7ce4225493f7d58f5",
+      "size_bytes": 99679
+    },
+    "phase3_models/predictions/lstm_temperature_preds_fold1.parquet": {
+      "sha256": "f7ba631d4ae347e5157f83d461e8c62abfcb7fad2c918f3aaa5064b5292719d0",
+      "size_bytes": 1120751
+    },
+    "phase3_models/predictions/lstm_temperature_preds_fold2.parquet": {
+      "sha256": "1764ff15dbd06b1a07ee2f49f5c018c3e681a13f5b715c7f0bd3751b8ea3075d",
+      "size_bytes": 1061051
+    },
+    "phase3_models/predictions/lstm_temperature_preds_holdout.parquet": {
+      "sha256": "b6b34e7fa364a4383d76713aa8f2dae75caaf254ce8663b876a61b32819947cf",
+      "size_bytes": 112714
+    },
+    "phase3_models/predictions/xgb_rain_cls_preds_fold1.parquet": {
+      "sha256": "76e958af4c120984533de3e7b39cf11a2c78c67fbc5634f9841d65699391d8c9",
+      "size_bytes": 999075
+    },
+    "phase3_models/predictions/xgb_rain_cls_preds_fold2.parquet": {
+      "sha256": "4c3bf257172a4093a571b3092c8f700c612b48ca93858f8b2a39e80db172452e",
+      "size_bytes": 976833
+    },
+    "phase3_models/predictions/xgb_rain_cls_preds_holdout.parquet": {
+      "sha256": "2f5057bb59d8141951d480eadb1456f34bf73a88841de2a3f06ba99457b27bab",
+      "size_bytes": 112883
+    },
+    "phase3_models/predictions/xgb_rain_preds_fold1.parquet": {
+      "sha256": "4641420e071a84909ea61f6999938ecda6f8438140044e7c6bbce77d8dff1fd6",
+      "size_bytes": 1042853
+    },
+    "phase3_models/predictions/xgb_rain_preds_fold2.parquet": {
+      "sha256": "d2afb53c362998ca52cb0920e489b96175a1e207289f6a684c8fe72a161771d0",
+      "size_bytes": 1037119
+    },
+    "phase3_models/predictions/xgb_rain_preds_holdout.parquet": {
+      "sha256": "681f7760e2166893d9df67cb5e678acddd10f98bf7796e1ed38af58a794f0575",
+      "size_bytes": 110971
+    },
+    "phase3_models/predictions/xgb_temp_preds_fold1.parquet": {
+      "sha256": "bf648da33933cc4ab260d23a0fcb8faaa4f2a9097088eb78a59aa5051726598f",
+      "size_bytes": 1128251
+    },
+    "phase3_models/predictions/xgb_temp_preds_fold2.parquet": {
+      "sha256": "edcbd795e79a14b65a7138ed459eca6af27f2f56f2a992154331cd1ccc70f3e9",
+      "size_bytes": 1133369
+    },
+    "phase3_models/predictions/xgb_temp_preds_holdout.parquet": {
+      "sha256": "bf3ae7798240c993b7050416dc420766ee0cbb80e67d7922c3eca1d13863605c",
+      "size_bytes": 128502
+    },
+    "phase3_models/preprocessors/scaler_lstm_rain_classification_fold1.joblib": {
+      "sha256": "106992b5f6493d4b714d16ac9de67628ae2742124c088c8d44f5d41f6b711fc4",
+      "size_bytes": 1879
+    },
+    "phase3_models/preprocessors/scaler_lstm_rain_classification_fold2.joblib": {
+      "sha256": "9fbc6519067a4cb66d1c9f3e462af4099480448307c9cd7cb60dc1125e431ec1",
+      "size_bytes": 1879
+    },
+    "phase3_models/preprocessors/scaler_lstm_rainfall_fold1.joblib": {
+      "sha256": "106992b5f6493d4b714d16ac9de67628ae2742124c088c8d44f5d41f6b711fc4",
+      "size_bytes": 1879
+    },
+    "phase3_models/preprocessors/scaler_lstm_rainfall_fold2.joblib": {
+      "sha256": "9fbc6519067a4cb66d1c9f3e462af4099480448307c9cd7cb60dc1125e431ec1",
+      "size_bytes": 1879
+    },
+    "phase3_models/preprocessors/scaler_lstm_temperature_fold1.joblib": {
+      "sha256": "106992b5f6493d4b714d16ac9de67628ae2742124c088c8d44f5d41f6b711fc4",
+      "size_bytes": 1879
+    },
+    "phase3_models/preprocessors/scaler_lstm_temperature_fold2.joblib": {
+      "sha256": "9fbc6519067a4cb66d1c9f3e462af4099480448307c9cd7cb60dc1125e431ec1",
+      "size_bytes": 1879
+    },
+    "phase3_models/xgboost/rain_classification/xgb_rain_cls_fold1.json": {
+      "sha256": "b4ce5e54d60e1e594d8bb538f17b90a8c8693740023c1633479f303dd4fba80c",
+      "size_bytes": 2040406
+    },
+    "phase3_models/xgboost/rain_classification/xgb_rain_cls_fold2.json": {
+      "sha256": "e8868da287d5e237dbc5ed6f7b5511e1aa05350f6e7ce7ed2962559e12f468fe",
+      "size_bytes": 3889528
+    },
+    "phase3_models/xgboost/rainfall/xgb_rain_amt_fold1.json": {
+      "sha256": "34f5a86780d36397539c24f600d3a7e27545dc4ca735ad8c9277d9c185410ddf",
+      "size_bytes": 2102334
+    },
+    "phase3_models/xgboost/rainfall/xgb_rain_amt_fold2.json": {
+      "sha256": "8c0433b9bdd2e2cb49b7c99314ef9842c36d922de435bdb5e3826654eb6d2862",
+      "size_bytes": 4218458
+    },
+    "phase3_models/xgboost/temperature/xgb_temp_fold1.json": {
+      "sha256": "bde67fa9565dd84de14250191bbc6bdecb27a059de3ea8ce5881ed2d672e8f32",
+      "size_bytes": 2770361
+    },
+    "phase3_models/xgboost/temperature/xgb_temp_fold2.json": {
+      "sha256": "95b46b568a7c3269784ded467988e11c6ceb8bb2c5eadcdcf82b8b7f34ef976b",
+      "size_bytes": 2594954
+    }
+  }
+}

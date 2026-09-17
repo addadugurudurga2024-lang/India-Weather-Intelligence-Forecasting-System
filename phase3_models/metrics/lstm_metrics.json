@@ -1,0 +1,125 @@
+{
+  "target_a_temperature": {
+    "fold1": {
+      "mae": 0.7853731513023376,
+      "rmse": 1.067091389876019,
+      "r2": 0.9567708969116211,
+      "mae_rainy_only": null,
+      "rmse_rainy_only": null,
+      "train_sequences": 286167,
+      "val_sequences": 146930,
+      "train_time_sec": 384.49
+    },
+    "fold2": {
+      "mae": 0.7114635109901428,
+      "rmse": 0.9956169333553223,
+      "r2": 0.9672537446022034,
+      "mae_rainy_only": null,
+      "rmse_rainy_only": null,
+      "train_sequences": 435557,
+      "val_sequences": 140139,
+      "train_time_sec": 580.29
+    },
+    "holdout": {
+      "mae": 0.6441072821617126,
+      "rmse": 0.9053795679259734,
+      "r2": 0.9713044166564941,
+      "mae_rainy_only": null,
+      "rmse_rainy_only": null,
+      "holdout_sequences": 13871
+    }
+  },
+  "target_b_rainfall_amount": {
+    "fold1": {
+      "mae": 3.0685787200927734,
+      "rmse": 9.684951939342952,
+      "r2": 0.2564447522163391,
+      "mae_rainy_only": 6.553293228149414,
+      "rmse_rainy_only": 14.650785749279425,
+      "train_sequences": 279836,
+      "val_sequences": 146941,
+      "train_time_sec": 310.02
+    },
+    "fold2": {
+      "mae": 3.387303590774536,
+      "rmse": 10.316348935494899,
+      "r2": 0.31651318073272705,
+      "mae_rainy_only": 7.086696147918701,
+      "rmse_rainy_only": 15.39239361665365,
+      "train_sequences": 429237,
+      "val_sequences": 139872,
+      "train_time_sec": 343.62
+    },
+    "holdout": {
+      "mae": 0.4368108808994293,
+      "rmse": 2.052609164904536,
+      "r2": 0.11678767204284668,
+      "mae_rainy_only": 2.8629937171936035,
+      "rmse_rainy_only": 6.08225421827569,
+      "holdout_sequences": 13872
+    }
+  },
+  "target_c_rain_binary": {
+    "fold1": {
+      "accuracy": 0.8168924942664062,
+      "precision": 0.7825260576333538,
+      "recall": 0.8005645287752862,
+      "f1": 0.7914425238353616,
+      "roc_auc": 0.8928889150834526,
+      "pr_auc": 0.875745557614717,
+      "confusion_matrix": [
+        [
+          68983,
+          14188
+        ],
+        [
+          12718,
+          51052
+        ]
+      ],
+      "train_sequences": 279836,
+      "val_sequences": 146941,
+      "train_time_sec": 117.99
+    },
+    "fold2": {
+      "accuracy": 0.8375800732097918,
+      "precision": 0.8095700829114618,
+      "recall": 0.8301538065926295,
+      "f1": 0.8197327493175903,
+      "roc_auc": 0.9095806063297015,
+      "pr_auc": 0.8994144819143466,
+      "confusion_matrix": [
+        [
+          65501,
+          12150
+        ],
+        [
+          10568,
+          51653
+        ]
+      ],
+      "train_sequences": 429237,
+      "val_sequences": 139872,
+      "train_time_sec": 393.48
+    },
+    "holdout": {
+      "accuracy": 0.8832179930795848,
+      "precision": 0.46536267318663405,
+      "recall": 0.3719869706840391,
+      "f1": 0.41346850108616945,
+      "roc_auc": 0.8256359738811694,
+      "pr_auc": 0.4345956872081016,
+      "confusion_matrix": [
+        [
+          11681,
+          656
+        ],
+        [
+          964,
+          571
+        ]
+      ],
+      "holdout_sequences": 13872
+    }
+  }
+}

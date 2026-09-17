@@ -1,0 +1,30 @@
+{
+  "national_calendar": {
+    "min_date": "2015-01-01 00:00:00",
+    "max_date": "2025-02-10 00:00:00",
+    "total_calendar_days": 3694,
+    "unique_observed_dates": 3694,
+    "missing_national_dates": 0,
+    "panel_type": "Irregular unbalanced panel with 100% national daily presence"
+  },
+  "station_level_panel": {
+    "total_physical_stations": 414,
+    "total_station_date_transitions": 969925,
+    "consecutive_1day_transitions": 964181,
+    "consecutive_1day_pct": 99.40778926205634,
+    "gapped_transitions": 5744,
+    "gapped_pct": 0.5922107379436554,
+    "max_gap_days": 1040,
+    "mean_gap_days": 1.0309683738433384
+  },
+  "forecasting_target_availability": {
+    "target_a_next_day_temp_available_count": 964181,
+    "target_a_pct_of_total": 99.36537643029911,
+    "target_b_next_day_rain_available_count": 710250,
+    "target_b_pct_of_total": 73.19606859046168,
+    "target_c_rain_status_dry_count": 365449,
+    "target_c_rain_status_dry_pct": 51.453572685674054,
+    "target_c_rain_status_rain_count": 344801,
+    "target_c_rain_status_rain_pct": 48.54642731432594
+  }
+}

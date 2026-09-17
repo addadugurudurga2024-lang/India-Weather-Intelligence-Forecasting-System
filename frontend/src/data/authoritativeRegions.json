@@ -1,0 +1,1435 @@
+[
+  {
+    "id": "AN",
+    "name": "AN",
+    "type": "STATE",
+    "station_count": 8,
+    "district_count": 3,
+    "districts": [
+      "Nicobar",
+      "North & Middle Andaman",
+      "South Andaman"
+    ],
+    "station_ids": [
+      "car_nicobar_9.1500_92.8167_10m",
+      "car_nicobar_9.1667_92.8333_9m",
+      "hut_bay_10.5833_92.5500_5m",
+      "long_island_12.4167_92.9333_12m",
+      "maya_bandar_12.9167_92.9167_27m",
+      "nancowry_7.9833_93.5333_23m",
+      "port_blair_11.6667_92.7167_73m",
+      "port_blair_portblair_austinbd_11.6412_92.7297_4m"
+    ],
+    "bounds": {
+      "minLat": 7.9833,
+      "maxLat": 12.9167,
+      "minLon": 92.55,
+      "maxLon": 93.5333
+    },
+    "centroid": {
+      "lat": 10.6906,
+      "lon": 92.8787
+    },
+    "avg_elevation_m": 20.4
+  },
+  {
+    "id": "AP",
+    "name": "AP",
+    "type": "STATE",
+    "station_count": 34,
+    "district_count": 25,
+    "districts": [
+      "Bapatla",
+      "Bhadradri Kothagudem",
+      "East Godavari",
+      "Guntur",
+      "Hanumakonda",
+      "Hyderabad",
+      "Kakinada",
+      "Khammam",
+      "Krishna",
+      "Kurnool",
+      "Mahabubnagar",
+      "Medak",
+      "NTR",
+      "Nalgonda",
+      "Nandyal",
+      "Nellore",
+      "Nizamabad",
+      "Peddapalli",
+      "Prakasam",
+      "Sri Sathya Sai",
+      "Srikakulam",
+      "Tirupati",
+      "Visakhapatnam",
+      "West Godavari",
+      "YSR"
+    ],
+    "station_ids": [
+      "anantapur_14.6833_77.6167_349m",
+      "arogyavaram_13.5333_78.5000_696m",
+      "bapatla_15.9000_80.4667_0m",
+      "cuddapah_14.4833_78.8333_129m",
+      "cwc_vishakhapatnam_waltair_17.7000_83.3000_45m",
+      "hanamkonda_18.0167_79.5667_266m",
+      "hyderabad_airport_17.4500_78.4667_530m",
+      "hyderabad_anthredigudam_17.2406_78.4289_617m",
+      "kakinada_16.9500_82.2333_2m",
+      "kalingapatam_18.3333_84.1333_5m",
+      "kavali_14.9000_79.9833_17m",
+      "khammam_17.2500_80.1500_110m",
+      "kothagudem_17.5500_80.6333_110m",
+      "kurnool_15.8000_78.0667_280m",
+      "machilipatnam_16.2000_81.1500_3m",
+      "mahabubnagar_16.7500_78.0000_504m",
+      "medak_18.0500_78.2667_472m",
+      "nalgonda_17.0000_79.2500_0m",
+      "nandigama_16.7833_80.2833_0m",
+      "nandyal_15.4667_78.4833_211m",
+      "narsapur_16.4333_81.7000_0m",
+      "nellore_14.4500_79.9833_19m",
+      "nizamabad_18.6667_78.1000_379m",
+      "ongole_15.5000_80.0833_22m",
+      "rajahmundry_rjnagaram_17.1104_81.8182_46m",
+      "ramgundam_18.7667_79.4333_156m",
+      "rentachintala_16.5500_79.5500_104m",
+      "tirupathi_13.6667_79.5833_110m",
+      "tirupati_renigunta_13.6325_79.5433_107m",
+      "tuni_17.3500_82.5500_35m",
+      "vijayawada_gannavaram_16.5333_80.8000_21m",
+      "vishakhapatnam_17.7167_83.2333_3m",
+      "vishakhapatnam_gajuwaka_17.7212_83.2245_5m",
+      "vizagapatam_gajuwaka_17.7167_83.2333_5m"
+    ],
+    "bounds": {
+      "minLat": 13.5333,
+      "maxLat": 18.7667,
+      "minLon": 77.6167,
+      "maxLon": 84.1333
+    },
+    "centroid": {
+      "lat": 16.5251,
+      "lon": 80.2544
+    },
+    "avg_elevation_m": 157.6
+  },
+  {
+    "id": "AR",
+    "name": "AR",
+    "type": "STATE",
+    "station_count": 1,
+    "district_count": 1,
+    "districts": [
+      "East Siang"
+    ],
+    "station_ids": [
+      "pasighat_28.1000_95.3833_155m"
+    ],
+    "bounds": {
+      "minLat": 28.1,
+      "maxLat": 28.1,
+      "minLon": 95.3833,
+      "maxLon": 95.3833
+    },
+    "centroid": {
+      "lat": 28.1,
+      "lon": 95.3833
+    },
+    "avg_elevation_m": 155.0
+  },
+  {
+    "id": "AS",
+    "name": "AS",
+    "type": "STATE",
+    "station_count": 15,
+    "district_count": 14,
+    "districts": [
+      "Cachar",
+      "Dhubri",
+      "Dibrugarh",
+      "Dima Hasao",
+      "Goalpara",
+      "Golaghat",
+      "Hojai",
+      "Jorhat",
+      "Kamrup",
+      "Kamrup Metropolitan",
+      "Lakhimpur",
+      "Nagaon",
+      "Sonitpur",
+      "Udalguri"
+    ],
+    "station_ids": [
+      "chaparmukh_26.2000_92.5167_64m",
+      "dhubri_26.0167_89.9833_0m",
+      "dhubri_rupsi_26.1500_89.9167_35m",
+      "dibrugarh_mohanbari_27.4833_95.0167_110m",
+      "gauhati_26.1000_91.5833_47m",
+      "goalpara_26.1833_90.6333_36m",
+      "golaghat_26.5167_93.9833_0m",
+      "haflong_25.1667_93.0167_680m",
+      "jorhat_lengrabhita_26.0667_90.1667_880m",
+      "lumding_25.7500_93.1833_147m",
+      "majbat_26.7500_92.3500_0m",
+      "north_lakhimpur_27.2333_94.1167_101m",
+      "rangia_26.4333_91.6167_57m",
+      "silchar_24.7500_92.8000_21m",
+      "tezpur_26.6167_92.7833_77m"
+    ],
+    "bounds": {
+      "minLat": 24.75,
+      "maxLat": 27.4833,
+      "minLon": 89.9167,
+      "maxLon": 95.0167
+    },
+    "centroid": {
+      "lat": 26.2278,
+      "lon": 92.2444
+    },
+    "avg_elevation_m": 150.3
+  },
+  {
+    "id": "BR",
+    "name": "BR",
+    "type": "STATE",
+    "station_count": 16,
+    "district_count": 14,
+    "districts": [
+      "Araria",
+      "Bhagalpur",
+      "Darbhanga",
+      "East Champaran",
+      "East Singhbhum",
+      "Gaya",
+      "Muzaffarpur",
+      "Palamu",
+      "Patna",
+      "Purnia",
+      "Ranchi",
+      "Rohtas",
+      "Saran",
+      "Supaul"
+    ],
+    "station_ids": [
+      "bhagalpur_25.2333_86.9500_44m",
+      "chapra_25.7833_84.7333_55m",
+      "daltonganj_24.0500_84.0667_0m",
+      "darbhanga_26.1667_85.9000_47m",
+      "dehri_24.9167_84.1833_0m",
+      "forbesganj_26.3000_87.2667_59m",
+      "gaya_24.7500_84.9500_110m",
+      "jamshedpur_22.8167_86.1833_140m",
+      "m_o_ranchi_23.3167_85.3167_652m",
+      "muzaffarpur_26.1167_85.4000_52m",
+      "patna_25.6000_85.1000_51m",
+      "purnea_25.2667_87.4667_0m",
+      "ranchi_silwai_23.4333_85.4000_647m",
+      "raxaul_26.9833_84.8500_83m",
+      "sabaur_25.2333_87.0667_36m",
+      "supaul_26.1333_86.5833_0m"
+    ],
+    "bounds": {
+      "minLat": 22.8167,
+      "maxLat": 26.9833,
+      "minLon": 84.0667,
+      "maxLon": 87.4667
+    },
+    "centroid": {
+      "lat": 25.1313,
+      "lon": 85.7135
+    },
+    "avg_elevation_m": 123.5
+  },
+  {
+    "id": "CH",
+    "name": "CH",
+    "type": "STATE",
+    "station_count": 1,
+    "district_count": 1,
+    "districts": [
+      "Chandigarh"
+    ],
+    "station_ids": [
+      "chandigarh_srajpur_30.7333_76.8833_347m"
+    ],
+    "bounds": {
+      "minLat": 30.7333,
+      "maxLat": 30.7333,
+      "minLon": 76.8833,
+      "maxLon": 76.8833
+    },
+    "centroid": {
+      "lat": 30.7333,
+      "lon": 76.8833
+    },
+    "avg_elevation_m": 347.0
+  },
+  {
+    "id": "CT",
+    "name": "CT",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 2,
+    "districts": [
+      "Raipur",
+      "Rajnandgaon"
+    ],
+    "station_ids": [
+      "mana_raipur_21.2333_81.6500_313m",
+      "rajnandgaon_rj_nndgaon_21.1000_81.0333_329m"
+    ],
+    "bounds": {
+      "minLat": 21.1,
+      "maxLat": 21.2333,
+      "minLon": 81.0333,
+      "maxLon": 81.65
+    },
+    "centroid": {
+      "lat": 21.1667,
+      "lon": 81.3417
+    },
+    "avg_elevation_m": 321.0
+  },
+  {
+    "id": "DD",
+    "name": "DD",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 1,
+    "districts": [
+      "Daman"
+    ],
+    "station_ids": [
+      "daman_20.4167_72.8500_0m",
+      "daman_damn_20.4344_72.8432_10m"
+    ],
+    "bounds": {
+      "minLat": 20.4167,
+      "maxLat": 20.4344,
+      "minLon": 72.8432,
+      "maxLon": 72.85
+    },
+    "centroid": {
+      "lat": 20.4256,
+      "lon": 72.8466
+    },
+    "avg_elevation_m": 5.0
+  },
+  {
+    "id": "DL",
+    "name": "DL",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 1,
+    "districts": [
+      "New Delhi"
+    ],
+    "station_ids": [
+      "new_delhi_palam_28.5667_77.1167_220m",
+      "new_delhi_safdarjung_28.5833_77.2000_211m"
+    ],
+    "bounds": {
+      "minLat": 28.5667,
+      "maxLat": 28.5833,
+      "minLon": 77.1167,
+      "maxLon": 77.2
+    },
+    "centroid": {
+      "lat": 28.575,
+      "lon": 77.1583
+    },
+    "avg_elevation_m": 215.5
+  },
+  {
+    "id": "GA",
+    "name": "GA",
+    "type": "STATE",
+    "station_count": 3,
+    "district_count": 2,
+    "districts": [
+      "North Goa",
+      "South Goa"
+    ],
+    "station_ids": [
+      "goa_dabolim_airport_15.3833_73.8167_42m",
+      "goa_panjim_15.4833_73.8167_58m",
+      "mormugao_15.4167_73.7833_61m"
+    ],
+    "bounds": {
+      "minLat": 15.3833,
+      "maxLat": 15.4833,
+      "minLon": 73.7833,
+      "maxLon": 73.8167
+    },
+    "centroid": {
+      "lat": 15.4278,
+      "lon": 73.8056
+    },
+    "avg_elevation_m": 53.7
+  },
+  {
+    "id": "GJ",
+    "name": "GJ",
+    "type": "STATE",
+    "station_count": 25,
+    "district_count": 17,
+    "districts": [
+      "Ahmedabad",
+      "Amreli",
+      "Anand",
+      "Banaskantha",
+      "Bhavnagar",
+      "Devbhumi Dwarka",
+      "Diu",
+      "Gandhinagar",
+      "Gir Somnath",
+      "Jamnagar",
+      "Kachchh",
+      "Porbandar",
+      "Rajkot",
+      "Surat",
+      "Surendranagar",
+      "Vadodara",
+      "Valsad"
+    ],
+    "station_ids": [
+      "ahmadabad_23.0667_72.6333_55m",
+      "amreli_21.6000_71.2167_0m",
+      "baroda_aerodrome_22.3333_73.2667_37m",
+      "baroda_vadodara_22.3000_73.2500_34m",
+      "bhaunagar_21.7500_72.2000_5m",
+      "bhuj_rudramata_23.2500_69.6667_78m",
+      "bulsar_20.6167_72.9333_0m",
+      "deesa_24.2000_72.2000_135m",
+      "diu_20.7167_70.9167_10m",
+      "dwarka_22.3667_69.0833_10m",
+      "gandhinagar_23.2333_72.7167_0m",
+      "jamnagar_22.4500_70.0833_14m",
+      "kandla_aerodrome_23.1500_70.1167_29m",
+      "keshod_21.3167_70.3167_50m",
+      "mahuva_21.0833_71.7833_8m",
+      "naliya_23.2500_68.8500_20m",
+      "new_kandla_23.0000_70.2167_10m",
+      "okha_22.4833_69.1167_5m",
+      "porbandar_21.6500_69.6667_5m",
+      "rajkot_22.3000_70.7833_134m",
+      "surat_21.2000_72.8333_10m",
+      "surat_magdala_21.1141_72.7418_5m",
+      "surendranagar_22.7333_71.6000_72m",
+      "vallabh_vidyanagar_22.5667_72.9333_41m",
+      "veraval_20.9000_70.3667_6m"
+    ],
+    "bounds": {
+      "minLat": 20.6167,
+      "maxLat": 24.2,
+      "minLon": 68.85,
+      "maxLon": 73.2667
+    },
+    "centroid": {
+      "lat": 22.1852,
+      "lon": 71.2597
+    },
+    "avg_elevation_m": 30.9
+  },
+  {
+    "id": "HP",
+    "name": "HP",
+    "type": "STATE",
+    "station_count": 11,
+    "district_count": 7,
+    "districts": [
+      "Bilaspur",
+      "Kangra",
+      "Kullu",
+      "Mandi",
+      "Shimla",
+      "Solan",
+      "Una"
+    ],
+    "station_ids": [
+      "bhuntar_31.8333_77.1667_0m",
+      "bilaspur_31.2500_76.6667_589m",
+      "dharmpur_30.9000_77.0167_1986m",
+      "dharmsala_32.2667_76.3833_1211m",
+      "kangra_chari_32.1651_76.2634_770m",
+      "manali_32.2667_77.1667_0m",
+      "mandi_31.7167_76.9667_760m",
+      "shimla_31.1000_77.1667_2205m",
+      "shimla_kanda_31.0818_77.0680_1546m",
+      "sundernagar_sundarnagar_31.5333_76.9000_874m",
+      "una_31.4667_76.2667_365m"
+    ],
+    "bounds": {
+      "minLat": 30.9,
+      "maxLat": 32.2667,
+      "minLon": 76.2634,
+      "maxLon": 77.1667
+    },
+    "centroid": {
+      "lat": 31.5982,
+      "lon": 76.8211
+    },
+    "avg_elevation_m": 936.9
+  },
+  {
+    "id": "HR",
+    "name": "HR",
+    "type": "STATE",
+    "station_count": 6,
+    "district_count": 5,
+    "districts": [
+      "Ambala",
+      "Hisar",
+      "Karnal",
+      "Mahendragarh",
+      "Rohtak"
+    ],
+    "station_ids": [
+      "ambala_30.3833_76.7667_271m",
+      "ambala_ambla_30.4000_76.7667_958m",
+      "hissar_29.1667_75.7333_216m",
+      "karnal_29.7000_77.0333_248m",
+      "narnaul_28.0000_76.0833_306m",
+      "rohtak_28.8333_76.5833_0m"
+    ],
+    "bounds": {
+      "minLat": 28.0,
+      "maxLat": 30.4,
+      "minLon": 75.7333,
+      "maxLon": 77.0333
+    },
+    "centroid": {
+      "lat": 29.4139,
+      "lon": 76.4944
+    },
+    "avg_elevation_m": 333.2
+  },
+  {
+    "id": "JK",
+    "name": "JK",
+    "type": "STATE",
+    "station_count": 7,
+    "district_count": 5,
+    "districts": [
+      "Anantnag",
+      "Baramulla",
+      "Jammu",
+      "Ramban",
+      "Srinagar"
+    ],
+    "station_ids": [
+      "banihal_33.5000_75.1667_1624m",
+      "gulmarg_34.0500_74.4000_2652m",
+      "jammu_32.6667_74.8333_366m",
+      "jammu_rmbgh_32.6891_74.8374_314m",
+      "qazi_gund_33.5833_75.0833_0m",
+      "srinagar_33.9833_74.7833_1664m",
+      "srinagar_34.0833_74.8333_1585m"
+    ],
+    "bounds": {
+      "minLat": 32.6667,
+      "maxLat": 34.0833,
+      "minLon": 74.4,
+      "maxLon": 75.1667
+    },
+    "centroid": {
+      "lat": 33.508,
+      "lon": 74.8482
+    },
+    "avg_elevation_m": 1172.1
+  },
+  {
+    "id": "KA",
+    "name": "KA",
+    "type": "STATE",
+    "station_count": 34,
+    "district_count": 26,
+    "districts": [
+      "Bagalkote",
+      "Ballari",
+      "Belagavi",
+      "Bengaluru Rural",
+      "Bengaluru Urban",
+      "Bidar",
+      "Bijapur",
+      "Chamarajanagar",
+      "Chikkaballapura",
+      "Chikkamagaluru",
+      "Chitradurga",
+      "Dakshina Kannada",
+      "Davangere",
+      "Dharwad",
+      "Gadag",
+      "Hassan",
+      "Haveri",
+      "Kalaburagi",
+      "Kodagu",
+      "Koppal",
+      "Latur",
+      "Mandya",
+      "Mysuru",
+      "Raichur",
+      "Shivamogga",
+      "Uttara Kannada"
+    ],
+    "station_ids": [
+      "agumbe_13.5000_75.0833_658m",
+      "bagalkote_mangoli_16.7000_75.7500_524m",
+      "bangalore_12.9667_77.5833_920m",
+      "bangalore_bengaluru_devenahalli_bial_2_wheeler_parking_13.1979_77.7063_897m",
+      "bangalore_hindustan_airport_12.9500_77.6333_888m",
+      "belgaum_15.8500_74.5333_751m",
+      "belgaum_sambra_15.8500_74.6167_758m",
+      "bellary_15.1500_76.8500_448m",
+      "bidar_airport_17.9167_77.5333_663m",
+      "bijapur_16.8167_75.7167_593m",
+      "chamarajnagar_chamrajnagar_11.9333_76.9333_760m",
+      "chickmagalur_13.2500_75.7500_0m",
+      "chikkanahalli_sadali_13.6667_77.9167_672m",
+      "chintamani_sugutru_13.2000_78.0667_857m",
+      "chitradurga_14.2333_76.4333_724m",
+      "davangere_sm_krishna_ext_14.5000_75.9167_620m",
+      "dharwad_15.4833_74.9833_678m",
+      "gadag_15.4167_75.6333_661m",
+      "gulbarga_17.3500_76.8500_457m",
+      "hassan_13.0000_76.1500_955m",
+      "haveri_hveri_14.7833_75.4000_573m",
+      "honavar_14.2833_74.4500_8m",
+      "jindal_vijaynagar_15.1758_76.6333_489m",
+      "karwar_14.7833_74.1333_3m",
+      "koppal_15.3500_76.1500_532m",
+      "madikeri_12.4167_75.7333_1150m",
+      "mandya_12.5000_76.8333_695m",
+      "mangalore_bajpe_12.9167_74.8833_102m",
+      "mangalore_panambur_12.9500_74.8333_32m",
+      "mysore_12.3000_76.7000_765m",
+      "raichur_16.2000_77.3500_398m",
+      "shimoga_13.9333_75.6333_571m",
+      "shirali_14.0667_74.5333_45m",
+      "udgir_18.0667_77.1167_639m"
+    ],
+    "bounds": {
+      "minLat": 11.9333,
+      "maxLat": 18.0667,
+      "minLon": 74.1333,
+      "maxLon": 78.0667
+    },
+    "centroid": {
+      "lat": 14.4899,
+      "lon": 76.1183
+    },
+    "avg_elevation_m": 573.1
+  },
+  {
+    "id": "KL",
+    "name": "KL",
+    "type": "STATE",
+    "station_count": 17,
+    "district_count": 11,
+    "districts": [
+      "Alappuzha",
+      "Ernakulam",
+      "Kannur",
+      "Kollam",
+      "Kottayam",
+      "Kozhikode",
+      "Malappuram",
+      "Palakkad",
+      "Theni",
+      "Thiruvananthapuram",
+      "Thrissur"
+    ],
+    "station_ids": [
+      "alapuzha_9.5500_76.4167_2m",
+      "calicut_kondotti_11.1368_75.9553_104m",
+      "cannur_11.8333_75.3333_11m",
+      "cochin_int_airport_kladi_10.1500_76.4000_8m",
+      "cochin_kladi_10.1520_76.4019_9m",
+      "cochin_willingdon_9.9500_76.2667_1m",
+      "fort_cochin_9.9667_76.2333_2m",
+      "kottayam_9.5833_76.5167_39m",
+      "kozhikode_11.2500_75.7833_4m",
+      "mo_karipur_airport_kondotti_11.1333_75.9500_100m",
+      "nilambur_11.2833_76.2333_0m",
+      "palakkad_10.7667_76.6500_95m",
+      "periakulum_ellakkal_10.0000_77.1333_300m",
+      "punalur_9.0000_76.9167_33m",
+      "thiruvananthapuram_8.4667_76.9500_4m",
+      "thiruvananthapuram_8.4833_76.9500_60m",
+      "thrissur_10.5167_76.2167_40m"
+    ],
+    "bounds": {
+      "minLat": 8.4667,
+      "maxLat": 11.8333,
+      "minLon": 75.3333,
+      "maxLon": 77.1333
+    },
+    "centroid": {
+      "lat": 10.1895,
+      "lon": 76.371
+    },
+    "avg_elevation_m": 47.8
+  },
+  {
+    "id": "LD",
+    "name": "LD",
+    "type": "STATE",
+    "station_count": 4,
+    "district_count": 1,
+    "districts": [
+      "Lakshadweep"
+    ],
+    "station_ids": [
+      "agatti_kavaratti_10.8237_72.1760_4m",
+      "amini_divi_11.1167_72.7333_3m",
+      "minicoy_8.3000_73.1500_1m",
+      "mo_agathi_airport_kavaratti_10.8500_72.4667_3m"
+    ],
+    "bounds": {
+      "minLat": 8.3,
+      "maxLat": 11.1167,
+      "minLon": 72.176,
+      "maxLon": 73.15
+    },
+    "centroid": {
+      "lat": 10.2726,
+      "lon": 72.6315
+    },
+    "avg_elevation_m": 2.8
+  },
+  {
+    "id": "MH",
+    "name": "MH",
+    "type": "STATE",
+    "station_count": 40,
+    "district_count": 26,
+    "districts": [
+      "Ahmednagar",
+      "Akola",
+      "Amravati",
+      "Aurangabad",
+      "Buldhana",
+      "Chandrapur",
+      "Gondia",
+      "Jalgaon",
+      "Jalna",
+      "Kolhapur",
+      "Mumbai City",
+      "Mumbai Suburban",
+      "Nagpur",
+      "Nanded",
+      "Nashik",
+      "Palghar",
+      "Parbhani",
+      "Pune",
+      "Raigad",
+      "Ratnagiri",
+      "Sangli",
+      "Satara",
+      "Sindhudurg",
+      "Solapur",
+      "Wardha",
+      "Yavatmal"
+    ],
+    "station_ids": [
+      "ahmadnagar_19.0833_74.8000_655m",
+      "akola_20.7000_77.0333_280m",
+      "akola_20.7000_77.0667_305m",
+      "alibag_18.6333_72.8667_5m",
+      "amraoti_20.9333_77.7833_367m",
+      "aurangabad_19.8833_75.3333_579m",
+      "aurangabad_chikalthan_aerodrome_19.8500_75.4000_582m",
+      "baramati_18.1500_74.5833_550m",
+      "bombay_colaba_18.9000_72.8167_10m",
+      "bombay_juhu_19.1167_72.8333_4m",
+      "bombay_santacruz_19.1167_72.8500_8m",
+      "bramhapuri_20.6000_79.8500_227m",
+      "buldana_20.5333_76.2333_648m",
+      "chandrapur_19.9667_79.3000_191m",
+      "dahanu_19.9667_72.7167_4m",
+      "gondia_21.4667_80.2000_311m",
+      "harnai_17.8167_73.1000_17m",
+      "jalgaon_21.0500_75.5667_200m",
+      "jalna_badnapur_19.8333_75.8000_534m",
+      "jeur_18.2000_75.2000_519m",
+      "kolhapur_16.7000_74.2333_569m",
+      "mahabaleshwar_17.9333_73.6667_1384m",
+      "malegaon_20.5500_74.5333_436m",
+      "matheran_18.9833_73.2833_0m",
+      "nagpur_mayo_hospital_21.1500_79.1167_311m",
+      "nagpur_sonegaon_21.1000_79.0500_308m",
+      "nanded_19.0833_77.3333_355m",
+      "nasik_20.0000_73.7833_598m",
+      "nasik_ozar_20.1333_73.9167_599m",
+      "parbhani_19.2667_76.7667_422m",
+      "poona_18.5333_73.8500_555m",
+      "poona_lohogaon_aerodrome_18.5833_73.9167_589m",
+      "ratnagiri_16.9833_73.3333_75m",
+      "sangli_16.8500_74.6000_545m",
+      "satara_17.5167_74.0500_610m",
+      "sholapur_17.6667_75.9000_477m",
+      "tbia_19.1500_72.0000_13m",
+      "vengurla_15.8667_73.6333_15m",
+      "wardha_20.6667_78.5833_282m",
+      "yeotmal_20.4000_78.1500_450m"
+    ],
+    "bounds": {
+      "minLat": 15.8667,
+      "maxLat": 21.4667,
+      "minLon": 72.0,
+      "maxLon": 80.2
+    },
+    "centroid": {
+      "lat": 19.2904,
+      "lon": 75.3758
+    },
+    "avg_elevation_m": 364.7
+  },
+  {
+    "id": "ML",
+    "name": "ML",
+    "type": "STATE",
+    "station_count": 3,
+    "district_count": 2,
+    "districts": [
+      "East Khasi Hills",
+      "Ri-Bhoi"
+    ],
+    "station_ids": [
+      "barapani_bara_pani_25.7000_91.9667_893m",
+      "cherrapunji_25.2500_91.7333_1312m",
+      "shillong_25.5667_91.8833_1598m"
+    ],
+    "bounds": {
+      "minLat": 25.25,
+      "maxLat": 25.7,
+      "minLon": 91.7333,
+      "maxLon": 91.9667
+    },
+    "centroid": {
+      "lat": 25.5056,
+      "lon": 91.8611
+    },
+    "avg_elevation_m": 1267.7
+  },
+  {
+    "id": "MN",
+    "name": "MN",
+    "type": "STATE",
+    "station_count": 1,
+    "district_count": 1,
+    "districts": [
+      "Imphal West"
+    ],
+    "station_ids": [
+      "imphal_tulihal_24.7667_93.9000_780m"
+    ],
+    "bounds": {
+      "minLat": 24.7667,
+      "maxLat": 24.7667,
+      "minLon": 93.9,
+      "maxLon": 93.9
+    },
+    "centroid": {
+      "lat": 24.7667,
+      "lon": 93.9
+    },
+    "avg_elevation_m": 780.0
+  },
+  {
+    "id": "MP",
+    "name": "MP",
+    "type": "STATE",
+    "station_count": 41,
+    "district_count": 38,
+    "districts": [
+      "Balaghat",
+      "Bastar",
+      "Betul",
+      "Bhopal",
+      "Chhatarpur",
+      "Chhindwara",
+      "Damoh",
+      "Datia",
+      "Dhar",
+      "Durg",
+      "Gaurela-Pendra-Marwahi",
+      "Guna",
+      "Gwalior",
+      "Indore",
+      "Jabalpur",
+      "Khandwa",
+      "Khargone",
+      "Mandla",
+      "Narmadapuram",
+      "Narsinghpur",
+      "Raipur",
+      "Raisen",
+      "Rajgarh",
+      "Ratlam",
+      "Rewa",
+      "Sagar",
+      "Satna",
+      "Seoni",
+      "Shajapur",
+      "Sheopur",
+      "Shivpuri",
+      "Sidhi",
+      "Surguja",
+      "Tikamgarh",
+      "Ujjain",
+      "Umaria",
+      "Vidisha",
+      "Washim"
+    ],
+    "station_ids": [
+      "ambikapur_23.1667_83.2500_596m",
+      "betul_21.8667_77.9333_652m",
+      "bhopal_bairagarh_23.2833_77.3500_523m",
+      "chhindwara_22.1000_79.0000_675m",
+      "damoh_23.8333_79.4500_369m",
+      "datia_25.6667_78.4667_227m",
+      "dhar_22.6000_75.3000_581m",
+      "durg_21.1833_81.2833_292m",
+      "guna_24.6500_77.3167_477m",
+      "gwalior_26.2333_78.2500_205m",
+      "hoshangabad_22.7667_77.7667_300m",
+      "indore_22.7167_75.8000_561m",
+      "jabalpur_23.2000_79.9500_391m",
+      "jagdalpur_19.0833_82.0333_552m",
+      "khajuraho_24.9833_79.9167_217m",
+      "khandwa_21.8333_76.3667_317m",
+      "khargone_21.8167_75.6167_250m",
+      "malanjkhand_22.0000_80.7000_580m",
+      "mandla_22.5833_80.3667_441m",
+      "narsinghpur_22.9500_79.1833_354m",
+      "nowgong_25.0667_79.4500_226m",
+      "pachmarhi_22.4667_78.4333_1061m",
+      "pbo_raipur_21.2167_81.6667_294m",
+      "pendra_road_22.7667_81.9000_624m",
+      "raipur_phundardih_21.2167_81.6667_294m",
+      "raisen_23.3167_77.8333_435m",
+      "rajgarh_24.0000_76.7167_380m",
+      "ratlam_23.3167_75.0500_484m",
+      "rewa_24.5333_81.3000_298m",
+      "sagar_23.8500_78.7500_550m",
+      "satna_24.5667_80.8333_315m",
+      "seoni_22.0833_79.5500_617m",
+      "shajapur_23.4333_76.3167_444m",
+      "sheopur_25.6667_76.6833_234m",
+      "shivpuri_25.3333_77.6500_463m",
+      "sidhi_24.4167_81.8667_270m",
+      "tikamgarh_24.7667_78.8333_344m",
+      "ujjain_23.1833_75.7833_488m",
+      "umaria_23.5333_80.8833_458m",
+      "vidisha_23.5333_77.8167_425m",
+      "washim_wshm_20.1167_77.1333_565m"
+    ],
+    "bounds": {
+      "minLat": 19.0833,
+      "maxLat": 26.2333,
+      "minLon": 75.05,
+      "maxLon": 83.25
+    },
+    "centroid": {
+      "lat": 23.1927,
+      "lon": 78.815
+    },
+    "avg_elevation_m": 434.9
+  },
+  {
+    "id": "MZ",
+    "name": "MZ",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 1,
+    "districts": [
+      "Aizawl"
+    ],
+    "station_ids": [
+      "aijal_23.7333_92.7167_0m",
+      "lengpui_hmunpui_23.8406_92.6197_426m"
+    ],
+    "bounds": {
+      "minLat": 23.7333,
+      "maxLat": 23.8406,
+      "minLon": 92.6197,
+      "maxLon": 92.7167
+    },
+    "centroid": {
+      "lat": 23.7869,
+      "lon": 92.6682
+    },
+    "avg_elevation_m": 213.0
+  },
+  {
+    "id": "NL",
+    "name": "NL",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 2,
+    "districts": [
+      "Jiribam",
+      "Kohima"
+    ],
+    "station_ids": [
+      "kohima_25.6333_94.1667_1405m",
+      "manipur_road_rjbri_25.8800_93.7700_152m"
+    ],
+    "bounds": {
+      "minLat": 25.6333,
+      "maxLat": 25.88,
+      "minLon": 93.77,
+      "maxLon": 94.1667
+    },
+    "centroid": {
+      "lat": 25.7567,
+      "lon": 93.9684
+    },
+    "avg_elevation_m": 778.5
+  },
+  {
+    "id": "OR",
+    "name": "OR",
+    "type": "STATE",
+    "station_count": 16,
+    "district_count": 15,
+    "districts": [
+      "Angul",
+      "Balasore",
+      "Bhadrak",
+      "Cuttack",
+      "Ganjam",
+      "Jagatsinghpur",
+      "Jharsuguda",
+      "Kalahandi",
+      "Keonjhar",
+      "Khordha",
+      "Koraput",
+      "Mayurbhanj",
+      "Puri",
+      "Sambalpur",
+      "Sundargarh"
+    ],
+    "station_ids": [
+      "angul_20.8333_85.1000_137m",
+      "balasore_21.5167_86.9333_18m",
+      "baripada_21.9333_86.7667_53m",
+      "bhawanipatna_19.9167_83.1833_261m",
+      "bhubaneswar_20.2500_85.8333_45m",
+      "chandbali_20.7833_86.7333_5m",
+      "cuttack_20.4667_85.9333_27m",
+      "gopalpur_19.2667_84.8833_16m",
+      "jharsuguda_21.9167_84.0833_228m",
+      "keongjhargarh_21.6167_85.5167_461m",
+      "koraput_18.8167_82.7167_0m",
+      "paradip_c_w_r_20.3000_86.6833_4m",
+      "puri_19.8000_85.8167_5m",
+      "rourkela_22.2167_84.8833_0m",
+      "sambalpur_21.4667_83.9667_0m",
+      "sundargarh_22.0167_84.0000_240m"
+    ],
+    "bounds": {
+      "minLat": 18.8167,
+      "maxLat": 22.2167,
+      "minLon": 82.7167,
+      "maxLon": 86.9333
+    },
+    "centroid": {
+      "lat": 20.8198,
+      "lon": 85.1896
+    },
+    "avg_elevation_m": 93.8
+  },
+  {
+    "id": "PB",
+    "name": "PB",
+    "type": "STATE",
+    "station_count": 6,
+    "district_count": 5,
+    "districts": [
+      "Amritsar",
+      "Bathinda",
+      "Ludhiana",
+      "Pathankot",
+      "Patiala"
+    ],
+    "station_ids": [
+      "amritsar_31.6333_74.8667_229m",
+      "bhatinda_30.1667_74.5833_207m",
+      "ludhiana_30.8667_75.9333_255m",
+      "ludhiana_dorha_30.8547_75.9526_254m",
+      "pathankot_pathnkot_32.2338_75.6346_310m",
+      "patiala_30.3333_76.4667_249m"
+    ],
+    "bounds": {
+      "minLat": 30.1667,
+      "maxLat": 32.2338,
+      "minLon": 74.5833,
+      "maxLon": 76.4667
+    },
+    "centroid": {
+      "lat": 31.0148,
+      "lon": 75.5729
+    },
+    "avg_elevation_m": 250.7
+  },
+  {
+    "id": "PY",
+    "name": "PY",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 2,
+    "districts": [
+      "Cuddalore",
+      "Karaikal"
+    ],
+    "station_ids": [
+      "cuddalore_11.7667_79.7667_5m",
+      "karaikal_10.9167_79.8333_7m"
+    ],
+    "bounds": {
+      "minLat": 10.9167,
+      "maxLat": 11.7667,
+      "minLon": 79.7667,
+      "maxLon": 79.8333
+    },
+    "centroid": {
+      "lat": 11.3417,
+      "lon": 79.8
+    },
+    "avg_elevation_m": 6.0
+  },
+  {
+    "id": "RJ",
+    "name": "RJ",
+    "type": "STATE",
+    "station_count": 22,
+    "district_count": 19,
+    "districts": [
+      "Ajmer",
+      "Alwar",
+      "Barmer",
+      "Bhilwara",
+      "Bikaner",
+      "Bundi",
+      "Chittorgarh",
+      "Churu",
+      "Ganganagar",
+      "Jaipur",
+      "Jaisalmer",
+      "Jhunjhunu",
+      "Jodhpur",
+      "Kota",
+      "Pali",
+      "Sawai Madhopur",
+      "Sikar",
+      "Sirohi",
+      "Udaipur"
+    ],
+    "station_ids": [
+      "ajmer_26.4500_74.6167_485m",
+      "alwar_27.5000_76.5833_270m",
+      "barmer_25.7500_71.3833_193m",
+      "bhilwara_25.3500_74.6333_421m",
+      "bikaner_28.0000_73.3000_223m",
+      "bundi_25.4500_75.6333_266m",
+      "chittorgarh_24.8833_74.6333_404m",
+      "churu_28.2500_74.9167_290m",
+      "erinpura_jawai_dam_site_25.0833_73.0833_294m",
+      "ganganagar_29.9167_73.9167_176m",
+      "jaipur_sanganer_26.8167_75.8000_385m",
+      "jaisalmer_26.9000_70.9167_231m",
+      "jodhpur_26.3000_73.0167_217m",
+      "kota_aerodrome_25.1500_75.8500_273m",
+      "mount_abu_24.6000_72.7167_1196m",
+      "phalodi_27.1333_72.3667_233m",
+      "pilani_28.3333_75.5833_300m",
+      "sawai_madhopur_25.9833_76.3667_0m",
+      "sikar_27.6167_75.1333_431m",
+      "udaipur_24.5833_73.7000_581m",
+      "udaipur_dabok_24.6167_73.8833_509m",
+      "udaipur_naramagra_24.6177_73.8961_513m"
+    ],
+    "bounds": {
+      "minLat": 24.5833,
+      "maxLat": 29.9167,
+      "minLon": 70.9167,
+      "maxLon": 76.5833
+    },
+    "centroid": {
+      "lat": 26.3311,
+      "lon": 74.1786
+    },
+    "avg_elevation_m": 358.7
+  },
+  {
+    "id": "SK",
+    "name": "SK",
+    "type": "STATE",
+    "station_count": 1,
+    "district_count": 1,
+    "districts": [
+      "Gangtok"
+    ],
+    "station_ids": [
+      "gangtok_27.3333_88.6167_1756m"
+    ],
+    "bounds": {
+      "minLat": 27.3333,
+      "maxLat": 27.3333,
+      "minLon": 88.6167,
+      "maxLon": 88.6167
+    },
+    "centroid": {
+      "lat": 27.3333,
+      "lon": 88.6167
+    },
+    "avg_elevation_m": 1756.0
+  },
+  {
+    "id": "TN",
+    "name": "TN",
+    "type": "STATE",
+    "station_count": 30,
+    "district_count": 21,
+    "districts": [
+      "Chennai",
+      "Coimbatore",
+      "Cuddalore",
+      "Dharmapuri",
+      "Dindigul",
+      "Kanyakumari",
+      "Karur",
+      "Madurai",
+      "Nagapattinam",
+      "Nilgiris",
+      "Puducherry",
+      "Ramanathapuram",
+      "Salem",
+      "Thanjavur",
+      "Thoothukudi",
+      "Tiruchirappalli",
+      "Tirunelveli",
+      "Tirupattur",
+      "Tiruvallur",
+      "Vellore",
+      "Virudhunagar"
+    ],
+    "station_ids": [
+      "atiramapattinam_10.3333_79.3833_4m",
+      "coimbatore_11.0000_76.9667_407m",
+      "coimbatore_peelamedu_11.0333_77.0500_396m",
+      "coonoor_11.3500_76.8000_1745m",
+      "dharmapuri_12.1333_78.0333_396m",
+      "k_paramathy_10.9500_78.0833_182m",
+      "kanniyakumari_8.0833_77.5000_36m",
+      "kodaikanal_10.2333_77.4667_2339m",
+      "kovilangulam_aruppukkottai_9.5500_78.0833_103m",
+      "madras_13.0667_80.2500_6m",
+      "madras_minambakkam_13.0000_80.1833_10m",
+      "madurai_9.8333_78.0833_139m",
+      "madurai_9.9167_78.1167_132m",
+      "mo_pondicherry_puducherry_11.9667_79.8167_38m",
+      "nagappattinam_10.7667_79.8500_2m",
+      "palayankottai_8.7333_77.7500_45m",
+      "pamban_9.2667_79.3000_10m",
+      "parangipettai_11.5000_79.7667_3m",
+      "pondicherry_auroville_11.9687_79.8101_36m",
+      "salem_11.6500_78.1667_279m",
+      "thanjavur_10.7833_79.1333_0m",
+      "tiruchchirapalli_10.7667_78.7167_85m",
+      "tiruppattur_12.4833_78.5667_385m",
+      "tiruttani_13.1500_79.5333_0m",
+      "tondi_9.7333_79.0333_4m",
+      "tuticorin_new_port_8.7500_78.1833_0m",
+      "udhagamandalam_11.4000_76.7333_2236m",
+      "valparai_10.2833_77.0000_1041m",
+      "vellore_12.9167_79.1500_213m",
+      "yercaud_11.7500_78.1667_1463m"
+    ],
+    "bounds": {
+      "minLat": 8.0833,
+      "maxLat": 13.15,
+      "minLon": 76.7333,
+      "maxLon": 80.25
+    },
+    "centroid": {
+      "lat": 10.9451,
+      "lon": 78.4892
+    },
+    "avg_elevation_m": 391.2
+  },
+  {
+    "id": "TR",
+    "name": "TR",
+    "type": "STATE",
+    "station_count": 2,
+    "district_count": 2,
+    "districts": [
+      "Unakoti",
+      "West Tripura"
+    ],
+    "station_ids": [
+      "agartala_23.8833_91.2500_15m",
+      "kailashahar_24.3167_92.0000_27m"
+    ],
+    "bounds": {
+      "minLat": 23.8833,
+      "maxLat": 24.3167,
+      "minLon": 91.25,
+      "maxLon": 92.0
+    },
+    "centroid": {
+      "lat": 24.1,
+      "lon": 91.625
+    },
+    "avg_elevation_m": 21.0
+  },
+  {
+    "id": "UP",
+    "name": "UP",
+    "type": "STATE",
+    "station_count": 32,
+    "district_count": 26,
+    "districts": [
+      "Agra",
+      "Aligarh",
+      "Bahraich",
+      "Banda",
+      "Bareilly",
+      "Bijnor",
+      "Dehradun",
+      "Ghazipur",
+      "Gorakhpur",
+      "Hamirpur",
+      "Hardoi",
+      "Jalaun",
+      "Jhansi",
+      "Kanpur Nagar",
+      "Lucknow",
+      "Maharajganj",
+      "Meerut",
+      "Moradabad",
+      "Nainital",
+      "Prayagraj",
+      "Rae Bareli",
+      "Rampur",
+      "Shahjahanpur",
+      "Tehri Garhwal",
+      "Udham Singh Nagar",
+      "Varanasi"
+    ],
+    "station_ids": [
+      "agra_27.1500_77.9667_168m",
+      "agra_27.1667_78.0333_168m",
+      "aligarh_27.8833_78.0667_186m",
+      "allahabad_bamhrauli_25.4500_81.7333_97m",
+      "bahraich_27.5667_81.6000_122m",
+      "banda_25.4667_80.3667_120m",
+      "bareilly_28.3667_79.4000_167m",
+      "dehradun_30.3167_78.0333_683m",
+      "dehradun_rni_pokhri_30.1897_78.1803_558m",
+      "fursatganj_re_bareli_26.2500_81.3667_107m",
+      "ghazipur_25.4000_83.5500_0m",
+      "gorakhpur_26.7500_83.3667_76m",
+      "hamirpur_25.9500_80.1500_109m",
+      "hardoi_27.3833_80.1667_141m",
+      "jhansi_25.4500_78.5833_250m",
+      "kanpur_26.4333_80.3667_125m",
+      "kanpur_chakeri_26.4000_80.4000_123m",
+      "lucknow_26.8667_80.9333_110m",
+      "lucknow_amausi_26.7500_80.8833_122m",
+      "meerut_29.0167_77.6333_221m",
+      "moradabad_28.8333_78.7500_0m",
+      "mukteshwar_kumaon_29.4667_79.6500_2310m",
+      "nainital_29.4000_79.4667_1953m",
+      "najibabad_29.6167_78.3833_269m",
+      "nautanwa_27.4333_83.4167_98m",
+      "orai_25.9833_79.5000_140m",
+      "pantnagar_29.0333_79.4667_233m",
+      "rampur_28.7500_79.0000_191m",
+      "shahjahanpur_27.8833_79.9000_155m",
+      "tehri_30.4000_78.4833_0m",
+      "varanasi_25.3000_83.0167_88m",
+      "varanasi_babatpur_25.4500_82.8667_81m"
+    ],
+    "bounds": {
+      "minLat": 25.3,
+      "maxLat": 30.4,
+      "minLon": 77.6333,
+      "maxLon": 83.55
+    },
+    "centroid": {
+      "lat": 27.4924,
+      "lon": 80.0838
+    },
+    "avg_elevation_m": 286.6
+  },
+  {
+    "id": "WB",
+    "name": "WB",
+    "type": "STATE",
+    "station_count": 25,
+    "district_count": 19,
+    "districts": [
+      "Bankura",
+      "Birbhum",
+      "Cooch Behar",
+      "Dakshin Dinajpur",
+      "Darjeeling",
+      "Hooghly",
+      "Howrah",
+      "Jalpaiguri",
+      "Kalimpong",
+      "Kolkata",
+      "Malda",
+      "Murshidabad",
+      "Nadia",
+      "Paschim Bardhaman",
+      "Paschim Medinipur",
+      "Purba Bardhaman",
+      "Purba Medinipur",
+      "Purulia",
+      "South 24 Parganas"
+    ],
+    "station_ids": [
+      "bagati_22.9833_88.3667_0m",
+      "balurghat_25.2167_88.7833_0m",
+      "bankura_23.2500_87.0500_0m",
+      "berhampore_24.1333_88.2667_18m",
+      "burdwan_23.2333_87.8500_0m",
+      "calcutta_alipore_22.5333_88.3333_5m",
+      "calcutta_dum_dum_22.6500_88.4500_4m",
+      "canning_22.2500_88.6667_3m",
+      "contai_21.7833_87.7500_10m",
+      "cooch_behar_26.3333_89.4667_41m",
+      "darjeeling_27.0500_88.2667_2127m",
+      "diamond_harbour_22.1833_88.2000_4m",
+      "digha_21.8333_87.7833_0m",
+      "jalpaiguri_26.5333_88.7167_0m",
+      "kalimpong_27.0667_88.4667_0m",
+      "krishnanagar_23.4000_88.5167_12m",
+      "malda_25.0333_88.1333_26m",
+      "midnapore_22.4167_87.3167_0m",
+      "ondal_andl_23.6167_87.2000_86m",
+      "panagarh_pngarh_23.4667_87.4333_74m",
+      "purulia_23.3333_86.4167_254m",
+      "shanti_niketan_23.6500_87.7000_58m",
+      "siliguri_26.6333_88.3167_126m",
+      "siliguri_26.6667_88.3667_123m",
+      "uluberia_22.5000_87.9500_0m"
+    ],
+    "bounds": {
+      "minLat": 21.7833,
+      "maxLat": 27.0667,
+      "minLon": 86.4167,
+      "maxLon": 89.4667
+    },
+    "centroid": {
+      "lat": 23.99,
+      "lon": 88.0707
+    },
+    "avg_elevation_m": 118.8
+  }
+]
