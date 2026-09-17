@@ -1,6 +1,7 @@
 <div align="center">
   <h1>🌦️ India Weather Forecasting & Intelligence System</h1>
   <p>A production-oriented, scientific weather intelligence and forecasting platform covering <b>413 canonical physical weather stations</b> across 32 Indian States and Union Territories.</p>
+  <p>A Machine Learning–Driven Platform for Multi-Horizon Weather Prediction, Historical Analytics, and Climate Intelligence</p>
 
   <!-- Badges -->
   <p>
