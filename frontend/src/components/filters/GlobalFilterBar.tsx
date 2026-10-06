@@ -4,8 +4,8 @@ import { useFilters } from '../../context/FilterContext';
 import { stationService } from '../../services';
 import { stations } from '../../data';
 
-export const GlobalFilterBar: React.FC = () => {
-  const { filters, setFilter, resetFilters } = useFilters();
+export const GlobalFilterBar: React.FC = () => { 
+  const { filters, setFilter, setScope, resetFilters } = useFilters();
   const [states, setStates] = useState<string[]>([]);
   const [districts, setDistricts] = useState<string[]>([]);
   const [stationsList, setStationsList] = useState(stations);
@@ -63,7 +63,10 @@ export const GlobalFilterBar: React.FC = () => {
             <select
               className="select"
               value={filters.state}
-              onChange={(e) => setFilter('state', e.target.value)}
+              onChange={(e) => {
+                const newState = e.target.value;
+                setScope(newState, 'ALL', 'ALL');
+              }}
               aria-label="Filter by State"
             >
               <option value="ALL">All States ({states.length})</option>
@@ -78,7 +81,10 @@ export const GlobalFilterBar: React.FC = () => {
             <select
               className="select"
               value={filters.district}
-              onChange={(e) => setFilter('district', e.target.value)}
+              onChange={(e) => {
+                const newDistrict = e.target.value;
+                setScope(filters.state, newDistrict, 'ALL');
+              }}
               aria-label="Filter by District"
             >
               <option value="ALL">All Districts ({districts.length})</option>

@@ -49,8 +49,8 @@ export const forecastService = {
           timeline: apiRes.timeline.map((d: any) => ({
             relative_day: d.day_offset,
             date: d.date,
-            status: d.provenance === 'OBSERVED' ? 'OBSERVED' : d.provenance === 'CURRENT' ? 'CURRENT' : d.provenance === 'UNAVAILABLE' ? 'UNAVAILABLE' : 'FORECAST',
-            is_observed: d.provenance === 'OBSERVED' || d.provenance === 'CURRENT',
+            status: d.status || (d.day_offset === 0 ? (d.provenance === 'CURRENT' ? 'CURRENT' : 'UNAVAILABLE') : d.day_offset < 0 ? (d.provenance === 'OBSERVED' ? 'OBSERVED' : 'MODEL ESTIMATE') : 'FORECAST'),
+            is_observed: typeof d.is_observed === 'boolean' ? d.is_observed : (d.provenance === 'OBSERVED' || d.provenance === 'CURRENT'),
             temperature_avg: d.temp_avg_c,
             temperature_min: d.temp_min_c,
             temperature_max: d.temp_max_c,
@@ -59,6 +59,8 @@ export const forecastService = {
             wind_speed: d.wind_kmh,
             air_pressure: d.pressure_hpa,
             provenance: d.provenance,
+            uncertainty: d.uncertainty || null,
+            model_metadata: d.model_metadata || null,
           })),
         } as Operational25DayTimeline;
       }
@@ -163,5 +165,9 @@ export const forecastService = {
 
   async getMultiHorizonSummary(): Promise<MultiHorizonSummary> {
     return Promise.resolve(authoritativeMultiHorizonSummary as MultiHorizonSummary);
-  }
+  },
+
+  async getHorizonDiagnostics(stationId: string, mode?: string, originDate?: string): Promise<any> {
+    return apiClient.getHorizonDiagnostics(stationId, mode, originDate);
+  },
 };

@@ -166,7 +166,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span style={{ fontSize: 'var(--font-xs)', color: 'var(--text-tertiary)' }}>System Stage</span>
-            <span className="badge badge-success">Phase 9 Active</span>
+            <span className="badge badge-success">Phase 11 Active</span>
           </div>
           <div style={{ fontSize: 'var(--font-2xs)', color: 'var(--text-secondary)' }}>
             Canonical 413 Stations • XGBoost + LSTM Verified

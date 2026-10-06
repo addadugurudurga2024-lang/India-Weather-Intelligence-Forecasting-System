@@ -13,6 +13,7 @@ Provides dual-mode observation retrieval and operational 25-day timeline generat
 
 import json
 import logging
+import hashlib
 import urllib.request
 import urllib.parse
 from datetime import datetime, timedelta
@@ -327,16 +328,16 @@ def run_multi_horizon_direct_forecast(
         pred_min = float(model_min.predict(X_h)[0])
         pred_max = float(model_max.predict(X_h)[0])
 
+        pred_temp = round(pred_temp, 1)
         # Physical consistency check: min <= avg <= max
         # If model outputs invert, apply minimal deterministic adjustment
         if pred_min > pred_temp:
             pred_min = round(pred_temp - 0.5, 1)
         if pred_max < pred_temp:
             pred_max = round(pred_temp + 0.5, 1)
-
-        pred_temp = round(pred_temp, 1)
-        pred_min = round(pred_min, 1)
-        pred_max = round(pred_max, 1)
+        # Strictly guarantee physical ordering: min <= avg <= max
+        pred_min = round(min(pred_min, pred_temp), 1)
+        pred_max = round(max(pred_max, pred_temp), 1)
 
         # Rain predictions
         rain_prob = float(model_cls.predict_proba(X_h)[0, 1])
@@ -419,15 +420,14 @@ def generate_previous_day_model_estimate(
     pred_min = float(model_min.predict(X_h)[0])
     pred_max = float(model_max.predict(X_h)[0])
 
+    pred_temp = round(pred_temp, 1)
     # Physical ordering consistency: min <= avg <= max
     if pred_min > pred_temp:
         pred_min = round(pred_temp - 0.5, 1)
     if pred_max < pred_temp:
         pred_max = round(pred_temp + 0.5, 1)
-
-    pred_temp = round(pred_temp, 1)
-    pred_min = round(pred_min, 1)
-    pred_max = round(pred_max, 1)
+    pred_min = round(min(pred_min, pred_temp), 1)
+    pred_max = round(max(pred_max, pred_temp), 1)
 
     rain_prob = float(model_cls.predict_proba(X_h)[0, 1])
     rain_prob = round(float(np.clip(rain_prob, 0.0, 1.0)), 3)
@@ -542,6 +542,14 @@ def build_operational_timeline(
         timeline_past_and_current.append(d0_entry)
 
     # Ingest uncertainty parameters
+    if eval_summary is None and EVAL_SUMMARY_PATH.exists():
+        try:
+            with open(EVAL_SUMMARY_PATH, "r", encoding="utf-8") as f:
+                eval_summary = json.load(f)
+        except Exception as e:
+            logger.warning(f"Could not load eval summary for uncertainties: {e}")
+            eval_summary = {}
+
     uncertainties = eval_summary.get("uncertainty_and_calibration", {}).get("continuous_intervals", {}) if eval_summary else {}
 
     # 3. Generate D+1..D+12 True Model Forecasts
@@ -581,3 +589,119 @@ def build_operational_timeline(
         },
         "timeline": complete_timeline,
     }
+
+
+def get_horizon_inference_diagnostics(
+    station_id: str,
+    origin_date: str = "2025-01-20",
+    df_canonical: Optional[pd.DataFrame] = None,
+) -> Dict[str, Any]:
+    """
+    Diagnostic capability inspecting feature signature, model mapping,
+    raw and final predictions across all 12 forecast horizons (Section 24).
+    """
+    station_meta = load_station_metadata().get(station_id, {
+        "station_id": station_id,
+        "station_name": station_id,
+        "latitude": 20.0,
+        "longitude": 78.0,
+        "elevation_m": 150.0,
+    })
+    origin_dt = datetime.strptime(origin_date, "%Y-%m-%d")
+    base_features_df = get_station_feature_state(
+        station_id=station_id,
+        origin_date=origin_date,
+        df_canonical=df_canonical,
+        station_meta=station_meta,
+    )
+
+    diagnostics = []
+    for h in range(1, 13):
+        target_dt = origin_dt + timedelta(days=h)
+        target_date = target_dt.strftime("%Y-%m-%d")
+        fc_doy = target_dt.timetuple().tm_yday
+
+        sin_val = float(np.sin(2 * np.pi * fc_doy / 365.25))
+        cos_val = float(np.cos(2 * np.pi * fc_doy / 365.25))
+
+        X_h = base_features_df.copy()
+        X_h[f"doy_sin_h{h}"] = sin_val
+        X_h[f"doy_cos_h{h}"] = cos_val
+
+        # Compute deterministic feature signature (hash of features)
+        feat_str = "|".join(f"{col}:{X_h[col].iloc[0]:.6f}" for col in sorted(X_h.columns))
+        feat_hash = hashlib.sha256(feat_str.encode("utf-8")).hexdigest()[:16]
+
+        m_temp = get_model(f"xgb_temp_h{h}.json")
+        m_min = get_model(f"xgb_temp_min_h{h}.json")
+        m_max = get_model(f"xgb_temp_max_h{h}.json")
+        m_cls = get_model(f"xgb_rain_cls_h{h}.json")
+        m_amt = get_model(f"xgb_rain_amt_h{h}.json")
+        m_wind = get_model(f"xgb_wind_h{h}.json")
+        m_pres = get_model(f"xgb_pres_h{h}.json")
+
+        raw_temp = float(m_temp.predict(X_h)[0])
+        raw_min = float(m_min.predict(X_h)[0])
+        raw_max = float(m_max.predict(X_h)[0])
+        raw_pop = float(m_cls.predict_proba(X_h)[0, 1])
+        raw_amt = float(m_amt.predict(X_h)[0])
+        raw_wind = float(m_wind.predict(X_h)[0])
+        raw_pres = float(m_pres.predict(X_h)[0])
+
+        final_temp = round(raw_temp, 1)
+        final_min = round(raw_min, 1)
+        final_max = round(raw_max, 1)
+        if final_min > final_temp:
+            final_min = round(final_temp - 0.5, 1)
+        if final_max < final_temp:
+            final_max = round(final_temp + 0.5, 1)
+        final_min = round(min(final_min, final_temp), 1)
+        final_max = round(max(final_max, final_temp), 1)
+
+        final_pop = round(float(np.clip(raw_pop, 0.0, 1.0)), 3)
+        final_amt = round(float(max(0.0, raw_amt)), 1)
+        if final_pop < 0.20:
+            final_amt = 0.0
+        final_wind = round(float(max(0.5, raw_wind)), 1)
+        final_pres = round(raw_pres, 1)
+
+        diagnostics.append({
+            "station_id": station_id,
+            "d0": origin_date,
+            "horizon": h,
+            "target_date": target_date,
+            "model_name": f"xgb_multi_horizon_h{h}_v1",
+            "feature_signature": feat_hash,
+            "calendar_features": {
+                f"doy_sin_h{h}": round(sin_val, 6),
+                f"doy_cos_h{h}": round(cos_val, 6),
+                "target_doy": fc_doy,
+            },
+            "raw_prediction": {
+                "temp_avg": round(raw_temp, 4),
+                "temp_min": round(raw_min, 4),
+                "temp_max": round(raw_max, 4),
+                "rain_prob": round(raw_pop, 4),
+                "rainfall_amt": round(raw_amt, 4),
+                "wind_speed": round(raw_wind, 4),
+                "air_pressure": round(raw_pres, 4),
+            },
+            "final_prediction": {
+                "temp_avg": final_temp,
+                "temp_min": final_min,
+                "temp_max": final_max,
+                "rain_prob": final_pop,
+                "rainfall_amt": final_amt,
+                "wind_speed": final_wind,
+                "air_pressure": final_pres,
+            },
+            "provenance": f"XGBoost Multi-Horizon Direct Engine (xgb_multi_horizon_h{h}_v1)",
+        })
+
+    return {
+        "station_id": station_id,
+        "forecast_origin": origin_date,
+        "horizons_count": len(diagnostics),
+        "diagnostics": diagnostics,
+    }
+

@@ -6,12 +6,14 @@ from backend.app.schemas.forecast import (
     OperationalTimelineResponse,
     MultiHorizonForecastResponse,
     CurrentTelemetryResponse,
+    HorizonDiagnosticsResponse,
 )
 from backend.app.services.data_service import get_station_by_id
 from backend.app.services.forecast_service import (
     get_operational_timeline,
     get_multi_horizon_forecast,
     get_current_telemetry,
+    get_horizon_diagnostics,
 )
 
 router = APIRouter(prefix="/forecast", tags=["Forecast"])
@@ -72,4 +74,24 @@ def get_telemetry(
     if not data:
         raise HTTPException(status_code=404, detail="Observation data unavailable.")
     return data
+
+
+@router.get("/horizon-diagnostics/{station_id}", response_model=HorizonDiagnosticsResponse)
+def get_diagnostics(
+    station_id: str,
+    mode: str = Query(default="historical_holdout_replay", description="'historical_holdout_replay' or 'operational_current'"),
+    origin_date: Optional[str] = Query(default=None, description="Optional explicit origin date (YYYY-MM-DD)"),
+):
+    """Retrieves full horizon diagnostic audit data for H1 through H12 (Section 24)."""
+    stn = get_station_by_id(station_id)
+    if not stn:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Station '{station_id}' not found in the 413 canonical station registry.",
+        )
+    data = get_horizon_diagnostics(station_id, mode=mode, origin_date=origin_date)
+    if not data:
+        raise HTTPException(status_code=500, detail="Failed to run horizon diagnostics.")
+    return data
+
 

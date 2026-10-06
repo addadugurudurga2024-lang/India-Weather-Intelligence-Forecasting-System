@@ -36,7 +36,7 @@ export const stationService = {
     const stns = await this.getStations();
     const stateStations = stateCode === 'ALL' 
       ? stns 
-      : stns.filter((s) => s.state === stateCode);
+      : stns.filter((s) => s.state.toUpperCase() === stateCode.toUpperCase());
     const districts = Array.from(new Set(stateStations.map((s) => s.district))).sort();
     return Promise.resolve(districts);
   }

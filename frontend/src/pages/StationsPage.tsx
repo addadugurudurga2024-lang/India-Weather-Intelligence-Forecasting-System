@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Search } from 'lucide-react';
+import { Search, Compass, Layers } from 'lucide-react';
 import { stations } from '../data';
 import { weatherService } from '../services';
 import { useFilters } from '../context/FilterContext';
 import { PreviewBanner } from '../components/common/PreviewBanner';
+import { StationComparison } from '../components/stations/StationComparison';
 import type { Station, WeatherObservation } from '../types';
 
 export const StationsPage: React.FC = () => {
   const { filters, setScope } = useFilters();
+  const [viewMode, setViewMode] = useState<'single' | 'compare'>('single');
   const [searchQuery, setSearchQuery] = useState('');
   const [localStationId, setLocalStationId] = useState<string>(stations[0]?.station_id || '');
   const [stationHistory, setStationHistory] = useState<WeatherObservation[]>([]);
@@ -51,12 +53,33 @@ export const StationsPage: React.FC = () => {
         subtext="Reconciled during Phase 1.5 &amp; Phase 2.1: exactly 413 physical stations across 32 Indian States and Union Territories with 0 composite duplicate records."
       />
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'minmax(320px, 400px) 1fr',
-        gap: 'var(--space-6)',
-        alignItems: 'start'
-      }}>
+      {/* View Mode Switcher */}
+      <div style={{ display: 'flex', gap: 'var(--space-2)', borderBottom: '1px solid var(--border-base)', paddingBottom: 'var(--space-3)' }}>
+        <button
+          className={`btn btn-sm ${viewMode === 'single' ? 'btn-primary' : 'btn-secondary'}`}
+          onClick={() => setViewMode('single')}
+        >
+          <Compass size={15} />
+          <span>Single Station Inspector</span>
+        </button>
+        <button
+          className={`btn btn-sm ${viewMode === 'compare' ? 'btn-primary' : 'btn-secondary'}`}
+          onClick={() => setViewMode('compare')}
+        >
+          <Layers size={15} />
+          <span>Multi-Station Comparison (3–5 Stations)</span>
+        </button>
+      </div>
+
+      {viewMode === 'compare' ? (
+        <StationComparison />
+      ) : (
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'minmax(320px, 400px) 1fr',
+          gap: 'var(--space-6)',
+          alignItems: 'start'
+        }}>
         {/* Left Column: Search & Station Directory */}
         <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', maxHeight: '820px' }}>
           <div>
@@ -242,6 +265,7 @@ export const StationsPage: React.FC = () => {
           </div>
         )}
       </div>
+      )}
     </div>
   );
 };

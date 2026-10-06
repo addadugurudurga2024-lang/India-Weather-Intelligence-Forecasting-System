@@ -7,13 +7,13 @@ interface PreviewBannerProps {
 }
 
 export const PreviewBanner: React.FC<PreviewBannerProps> = ({
-  message = 'Operational Preview • Phase 8.5 Architecture',
-  subtext = 'FastAPI backend integration is scheduled for Phase 9. All operational intelligence reflects verified Phase 7 multi-horizon forecasting models and Phase 8 intelligence reasoning.'
+  message = 'Operational Intelligence • Phase 11 Hardened Architecture',
+  subtext = 'FastAPI backend integrated with authoritative Parquet historical telemetry, frozen XGBoost multi-horizon models, and genuine empirical uncertainty intervals.'
 }) => {
   return (
     <div style={{
-      background: 'color-mix(in srgb, var(--accent-warning) 12%, var(--bg-surface))',
-      border: '1px solid rgba(245, 158, 11, 0.3)',
+      background: 'color-mix(in srgb, var(--accent-primary) 10%, var(--bg-surface))',
+      border: '1px solid var(--border-base)',
       borderRadius: 'var(--radius-md)',
       padding: 'var(--space-3) var(--space-4)',
       marginBottom: 'var(--space-5)',
@@ -21,7 +21,7 @@ export const PreviewBanner: React.FC<PreviewBannerProps> = ({
       alignItems: 'center',
       gap: 'var(--space-3)'
     }}>
-      <div style={{ color: 'var(--accent-warning)', display: 'flex', alignItems: 'center' }}>
+      <div style={{ color: 'var(--accent-primary)', display: 'flex', alignItems: 'center' }}>
         <AlertCircle size={20} />
       </div>
       <div style={{ flex: 1 }}>
@@ -32,9 +32,9 @@ export const PreviewBanner: React.FC<PreviewBannerProps> = ({
           {subtext}
         </div>
       </div>
-      <div className="badge badge-warning" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+      <div className="badge badge-success" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
         <Terminal size={12} />
-        <span>DEV PREVIEW</span>
+        <span>OPERATIONAL</span>
       </div>
     </div>
   );

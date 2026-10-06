@@ -108,6 +108,14 @@ export const apiClient = {
     return fetchJson<any>(`/forecast/multi-horizon/${encodeURIComponent(stationId)}${qs}`);
   },
 
+  async getHorizonDiagnostics(stationId: string, mode?: string, originDate?: string) {
+    const params = new URLSearchParams();
+    if (mode) params.append('mode', mode);
+    if (originDate) params.append('origin_date', originDate);
+    const qs = params.toString() ? `?${params.toString()}` : '';
+    return fetchJson<any>(`/forecast/horizon-diagnostics/${encodeURIComponent(stationId)}${qs}`);
+  },
+
   async getCurrentTelemetry(stationId: string, mode?: string, originDate?: string) {
     const params = new URLSearchParams();
     if (mode) params.append('mode', mode);

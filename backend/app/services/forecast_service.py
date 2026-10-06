@@ -12,6 +12,7 @@ from operational_ingestion_service import (
     build_operational_timeline as _build_timeline,
     get_station_feature_state as _get_feature_state,
     load_station_metadata,
+    get_horizon_inference_diagnostics as _get_diagnostics,
 )
 from backend.app.services.data_service import get_station_by_id
 
@@ -48,18 +49,27 @@ def get_operational_timeline(
         status_val = item.get("status", "UNAVAILABLE")
         if status_val == "OBSERVED":
             prov = "OBSERVED"
+            canonical_status = "OBSERVED"
         elif status_val == "CURRENT":
             prov = "CURRENT"
-        elif status_val in ("FORECAST", "MODEL ESTIMATE"):
-            prov = "MODEL ESTIMATE"
+            canonical_status = "CURRENT"
+        elif status_val == "FORECAST":
+            prov = item.get("provenance", f"XGBoost Multi-Horizon Direct Engine (xgb_multi_horizon_h{h_offset}_v1)")
+            canonical_status = "FORECAST"
+        elif status_val == "MODEL ESTIMATE":
+            prov = item.get("provenance", "MODEL ESTIMATE")
+            canonical_status = "MODEL ESTIMATE"
         else:
-            prov = "UNAVAILABLE"
+            prov = item.get("provenance", "UNAVAILABLE")
+            canonical_status = "UNAVAILABLE"
 
         normalized.append({
             "date": item.get("date"),
             "day_offset": h_offset,
             "horizon_label": label,
+            "status": canonical_status,
             "provenance": prov,
+            "is_observed": bool(item.get("is_observed", canonical_status in ("OBSERVED", "CURRENT"))),
             "temp_avg_c": item.get("temperature_avg"),
             "temp_min_c": item.get("temperature_min"),
             "temp_max_c": item.get("temperature_max"),
@@ -68,6 +78,8 @@ def get_operational_timeline(
             "wind_kmh": item.get("wind_speed"),
             "pressure_hpa": item.get("air_pressure"),
             "model_name": item.get("model_metadata", {}).get("model_id") if item.get("model_metadata") else None,
+            "uncertainty": item.get("uncertainty"),
+            "model_metadata": item.get("model_metadata"),
         })
 
     return {
@@ -182,4 +194,32 @@ def get_current_telemetry(
         "rainfall_mm": d0_item.get("rainfall_amount"),
         "wind_kmh": d0_item.get("wind_speed"),
         "pressure_hpa": d0_item.get("air_pressure"),
+    }
+
+
+def get_horizon_diagnostics(
+    station_id: str,
+    mode: str = "historical_holdout_replay",
+    origin_date: Optional[str] = None,
+) -> Optional[Dict[str, Any]]:
+    """Retrieves full horizon diagnostic audit data for H1 through H12 (Section 24)."""
+    stn = get_station_by_id(station_id)
+    if not stn:
+        return None
+
+    if mode == "operational_current":
+        effective_origin = origin_date or datetime.now().strftime("%Y-%m-%d")
+    else:
+        effective_origin = "2025-01-20"
+
+    diag_data = _get_diagnostics(station_id, origin_date=effective_origin)
+    if not diag_data:
+        return None
+
+    return {
+        "station_id": station_id,
+        "forecast_origin": effective_origin,
+        "mode": mode,
+        "horizons_count": diag_data.get("horizons_count", 12),
+        "diagnostics": diag_data.get("diagnostics", []),
     }

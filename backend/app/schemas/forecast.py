@@ -8,7 +8,9 @@ class TimelineRecord(BaseModel):
     date: str
     day_offset: int
     horizon_label: str
-    provenance: str = Field(..., description="'OBSERVED', 'MODEL ESTIMATE', 'CURRENT', or 'UNAVAILABLE'")
+    status: str = Field(default="UNAVAILABLE", description="'OBSERVED', 'CURRENT', 'MODEL ESTIMATE', 'FORECAST', or 'UNAVAILABLE'")
+    provenance: str = Field(..., description="'OBSERVED', 'CURRENT', 'MODEL ESTIMATE', 'FORECAST', or authoritative engine string")
+    is_observed: bool = False
     temp_avg_c: Optional[float] = None
     temp_min_c: Optional[float] = None
     temp_max_c: Optional[float] = None
@@ -17,6 +19,8 @@ class TimelineRecord(BaseModel):
     wind_kmh: Optional[float] = None
     pressure_hpa: Optional[float] = None
     model_name: Optional[str] = None
+    uncertainty: Optional[Dict[str, Any]] = None
+    model_metadata: Optional[Dict[str, Any]] = None
 
 
 class OperationalTimelineResponse(BaseModel):
@@ -61,3 +65,25 @@ class CurrentTelemetryResponse(BaseModel):
     rainfall_mm: Optional[float] = None
     wind_kmh: Optional[float] = None
     pressure_hpa: Optional[float] = None
+
+
+class HorizonDiagnosticRecord(BaseModel):
+    station_id: str
+    d0: str
+    horizon: int
+    target_date: str
+    model_name: str
+    feature_signature: str
+    raw_prediction: Dict[str, Any]
+    final_prediction: Dict[str, Any]
+    provenance: str
+    calendar_features: Dict[str, float]
+
+
+class HorizonDiagnosticsResponse(BaseModel):
+    station_id: str
+    forecast_origin: str
+    mode: str
+    horizons_count: int
+    diagnostics: List[HorizonDiagnosticRecord]
+
