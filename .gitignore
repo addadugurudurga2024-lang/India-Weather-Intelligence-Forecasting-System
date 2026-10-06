@@ -51,3 +51,8 @@ Thumbs.db
 # Scratch and Logs
 scratch/
 *.log
+
+# Reports and Documents (Local Only)
+data_report/
+reports/
+
